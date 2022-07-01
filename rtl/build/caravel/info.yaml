@@ -1,0 +1,20 @@
+---
+project:
+  description: "High-specific-bandwidth memory cell test site for 90nm"
+  foundry: "SkyWater"
+  git_url: "https://git.openpower.foundation/cores/toysram.git"
+  organization: "Open POWER"
+  organization_url: "http://openpowerfoundation.com"
+  owner: "Bob Montoya"
+  process: "SKY90"
+  project_name: "ToySRAM"
+  project_id: "00000000"
+  tags:
+    - "Open MPW"
+    - "Custom Cell"
+    - "Array"
+  category: "Custom Cell"
+  top_level_netlist: "verilog/gl/site.v"
+  user_level_netlist: "verilog/gl/user_project_wrapper.v"
+  version: "1.00"
+  cover_image: "docs/img/bob.jpg"

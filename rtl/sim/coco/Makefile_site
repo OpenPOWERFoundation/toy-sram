@@ -1,0 +1,46 @@
+# sdr ra
+# make -f Makefile.icarus build  # rebuild and sim and fst
+# make -f Makefile.icarus run    # sim and fst
+# make -f Makefile.icarus        # sim
+
+#COCOTB_LOG_LEVEL=DEBUG
+#GPI_EXTRA=vpi
+
+#COCOTB_RESOLVE_X = ZEROS # VALUE_ERROR ZEROS ONES RANDOM
+
+SIM_BUILD ?= build_site
+SIM ?= icarus
+
+# options
+#COCOTB_HDL_TIMEUNIT ?= 1ns
+#COCOTB_HDL_TIMEPRECISION ?= 1ps
+#COCOTB_RESOLVE_X = VALUE_ERROR # ZEROS ONES RANDOM
+
+# icarus
+
+VERILOG_ROOT = src
+
+COMPILE_ARGS = -I$(VERILOG_ROOT)/../site -I$(VERILOG_ROOT)/../array -y$(VERILOG_ROOT)/../site -y$(VERILOG_ROOT)/../array
+
+# other options
+
+# rtl
+TOPLEVEL_LANG = verilog
+# top-level to enable trace, etc.
+VERILOG_SOURCES = ./test_site.v
+TOPLEVEL = test_site
+
+# python test
+MODULE = tb
+TESTCASE = tb_site
+
+# cocotb make rules
+include $(shell cocotb-config --makefiles)/Makefile.sim
+
+build: clean sim fst
+
+run: sim fst
+
+fst:
+	vcd2fst test_site.vcd test_site.fst
+	rm test_site.vcd

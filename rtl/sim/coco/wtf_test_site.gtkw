@@ -1,0 +1,138 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Mon Jun 13 17:02:24 2022
+[*]
+[dumpfile] "/media/wtf/WD_USBC_4T/projects/toy-sram/rtl/sim/coco/test_site.fst"
+[dumpfile_mtime] "Mon Jun 13 16:51:29 2022"
+[dumpfile_size] 408816
+[savefile] "/media/wtf/WD_USBC_4T/projects/toy-sram/rtl/sim/coco/wtf_test_site.gtkw"
+[timestart] 2034000
+[size] 2048 1078
+[pos] 206 125
+*-18.000000 3035000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_site.
+[treeopen] test_site.site.
+[treeopen] test_site.site.ra_0.
+[treeopen] test_site.site.ra_0.ra.
+[sst_width] 204
+[signals_width] 265
+[sst_expanded] 1
+[sst_vpaned_height] 314
+@28
+test_site.wb_clk_i
+test_site.wb_rst_i
+test_site.wbs_cyc_i
+test_site.wbs_stb_i
+test_site.wbs_we_i
+@22
+test_site.wbs_adr_i[31:0]
+test_site.wbs_sel_i[3:0]
+test_site.wbs_dat_i[31:0]
+@28
+test_site.wbs_ack_o
+@22
+test_site.wbs_dat_o[31:0]
+test_site.la_data_in[127:0]
+test_site.la_data_out[127:0]
+test_site.la_oenb[127:0]
+test_site.io_in[37:0]
+test_site.io_oeb[37:0]
+test_site.io_out[37:0]
+@28
+test_site.irq[2:0]
+@200
+-WB SLAVE
+@22
+test_site.site.wb.rd_dat[31:0]
+@28
+test_site.site.wb.rd_ack_q
+@22
+test_site.site.wb.rd_dat_q[31:0]
+@200
+-CFG
+@22
+test_site.site.cfg.cfg0_q[31:0]
+@28
+test_site.site.cfg.wb_cmd_val
+test_site.site.cfg.cfg_cmd_val
+test_site.site.cfg.ctl_cmd_val
+test_site.site.cfg.ra0_cmd_val
+@22
+test_site.site.cfg.cmd_adr[31:0]
+@28
+test_site.site.cfg.cmd_we
+@22
+test_site.site.cfg.cmd_sel[3:0]
+test_site.site.cfg.cmd_dat[31:0]
+@200
+-CTL
+@22
+test_site.site.ctl.io_in[37:0]
+test_site.site.ctl.io_out[37:0]
+test_site.site.ctl.io_oeb[37:0]
+test_site.site.cfg.cfg0_q[31:0]
+test_site.site.ctl.seq_q[4:0]
+@28
+test_site.site.ctl.ctl_cmd_val
+test_site.site.ctl.ra0_cmd_val
+test_site.site.ctl.adr_bist
+test_site.site.ctl.adr_config
+@22
+test_site.site.ctl.cmd_adr[31:0]
+@28
+test_site.site.ctl.cmd_we
+@22
+test_site.site.ctl.cmd_sel[3:0]
+test_site.site.ctl.cmd_dat[31:0]
+@28
+test_site.site.ctl.rd_ack
+test_site.site.ctl.rdata_sel[2:0]
+@22
+test_site.site.ctl.rd_dat[31:0]
+@28
+test_site.site.ctl.ra0_r0_enb
+@22
+test_site.site.ctl.ra0_r0_adr[4:0]
+test_site.site.ctl.ra0_r0_dat[31:0]
+@28
+test_site.site.ctl.ra0_r1_enb
+@22
+test_site.site.ctl.ra0_r1_adr[4:0]
+test_site.site.ctl.ra0_r1_dat[31:0]
+@28
+test_site.site.ctl.ra0_w0_enb
+@22
+test_site.site.ctl.ra0_w0_adr[4:0]
+test_site.site.ctl.ra0_w0_dat[31:0]
+@28
+test_site.site.ctl.test_enable
+@22
+test_site.site.ctl.scan_reg_q[127:0]
+@28
+test_site.site.ctl.scan_clk
+@22
+test_site.site.ctl.scan_config[16:0]
+@28
+test_site.site.ctl.scan_di
+test_site.site.ctl.scan_do
+test_site.site.ctl.io_ra0_clk
+test_site.site.ctl.io_ra0_rst
+@200
+-RA0
+@28
+test_site.site.ra_0.clk
+test_site.site.ra_0.ra.wr_enb_0_q
+@22
+test_site.site.ra_0.ra.wr_adr_0_q[0:4]
+test_site.site.ra_0.ra.wr_dat_0_q[0:31]
+@28
+test_site.site.ra_0.ra.rd_enb_0_q
+@22
+test_site.site.ra_0.ra.rd_dat_0_q[0:31]
+@28
+test_site.site.ra_0.ra.rd_enb_1_q
+@22
+test_site.site.ra_0.ra.rd_dat_1_q[0:31]
+test_site.site.ra_0.ra.array0.ra[0].q[0:31]
+[pattern_trace] 1
+[pattern_trace] 0
