@@ -1,0 +1,29 @@
+* NGSPICE file created from 10T_1x8_magic.ext - technology: sky130A
+
+.subckt x10T_toy_magic WWL RWL WBL WBLb RBL0 RBL1 VDD GND
+X0 junc0 junc1 VDD VDD sky130_fd_pr__pfet_01v8 ad=1.29e+10p pd=430000u as=6.26e+10p ps=1.44e+06u w=1 l=0.15
+X1 GND junc0 junc1 GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=4.8725e+10p ps=1.28e+06u w=1 l=0.15
+X2 RWL0_junc junc0 GND GND sky130_fd_pr__nfet_01v8 ad=4.795e+10p pd=980000u as=2.252e+11p ps=4.64e+06u w=1 l=0.15
+X3 VDD junc0 junc1 VDD sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=1.68e+10p ps=520000u w=1 l=0.15
+X4 WBL WWL junc0 GND sky130_fd_pr__nfet_01v8 ad=2.4175e+10p pd=630000u as=4.935e+10p ps=1.28e+06u w=1 l=0.15
+X5 junc1 WWL WBLb GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=2.31e+10p ps=610000u w=1 l=0.15
+X6 GND junc1 RWL1_junc GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=4.795e+10p ps=980000u w=1 l=0.15
+X7 RBL0 RWL RWL0_junc GND sky130_fd_pr__nfet_01v8 ad=4.515e+10p pd=850000u as=0p ps=0u w=1 l=0.15
+X8 junc0 junc1 GND GND sky130_fd_pr__nfet_01v8 ad=2.4225e+11p pd=3.81e+06u as=0p ps=0u w=1 l=0.15
+X9 RWL1_junc RWL RBL1 GND sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=4.515e+10p ps=850000u w=1 l=0.15
+.ends
+
+.subckt x10T_1x8_magic WWL RWL WBLb_0 WBL_0 RBL1_0 RBL0_0 WBLb_1 WBL_1 RBL1_1 RBL0_1
++ WBLb_2 WBL_2 RBL1_2 RBL0_2 WBLb_3 WBL_3 RBL1_3 RBL0_3 WBLb_4 WBL_4 RBL1_4 RBL0_4
++ WBLb_5 WBL_5 RBL1_5 RBL0_5 WBLb_6 WBL_6 RBL1_6 RBL0_6 WBLb_7 WBL_7 RBL1_7 RBL0_7
++ VDD GND
+X10T_toy_magic_0 WWL RWL WBL_0 WBLb_0 RBL0_0 RBL1_0 VDD GND x10T_toy_magic
+X10T_toy_magic_1 WWL RWL WBL_1 WBLb_1 RBL0_1 RBL1_1 VDD GND x10T_toy_magic
+X10T_toy_magic_2 WWL RWL WBL_2 WBLb_2 RBL0_2 RBL1_2 VDD GND x10T_toy_magic
+X10T_toy_magic_3 WWL RWL WBL_3 WBLb_3 RBL0_3 RBL1_3 VDD GND x10T_toy_magic
+X10T_toy_magic_4 WWL RWL WBL_4 WBLb_4 RBL0_4 RBL1_4 VDD GND x10T_toy_magic
+X10T_toy_magic_5 WWL RWL WBL_5 WBLb_5 RBL0_5 RBL1_5 VDD GND x10T_toy_magic
+X10T_toy_magic_6 WWL RWL WBL_6 WBLb_6 RBL0_6 RBL1_6 VDD GND x10T_toy_magic
+X10T_toy_magic_7 WWL RWL WBL_7 WBLb_7 RBL0_7 RBL1_7 VDD GND x10T_toy_magic
+.ends
+

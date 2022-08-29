@@ -1,0 +1,590 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice(lvs)
+scale 1000 1 0.5
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+port "RBL0_7" 16 4597 38 4612 80 coreli
+port "RBL1_7" 15 4060 38 4075 80 coreli
+port "RBL0_6" 14 4017 38 4032 80 coreli
+port "RBL1_6" 13 3480 38 3495 80 coreli
+port "RBL0_5" 12 3437 38 3452 80 coreli
+port "RBL1_5" 11 2900 38 2915 80 coreli
+port "RBL0_4" 10 2857 38 2872 80 coreli
+port "RBL1_4" 8 2320 38 2335 80 coreli
+port "RBL0_3" 8 2277 38 2292 80 coreli
+port "RBL1_3" 7 1740 38 1755 80 coreli
+port "RBL0_2" 6 1697 38 1712 80 coreli
+port "RBL1_2" 5 1160 38 1175 80 coreli
+port "RBL0_1" 4 1117 38 1132 80 coreli
+port "RBL1_1" 3 580 38 595 80 coreli
+port "RBL0_0" 2 537 38 552 80 coreli
+port "RBL1_0" 1 0 38 15 80 coreli
+port "WBL_7" 34 4524 184 4539 213 coreli
+port "WBLb_7" 33 4134 184 4149 212 coreli
+port "WBL_6" 32 3944 184 3959 213 coreli
+port "WBLb_6" 31 3554 184 3569 212 coreli
+port "WBL_5" 30 3364 184 3379 213 coreli
+port "WBLb_5" 29 2974 184 2989 212 coreli
+port "WBL_4" 28 2784 184 2799 213 coreli
+port "WBLb_4" 27 2394 184 2409 212 coreli
+port "WBL_3" 26 2204 184 2219 213 coreli
+port "WBLb_3" 25 1814 184 1829 212 coreli
+port "WBL_2" 24 1624 184 1639 213 coreli
+port "WBLb_2" 23 1234 184 1249 212 coreli
+port "WBL_1" 22 1044 184 1059 213 coreli
+port "RWL" 18 0 102 15 136 m1
+port "WBLb_1" 21 654 184 669 212 coreli
+port "WBL_0" 20 464 184 479 213 coreli
+port "WBLb_0" 19 74 184 89 212 coreli
+port "WWL" 17 0 240 30 270 p
+port "VDD" 35 0 226 15 240 m1
+port "GND" 36 0 0 15 14 m1
+node "10T_toy_magic_1/RBL0" 342 149.464 4569 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_1/RBL0" "RBL0_7"
+node "10T_toy_magic_1/RWL0_junc" 315 0 4483 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_1/RWL1_junc" 315 0 4133 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_1/RBL1" 342 145.597 4060 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_1/RBL1" "RBL1_7"
+node "10T_toy_magic_0/RBL0" 342 145.597 3989 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/RBL0" "RBL0_6"
+node "10T_toy_magic_0/RWL0_junc" 315 0 3903 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_0/RWL1_junc" 315 0 3553 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_0/RBL1" 342 145.597 3480 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/RBL1" "RBL1_6"
+node "10T_toy_magic_2/RBL0" 342 145.597 3409 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_2/RBL0" "RBL0_5"
+node "10T_toy_magic_2/RWL0_junc" 315 0 3323 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_2/RWL1_junc" 315 0 2973 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_2/RBL1" 342 145.597 2900 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_2/RBL1" "RBL1_5"
+node "10T_toy_magic_3/RBL0" 342 145.597 2829 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_3/RBL0" "RBL0_4"
+node "10T_toy_magic_3/RWL0_junc" 315 0 2743 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_3/RWL1_junc" 315 0 2393 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_3/RBL1" 342 145.597 2320 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_3/RBL1" "RBL1_4"
+node "10T_toy_magic_4/RBL0" 342 145.597 2249 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_4/RBL0" "RBL0_3"
+node "10T_toy_magic_4/RWL0_junc" 315 0 2163 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_4/RWL1_junc" 315 0 1813 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_4/RBL1" 342 145.597 1740 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_4/RBL1" "RBL1_3"
+node "10T_toy_magic_5/RBL0" 342 145.597 1669 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_5/RBL0" "RBL0_2"
+node "10T_toy_magic_5/RWL0_junc" 315 0 1583 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_5/RWL1_junc" 315 0 1233 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_5/RBL1" 342 145.597 1160 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_5/RBL1" "RBL1_2"
+node "10T_toy_magic_6/RBL0" 342 145.597 1089 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_6/RBL0" "RBL0_1"
+node "10T_toy_magic_6/RWL0_junc" 315 0 1003 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_6/RWL1_junc" 315 0 653 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_6/RBL1" 342 145.597 580 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_6/RBL1" "RBL1_1"
+node "10T_toy_magic_7/RBL0" 342 145.597 509 38 ndif 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_7/RBL0" "RBL0_0"
+node "10T_toy_magic_7/RWL0_junc" 315 0 423 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_7/RWL1_junc" 315 0 73 38 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_7/RBL1" 342 149.464 0 38 ndc 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_7/RBL1" "RBL1_0"
+node "10T_toy_magic_1/WBL" 399 142.387 4505 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_1/WBL" "WBL_7"
+node "10T_toy_magic_1/junc0" 1711 467.013 4282 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_1/junc1" 1753 394.424 4189 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_1/WBLb" 375 140.298 4134 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_1/WBLb" "WBLb_7"
+node "10T_toy_magic_0/WBL" 399 143.798 3925 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/WBL" "WBL_6"
+node "10T_toy_magic_0/junc0" 1711 467.013 3702 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_0/junc1" 1753 394.424 3609 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_0/WBLb" 375 140.298 3554 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/WBLb" "WBLb_6"
+node "10T_toy_magic_2/WBL" 399 143.798 3345 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_2/WBL" "WBL_5"
+node "10T_toy_magic_2/junc0" 1711 467.013 3122 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_2/junc1" 1753 394.424 3029 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_2/WBLb" 375 140.298 2974 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_2/WBLb" "WBLb_5"
+node "10T_toy_magic_3/WBL" 399 143.798 2765 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_3/WBL" "WBL_4"
+node "10T_toy_magic_3/junc0" 1711 467.013 2542 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_3/junc1" 1753 394.424 2449 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_3/WBLb" 375 140.298 2394 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_3/WBLb" "WBLb_4"
+node "10T_toy_magic_4/WBL" 399 143.798 2185 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_4/WBL" "WBL_3"
+node "10T_toy_magic_4/junc0" 1711 467.013 1962 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_4/junc1" 1753 394.424 1869 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_4/WBLb" 375 140.298 1814 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_4/WBLb" "WBLb_3"
+node "10T_toy_magic_5/WBL" 399 143.798 1605 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_5/WBL" "WBL_2"
+node "10T_toy_magic_5/junc0" 1711 467.013 1382 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_5/junc1" 1753 394.424 1289 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_5/WBLb" 375 140.298 1234 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_5/WBLb" "WBLb_2"
+node "10T_toy_magic_6/WBL" 399 143.798 1025 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_6/WBL" "WBL_1"
+node "10T_toy_magic_0/RWL" 5499 5206.71 43 16 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 57600 4800 0 0 16320 2048 155346 9206 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/RWL" "RWL"
+node "10T_toy_magic_6/junc0" 1711 467.013 802 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_6/junc1" 1753 394.424 709 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_6/WBLb" 375 140.298 654 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_6/WBLb" "WBLb_1"
+node "10T_toy_magic_7/WBL" 399 143.798 445 184 ndif 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_7/WBL" "WBL_0"
+node "10T_toy_magic_7/junc0" 1711 467.013 222 16 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_7/junc1" 1753 394.424 129 16 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "10T_toy_magic_7/WBLb" 375 138.887 74 184 ndc 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_7/WBLb" "WBLb_0"
+node "10T_toy_magic_0/WWL" 9415 3687.35 0 240 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 175800 11780 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/WWL" "WWL"
+node "10T_toy_magic_0/VDD" 82483 2115.17 198 144 nw 0 0 0 0 117504 3984 0 0 448 480 20032 2304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7840 1312 64568 9252 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/VDD" "VDD"
+substrate "10T_toy_magic_0/GND" 0 0 159 38 ndif 0 0 0 0 0 0 0 0 72064 7424 448 480 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7840 1312 64568 9252 0 0 0 0 0 0 0 0 0 0
+equiv "10T_toy_magic_0/GND" "GND"
+cap "10T_toy_magic_3/RBL0" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_4/junc1" 47.9189
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/WBL" 75.7767
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_3/WBL" 37.6914
+cap "10T_toy_magic_1/WBL" "10T_toy_magic_1/junc1" 47.9189
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_0/WBL" "10T_toy_magic_0/junc1" 47.9189
+cap "10T_toy_magic_1/junc1" "10T_toy_magic_0/junc0" 26.3634
+cap "10T_toy_magic_7/WBLb" "10T_toy_magic_7/junc1" 183.585
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_6/WBLb" 25.8074
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_4/RWL0_junc" 15.7885
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/junc1" 186.68
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_5/RBL1" 28.4987
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_4/RBL1" 27.0637
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_3/junc0" 4.75574
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_7/RBL0" 23.4283
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_2/WBL" 23.2974
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_5/junc0" 192.02
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/RBL0" 318.214
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_2/junc0" 45.8984
+cap "10T_toy_magic_3/RBL0" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_1/junc0" 65.1391
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_0/WWL" 23.2974
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/junc1" 33.1573
+cap "10T_toy_magic_3/RBL0" "10T_toy_magic_2/junc0" 23.4283
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_0/WWL" 63.5929
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_6/RBL0" 59.0486
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_0/WWL" 23.2974
+cap "10T_toy_magic_5/junc0" "10T_toy_magic_5/RBL1" 27.0637
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_5/junc0" 59.0486
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_6/WBLb" 43.0871
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_7/WBL" 71.8891
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_6/RBL1" 75.7767
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/junc0" 27.0637
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_7/junc1" 4.41641
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_4/WBLb" 65.8529
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_6/junc1" 7.92078
+cap "10T_toy_magic_0/WBL" "10T_toy_magic_1/junc1" 25.836
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_7/RBL0" 65.8529
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_2/WBL" 18.3866
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_1/junc1" 176.661
+cap "10T_toy_magic_2/WBL" "10T_toy_magic_2/junc0" 170.742
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_2/RBL1" 102.912
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_4/junc1" 25.836
+cap "10T_toy_magic_6/WBL" "10T_toy_magic_6/RWL0_junc" 15.7885
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/RWL" 186.68
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_0/VDD" 18.3866
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_1/WBLb" 27.9959
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_1/junc0" 47.9827
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_5/junc0" 4.75574
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_2/junc0" 5.79053
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_0/VDD" 47.9827
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_1/junc0" 59.0486
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_4/WBLb" 43.0871
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_2/junc1" 4.41641
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_0/WBLb" 183.585
+cap "10T_toy_magic_2/WBL" "10T_toy_magic_0/junc0" 5.79053
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_0/VDD" 18.3866
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_7/RBL0" 18.5325
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/WBLb" 65.8529
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_3/WBL" 24.1664
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_4/RBL0" 120.918
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_1/junc1" 44.3264
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_5/junc0" 43.0871
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_4/junc1" 65.1391
+cap "10T_toy_magic_1/junc0" "10T_toy_magic_1/WBL" 170.742
+cap "10T_toy_magic_1/junc0" "10T_toy_magic_0/junc0" 4.75574
+cap "10T_toy_magic_2/RBL1" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_6/junc0" 26.3634
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_3/WBLb" 37.6914
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_1/WBLb" 23.6787
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_6/RBL0" 18.5325
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_7/junc1" 47.9189
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_0/WWL" 23.2974
+cap "10T_toy_magic_3/RBL0" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_7/WBLb" 24.1664
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_0/VDD" 47.9827
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_4/RBL1" "10T_toy_magic_5/junc0" 45.8984
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_4/junc1" 4.41641
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_4/RBL1" 102.912
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_6/WBL" 170.742
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_7/RBL0" 18.5744
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_3/RBL0" 33.1573
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_4/junc1" 125.126
+cap "10T_toy_magic_1/WBL" "10T_toy_magic_1/WBLb" 24.1664
+cap "10T_toy_magic_1/WBLb" "10T_toy_magic_0/junc0" 25.8074
+cap "10T_toy_magic_2/RBL1" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_4/RBL0" "10T_toy_magic_4/junc1" 33.1573
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/junc1" 28.4987
+cap "10T_toy_magic_2/RBL1" "10T_toy_magic_2/junc0" 27.0637
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_5/junc1" 47.9189
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_6/RBL0" 44.3264
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/junc1" 44.3264
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_2/WBL" 71.8891
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_7/RWL0_junc" 15.7885
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/WBLb" 7.92078
+cap "10T_toy_magic_1/junc0" "10T_toy_magic_0/WBL" 5.79053
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_0/VDD" 23.6787
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_4/junc1" 7.92078
+cap "10T_toy_magic_1/RWL0_junc" "10T_toy_magic_1/WBL" 15.7885
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_0/VDD" 18.3866
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_6/RBL0" 18.5744
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_2/junc0" 43.0871
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_1/junc0" 172.607
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_0/VDD" 23.6787
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_6/RBL1" 45.8984
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_0/RWL" 182.001
+cap "10T_toy_magic_6/RBL0" "10T_toy_magic_6/WBL" 120.918
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_2/junc1" 26.3634
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_6/WBL" 24.1664
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_6/junc1" 25.836
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_3/RBL1" 75.7767
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_2/RWL1_junc" 15.7885
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_3/WBL" 47.9189
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_2/RWL0_junc" "10T_toy_magic_2/WBL" 15.7885
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_3/junc1" 25.836
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_5/junc0" 25.8074
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_0/VDD" 1489.86
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_1/junc0" 23.4283
+cap "10T_toy_magic_4/RBL0" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_0/WWL" 10.7325
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_2/junc0" 65.1391
+cap "10T_toy_magic_0/WBL" "10T_toy_magic_1/WBLb" 37.6914
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/WBLb" 102.912
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_6/WBL" 23.2974
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_1/junc1" 57.187
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_1/WBLb" 71.8891
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_7/RBL1" 27.0637
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_1/junc1" 4.41641
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_6/RBL1" 27.0637
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/junc1" 4.41641
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/junc0" 192.02
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_2/RBL0" 33.1573
+cap "10T_toy_magic_7/RBL0" "10T_toy_magic_6/RBL1" 318.214
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_7/RBL0" 78.0777
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_0/junc0" 65.1391
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_0/VDD" 125.126
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_1/WBL" 23.2974
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_3/RBL0" 59.0486
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_4/junc0" 170.742
+cap "10T_toy_magic_3/RBL1" "10T_toy_magic_4/junc1" 28.4987
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_6/WBL" 25.836
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_4/junc1" 186.68
+cap "10T_toy_magic_2/RBL1" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_1/WBLb" 65.8529
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_5/RBL1" 45.8984
+cap "10T_toy_magic_2/WBL" "10T_toy_magic_0/WBLb" 37.6914
+cap "10T_toy_magic_4/RBL0" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_7/junc1" 479.603
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_7/WBLb" 43.0871
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_2/junc0" 47.9827
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_3/RWL1_junc" 15.7885
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_0/VDD" 14.192
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_6/WBL" 18.3866
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_4/junc1" 4.41641
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_2/RBL1" 28.4987
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/RBL0" 78.0777
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_0/VDD" 23.6787
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_4/junc1" 44.3264
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_6/RBL1" 102.912
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/WBLb" 71.8891
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_4/RBL0" 65.8529
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/junc1" 57.187
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_1/WBL" 16.8717
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_2/RBL0" 318.214
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_0/junc0" 47.9827
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_2/WBLb" 7.92078
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_3/WBL" 170.742
+cap "10T_toy_magic_2/junc0" "10T_toy_magic_0/junc0" 4.75574
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_1/WBL" 120.918
+cap "10T_toy_magic_6/RBL0" "10T_toy_magic_5/RBL1" 318.214
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_5/RBL0" 120.918
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_4/junc1" 479.603
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_0/WBL" 23.2974
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_3/junc0" 5.79053
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_6/junc0" 25.8074
+cap "10T_toy_magic_3/RBL1" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_6/RBL1" 18.5325
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/WWL" 106.154
+cap "10T_toy_magic_7/junc1" "10T_toy_magic_7/RBL0" 33.1573
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_6/junc1" 26.3634
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_2/WBL" 25.836
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_2/WBL" 120.918
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_5/WBL" 5.79053
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_1/junc0" 27.0637
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_5/RBL1" 18.5325
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_0/RWL1_junc" "10T_toy_magic_0/WBLb" 15.7885
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_0/RWL" 186.68
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_3/RWL0_junc" 15.7885
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_0/WBL" 18.3866
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_5/WBLb" 24.1664
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_6/RBL0" 65.8529
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_7/RBL1" 10.7325
+cap "10T_toy_magic_3/RBL1" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_7/junc1" 7.92078
+cap "10T_toy_magic_4/RWL1_junc" "10T_toy_magic_4/WBLb" 15.7885
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/VDD" 2284.5
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/RBL1" 28.4987
+cap "10T_toy_magic_3/RBL1" "10T_toy_magic_4/RBL0" 318.214
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_6/RBL1" 18.5744
+cap "10T_toy_magic_4/RBL0" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_4/junc1" "10T_toy_magic_4/RBL1" 57.187
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_2/junc0" 192.02
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_0/RWL" 40.0714
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_3/RBL0" 44.3264
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_2/RBL1" 45.8984
+cap "10T_toy_magic_0/RWL0_junc" "10T_toy_magic_0/WBL" 15.7885
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_5/RBL1" 57.187
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/WBL" 71.8891
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_6/junc1" 479.603
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_5/junc1" 33.1573
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_0/VDD" 125.126
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_3/RBL1" 102.912
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_4/RBL0" 44.3264
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_7/RBL0" 44.3264
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_1/WBLb" 102.912
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_1/WBLb" 7.92078
+cap "10T_toy_magic_0/WBL" "10T_toy_magic_0/junc0" 170.742
+cap "10T_toy_magic_4/WBL" "10T_toy_magic_4/WBLb" 24.1664
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_2/WBLb" 25.8074
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_4/RBL1" 75.7767
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_5/RBL1" 18.5744
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_1/WBL" 65.3658
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/junc0" 192.02
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_6/RWL1_junc" 15.7885
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_7/junc1" 65.1391
+cap "10T_toy_magic_7/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_6/WBL" "10T_toy_magic_5/RBL1" 75.7767
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_7/WBL" 170.742
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_3/junc1" 183.585
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_2/WBL" 47.9189
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_7/RBL1" 14.192
+cap "10T_toy_magic_1/junc0" "10T_toy_magic_1/junc1" 479.603
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_0/WBLb" 27.9959
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_3/WBL" 25.836
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_6/RBL0" 33.1573
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_4/RBL0" 59.0486
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_0/VDD" 47.9827
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_5/junc0" 4.75574
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_6/junc1" 183.585
+cap "10T_toy_magic_7/WBLb" "10T_toy_magic_7/RWL1_junc" 15.7885
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/junc0" 59.0486
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_5/junc1" 183.585
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_4/RBL1" 18.5325
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_5/RWL0_junc" 15.7885
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_4/junc0" 25.8074
+cap "10T_toy_magic_4/junc1" "10T_toy_magic_5/junc0" 26.3634
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_7/junc1" 125.126
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_4/junc1" 183.585
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_0/VDD" 23.6787
+cap "10T_toy_magic_7/WBLb" "10T_toy_magic_0/VDD" 22.7586
+cap "10T_toy_magic_6/junc0" "10T_toy_magic_7/WBL" 5.79053
+cap "10T_toy_magic_1/junc1" "10T_toy_magic_1/WBLb" 183.585
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_6/WBL" 37.6914
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_6/junc1" 65.1391
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_2/WBL" 75.7767
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/WBL" 71.8891
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_0/WBLb" 23.6787
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_4/RBL1" 28.4987
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_7/RBL0" 120.918
+cap "10T_toy_magic_3/RBL1" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_2/junc0" "10T_toy_magic_0/WBLb" 25.8074
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_5/junc0" 170.742
+cap "10T_toy_magic_6/RBL0" "10T_toy_magic_5/junc0" 23.4283
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/RBL1" 78.0777
+cap "10T_toy_magic_5/WBL" "10T_toy_magic_4/WBLb" 37.6914
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_3/RBL0" 120.918
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_4/RBL1" 18.5744
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_3/RBL1" 57.187
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_4/RBL0" 23.4283
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_0/VDD" 47.9827
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_0/junc1" 65.1391
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_2/junc0" 4.75574
+cap "10T_toy_magic_3/junc1" "10T_toy_magic_0/RWL" 186.68
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/WWL" 18.5325
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_6/junc1" 4.41641
+cap "10T_toy_magic_0/junc0" "10T_toy_magic_0/WBLb" 43.0871
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_5/RBL1" 78.0777
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/WBL" 120.918
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_2/RBL1" 57.187
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_6/WBLb" "10T_toy_magic_7/WBL" 37.6914
+cap "10T_toy_magic_0/RBL0" "10T_toy_magic_0/RWL" 78.0777
+cap "10T_toy_magic_3/WBLb" "10T_toy_magic_3/junc0" 43.0871
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_5/junc0" 65.1391
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_6/junc1" 125.126
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_0/WWL" 27.9959
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_7/RBL1" 56.3249
+cap "10T_toy_magic_1/RWL1_junc" "10T_toy_magic_1/WBLb" 15.7885
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_2/WBLb" 183.585
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_6/WBL" 47.9189
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_3/RBL1" 45.8984
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_0/RWL" 192.02
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_0/junc1" 125.126
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/VDD" 18.5744
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_2/junc0" 26.3634
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_0/WWL" 23.2974
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_2/junc0" 59.0486
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_5/junc0" 479.603
+cap "10T_toy_magic_5/junc1" "10T_toy_magic_4/WBLb" 7.92078
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_3/junc1" 26.3634
+cap "10T_toy_magic_7/junc1" "10T_toy_magic_6/RBL1" 28.4987
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_0/RWL" 71.8891
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_7/WBLb" 65.3658
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_7/junc1" 167.267
+cap "10T_toy_magic_0/WWL" "10T_toy_magic_1/junc1" 63.5929
+cap "10T_toy_magic_4/junc0" "10T_toy_magic_5/RBL0" 23.4283
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_5/junc0" 47.9827
+cap "10T_toy_magic_1/RBL1" "10T_toy_magic_0/junc0" 45.8984
+cap "10T_toy_magic_2/RBL1" "10T_toy_magic_3/RBL0" 318.214
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/WWL" 65.1391
+cap "10T_toy_magic_4/WBLb" "10T_toy_magic_0/VDD" 23.6787
+cap "10T_toy_magic_0/WBL" "10T_toy_magic_0/WBLb" 24.1664
+cap "10T_toy_magic_0/junc1" "10T_toy_magic_0/junc0" 479.603
+cap "10T_toy_magic_2/RBL0" "10T_toy_magic_0/junc0" 23.4283
+cap "10T_toy_magic_5/junc0" "10T_toy_magic_6/WBL" 5.79053
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_0/WBLb" 71.8891
+cap "10T_toy_magic_1/junc0" "10T_toy_magic_1/WBLb" 43.0871
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_3/RBL0" 65.8529
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_5/RBL1" 102.912
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_3/RBL1" 27.0637
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_4/RBL1" 78.0777
+cap "10T_toy_magic_7/WBL" "10T_toy_magic_0/VDD" 18.3866
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_0/RWL" 192.02
+cap "10T_toy_magic_5/WBLb" "10T_toy_magic_5/RWL1_junc" 15.7885
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_6/junc0" 4.75574
+cap "10T_toy_magic_7/RBL1" "10T_toy_magic_7/junc1" 57.187
+cap "10T_toy_magic_7/WBLb" "10T_toy_magic_7/RBL1" 102.912
+cap "10T_toy_magic_7/junc0" "10T_toy_magic_7/RBL0" 59.0486
+cap "10T_toy_magic_0/VDD" "10T_toy_magic_1/junc1" 125.126
+cap "10T_toy_magic_3/junc0" "10T_toy_magic_3/junc1" 479.603
+cap "10T_toy_magic_1/RBL0" "10T_toy_magic_1/junc1" 33.1573
+cap "10T_toy_magic_3/WBL" "10T_toy_magic_2/RBL1" 75.7767
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_0/VDD" 125.126
+cap "10T_toy_magic_6/junc1" "10T_toy_magic_6/RBL1" 57.187
+cap "10T_toy_magic_2/junc1" "10T_toy_magic_2/junc0" 479.603
+cap "10T_toy_magic_0/RWL" "10T_toy_magic_6/junc1" 186.68
+cap "10T_toy_magic_2/WBLb" "10T_toy_magic_2/WBL" 24.1664
+cap "10T_toy_magic_5/RBL0" "10T_toy_magic_4/RBL1" 318.214
+cap "10T_toy_magic_0/RBL1" "10T_toy_magic_0/WWL" 18.5325
+device mosfet nshort 4539 38 4540 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_1/RWL0_junc" 42 0 "10T_toy_magic_1/RBL0" 42 0
+device mosfet npass 4453 38 4454 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_1/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_1/RWL0_junc" 28 0
+device mosfet npd 4360 38 4361 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_1/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_1/junc0" 42 0
+device mosfet npd 4282 38 4283 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_1/junc0" 60 0 "10T_toy_magic_1/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 4189 38 4190 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_1/junc1" 60 0 "10T_toy_magic_1/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 4103 38 4104 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_1/RBL1" 42 0 "10T_toy_magic_1/RWL1_junc" 42 0
+device mosfet nshort 3959 38 3960 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_0/RWL0_junc" 42 0 "10T_toy_magic_0/RBL0" 42 0
+device mosfet npass 3873 38 3874 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_0/RWL0_junc" 28 0
+device mosfet npd 3780 38 3781 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_0/junc0" 42 0
+device mosfet npd 3702 38 3703 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/junc0" 60 0 "10T_toy_magic_0/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 3609 38 3610 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/junc1" 60 0 "10T_toy_magic_0/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 3523 38 3524 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_0/RBL1" 42 0 "10T_toy_magic_0/RWL1_junc" 42 0
+device mosfet nshort 3379 38 3380 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_2/RWL0_junc" 42 0 "10T_toy_magic_2/RBL0" 42 0
+device mosfet npass 3293 38 3294 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_2/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_2/RWL0_junc" 28 0
+device mosfet npd 3200 38 3201 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_2/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_2/junc0" 42 0
+device mosfet npd 3122 38 3123 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_2/junc0" 60 0 "10T_toy_magic_2/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 3029 38 3030 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_2/junc1" 60 0 "10T_toy_magic_2/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 2943 38 2944 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_2/RBL1" 42 0 "10T_toy_magic_2/RWL1_junc" 42 0
+device mosfet nshort 2799 38 2800 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_3/RWL0_junc" 42 0 "10T_toy_magic_3/RBL0" 42 0
+device mosfet npass 2713 38 2714 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_3/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_3/RWL0_junc" 28 0
+device mosfet npd 2620 38 2621 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_3/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_3/junc0" 42 0
+device mosfet npd 2542 38 2543 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_3/junc0" 60 0 "10T_toy_magic_3/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 2449 38 2450 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_3/junc1" 60 0 "10T_toy_magic_3/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 2363 38 2364 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_3/RBL1" 42 0 "10T_toy_magic_3/RWL1_junc" 42 0
+device mosfet nshort 2219 38 2220 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_4/RWL0_junc" 42 0 "10T_toy_magic_4/RBL0" 42 0
+device mosfet npass 2133 38 2134 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_4/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_4/RWL0_junc" 28 0
+device mosfet npd 2040 38 2041 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_4/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_4/junc0" 42 0
+device mosfet npd 1962 38 1963 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_4/junc0" 60 0 "10T_toy_magic_4/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 1869 38 1870 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_4/junc1" 60 0 "10T_toy_magic_4/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 1783 38 1784 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_4/RBL1" 42 0 "10T_toy_magic_4/RWL1_junc" 42 0
+device mosfet nshort 1639 38 1640 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_5/RWL0_junc" 42 0 "10T_toy_magic_5/RBL0" 42 0
+device mosfet npass 1553 38 1554 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_5/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_5/RWL0_junc" 28 0
+device mosfet npd 1460 38 1461 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_5/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_5/junc0" 42 0
+device mosfet npd 1382 38 1383 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_5/junc0" 60 0 "10T_toy_magic_5/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 1289 38 1290 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_5/junc1" 60 0 "10T_toy_magic_5/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 1203 38 1204 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_5/RBL1" 42 0 "10T_toy_magic_5/RWL1_junc" 42 0
+device mosfet nshort 1059 38 1060 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_6/RWL0_junc" 42 0 "10T_toy_magic_6/RBL0" 42 0
+device mosfet npass 973 38 974 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_6/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_6/RWL0_junc" 28 0
+device mosfet npd 880 38 881 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_6/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_6/junc0" 42 0
+device mosfet npd 802 38 803 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_6/junc0" 60 0 "10T_toy_magic_6/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 709 38 710 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_6/junc1" 60 0 "10T_toy_magic_6/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 623 38 624 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_6/RBL1" 42 0 "10T_toy_magic_6/RWL1_junc" 42 0
+device mosfet nshort 479 38 480 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_7/RWL0_junc" 42 0 "10T_toy_magic_7/RBL0" 42 0
+device mosfet npass 393 38 394 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_7/junc0" 60 0 "10T_toy_magic_0/GND" 28 0 "10T_toy_magic_7/RWL0_junc" 28 0
+device mosfet npd 300 38 301 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_7/junc1" 60 0 "10T_toy_magic_0/GND" 42 0 "10T_toy_magic_7/junc0" 42 0
+device mosfet npd 222 38 223 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_7/junc0" 60 0 "10T_toy_magic_7/junc1" 42 0 "10T_toy_magic_0/GND" 42 0
+device mosfet npass 129 38 130 39 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_7/junc1" 60 0 "10T_toy_magic_7/RWL1_junc" 28 0 "10T_toy_magic_0/GND" 28 0
+device mosfet nshort 43 38 44 39 30 42 "10T_toy_magic_0/GND" "10T_toy_magic_0/RWL" 60 0 "10T_toy_magic_7/RBL1" 42 0 "10T_toy_magic_7/RWL1_junc" 42 0
+device mosfet nshort 4475 184 4476 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_1/junc0" 28 0 "10T_toy_magic_1/WBL" 28 0
+device mosfet ppu 4360 174 4361 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_1/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_1/junc0" 28 0
+device mosfet ppu 4282 174 4283 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_1/junc0" 60 0 "10T_toy_magic_1/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 4167 184 4168 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_1/WBLb" 28 0 "10T_toy_magic_1/junc1" 28 0
+device mosfet nshort 3895 184 3896 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_0/junc0" 28 0 "10T_toy_magic_0/WBL" 28 0
+device mosfet ppu 3780 174 3781 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_0/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_0/junc0" 28 0
+device mosfet ppu 3702 174 3703 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_0/junc0" 60 0 "10T_toy_magic_0/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 3587 184 3588 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_0/WBLb" 28 0 "10T_toy_magic_0/junc1" 28 0
+device mosfet nshort 3315 184 3316 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_2/junc0" 28 0 "10T_toy_magic_2/WBL" 28 0
+device mosfet ppu 3200 174 3201 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_2/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_2/junc0" 28 0
+device mosfet ppu 3122 174 3123 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_2/junc0" 60 0 "10T_toy_magic_2/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 3007 184 3008 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_2/WBLb" 28 0 "10T_toy_magic_2/junc1" 28 0
+device mosfet nshort 2735 184 2736 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_3/junc0" 28 0 "10T_toy_magic_3/WBL" 28 0
+device mosfet ppu 2620 174 2621 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_3/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_3/junc0" 28 0
+device mosfet ppu 2542 174 2543 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_3/junc0" 60 0 "10T_toy_magic_3/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 2427 184 2428 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_3/WBLb" 28 0 "10T_toy_magic_3/junc1" 28 0
+device mosfet nshort 2155 184 2156 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_4/junc0" 28 0 "10T_toy_magic_4/WBL" 28 0
+device mosfet ppu 2040 174 2041 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_4/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_4/junc0" 28 0
+device mosfet ppu 1962 174 1963 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_4/junc0" 60 0 "10T_toy_magic_4/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 1847 184 1848 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_4/WBLb" 28 0 "10T_toy_magic_4/junc1" 28 0
+device mosfet nshort 1575 184 1576 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_5/junc0" 28 0 "10T_toy_magic_5/WBL" 28 0
+device mosfet ppu 1460 174 1461 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_5/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_5/junc0" 28 0
+device mosfet ppu 1382 174 1383 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_5/junc0" 60 0 "10T_toy_magic_5/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 1267 184 1268 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_5/WBLb" 28 0 "10T_toy_magic_5/junc1" 28 0
+device mosfet nshort 995 184 996 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_6/junc0" 28 0 "10T_toy_magic_6/WBL" 28 0
+device mosfet ppu 880 174 881 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_6/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_6/junc0" 28 0
+device mosfet ppu 802 174 803 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_6/junc0" 60 0 "10T_toy_magic_6/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 687 184 688 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_6/WBLb" 28 0 "10T_toy_magic_6/junc1" 28 0
+device mosfet nshort 415 184 416 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_7/junc0" 28 0 "10T_toy_magic_7/WBL" 28 0
+device mosfet ppu 300 174 301 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_7/junc1" 60 0 "10T_toy_magic_0/VDD" 28 0 "10T_toy_magic_7/junc0" 28 0
+device mosfet ppu 222 174 223 175 30 28 "10T_toy_magic_0/VDD" "10T_toy_magic_7/junc0" 60 0 "10T_toy_magic_7/junc1" 28 0 "10T_toy_magic_0/VDD" 28 0
+device mosfet nshort 107 184 108 185 30 28 "10T_toy_magic_0/GND" "10T_toy_magic_0/WWL" 60 0 "10T_toy_magic_7/WBLb" 28 0 "10T_toy_magic_7/junc1" 28 0

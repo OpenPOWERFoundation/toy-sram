@@ -1,0 +1,61 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu May 26 16:31:01 2022
+[*]
+[dumpfile] "/home/wtf/projects/osu-toy-sram/sim/test_sdr_ra_64x72.vcd"
+[dumpfile_mtime] "Thu May 26 16:21:53 2022"
+[dumpfile_size] 59568
+[savefile] "/home/wtf/projects/osu-toy-sram/sim/wtf_test_ra_sdr_64x72.gtkw"
+[timestart] 188625
+[size] 2088 1240
+[pos] 218 58
+*-10.000000 196000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_ra_sdr_64x72.
+[treeopen] test_ra_sdr_64x72.ra.
+[sst_width] 282
+[signals_width] 312
+[sst_expanded] 1
+[sst_vpaned_height] 370
+@28
+test_ra_sdr_64x72.clk
+test_ra_sdr_64x72.reset
+@200
+-WR 0
+@22
+test_ra_sdr_64x72.wr_adr_0[0:5]
+test_ra_sdr_64x72.wr_dat_0[0:71]
+@28
+test_ra_sdr_64x72.wr_enb_0
+@200
+-RD 0
+@28
+test_ra_sdr_64x72.rd_enb_0
+@22
+test_ra_sdr_64x72.rd_adr_0[0:5]
+test_ra_sdr_64x72.rd_dat_0[0:71]
+@200
+-RD 1
+@28
+test_ra_sdr_64x72.rd_enb_1
+@22
+test_ra_sdr_64x72.rd_adr_1[0:5]
+test_ra_sdr_64x72.rd_dat_1[0:71]
+@200
+-RA
+@28
+test_ra_sdr_64x72.ra.rd_enb_0_q
+@22
+test_ra_sdr_64x72.ra.rd_adr_0_q[0:5]
+test_ra_sdr_64x72.ra.rd_dat_0_q[0:71]
+@28
+test_ra_sdr_64x72.ra.rd_enb_1_q
+@22
+test_ra_sdr_64x72.ra.rd_adr_1_q[0:5]
+test_ra_sdr_64x72.ra.rd_dat_1_q[0:71]
+@29
+test_ra_sdr_64x72.ra.wr_enb_0_q
+@22
+test_ra_sdr_64x72.ra.wr_adr_0_q[0:5]
+test_ra_sdr_64x72.ra.wr_dat_0_q[0:71]
+[pattern_trace] 1
+[pattern_trace] 0

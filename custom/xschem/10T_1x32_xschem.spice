@@ -1,0 +1,99 @@
+** sch_path: /home/rjridle/osu-toy-sram/xschem/10T_1x32_xschem.sch
+.subckt 10T_1x32_xschem WBL_1 RBL0_6 WBL_2 WBL_3 WBLb_6 WBL_4 WBL_7 WBLb_5 WBL_0 WBLb_2 WBLb_1
++ WBLb_0 WBL_5 WBLb_4 WBL_6 WBLb_3 WBLb_7 WWL RWL RBL0_2 RBL1_6 RBL0_7 RBL1_5 RBL1_4 RBL1_3 RBL1_2 RBL0_5
++ RBL1_1 RBL1_7 RBL0_1 RBL0_4 RBL0_3 RBL1_0 RBL0_0 RBL0_8 RBL0_9 RBL0_10 RBL0_11 RBL0_12 RBL0_13 RBL0_14
++ RBL0_15 RBL1_8 RBL1_9 RBL1_10 RBL1_11 RBL1_12 RBL1_13 RBL1_14 RBL1_15 WBL_8 WBL_9 WBL_10 WBL_11 WBL_12
++ WBL_13 WBL_14 WBL_15 WBLb_8 WBLb_9 WBLb_10 WBLb_11 WBLb_12 WBLb_13 WBLb_14 WBLb_15 RBL0_16 RBL0_18 RBL0_19
++ RBL0_20 RBL0_21 RBL0_22 RBL0_17 RBL0_23 RBL1_16 RBL1_17 RBL1_18 RBL1_19 RBL1_20 RBL1_21 RBL1_22 RBL1_23
++ WBL_16 WBL_17 WBL_18 WBL_19 WBL_20 WBL_21 WBL_22 WBL_23 WBLb_16 WBLb_17 WBLb_18 WBLb_19 WBLb_20 WBLb_21
++ WBLb_22 WBLb_23 WBL_24 WBL_25 WBL_26 WBL_27 WBL_28 WBL_29 WBL_30 WBL_31 WBLb_24 WBLb_25 WBLb_26 WBLb_27
++ WBLb_28 WBLb_29 WBLb_30 WBLb_31 RBL0_24 RBL0_26 RBL0_25 RBL0_27 RBL0_28 RBL0_29 RBL0_30 RBL0_31 RBL1_24
++ RBL1_25 RBL1_26 RBL1_27 RBL1_28 RBL1_29 RBL1_30 RBL1_31
+*.PININFO WBL_1:I RBL0_6:O WBL_2:I WBL_3:I WBLb_6:I WBL_4:I WBL_7:I WBLb_5:I WBL_0:I WBLb_2:I
+*+ WBLb_1:I WBLb_0:I WBL_5:I WBLb_4:I WBL_6:I WBLb_3:I WBLb_7:I WWL:I RWL:I RBL0_2:O RBL1_6:O RBL0_7:O RBL1_5:O
+*+ RBL1_4:O RBL1_3:O RBL1_2:O RBL0_5:O RBL1_1:O RBL1_7:O RBL0_1:O RBL0_4:O RBL0_3:O RBL1_0:O RBL0_0:O RBL0_8:O
+*+ RBL0_9:O RBL0_10:O RBL0_11:O RBL0_12:O RBL0_13:O RBL0_14:O RBL0_15:O RBL1_8:O RBL1_9:O RBL1_10:O RBL1_11:O
+*+ RBL1_12:O RBL1_13:O RBL1_14:O RBL1_15:O WBL_8:I WBL_9:I WBL_10:I WBL_11:I WBL_12:I WBL_13:I WBL_14:I WBL_15:I
+*+ WBLb_8:I WBLb_9:I WBLb_10:I WBLb_11:I WBLb_12:I WBLb_13:I WBLb_14:I WBLb_15:I RBL0_16:O RBL0_18:O RBL0_19:O
+*+ RBL0_20:O RBL0_21:O RBL0_22:O RBL0_17:O RBL0_23:O RBL1_16:O RBL1_17:O RBL1_18:O RBL1_19:O RBL1_20:O RBL1_21:O
+*+ RBL1_22:O RBL1_23:O WBL_16:I WBL_17:I WBL_18:I WBL_19:I WBL_20:I WBL_21:I WBL_22:I WBL_23:I WBLb_16:I
+*+ WBLb_17:I WBLb_18:I WBLb_19:I WBLb_20:I WBLb_21:I WBLb_22:I WBLb_23:I WBL_24:I WBL_25:I WBL_26:I WBL_27:I
+*+ WBL_28:I WBL_29:I WBL_30:I WBL_31:I WBLb_24:I WBLb_25:I WBLb_26:I WBLb_27:I WBLb_28:I WBLb_29:I WBLb_30:I
+*+ WBLb_31:I RBL0_24:O RBL0_26:O RBL0_25:O RBL0_27:O RBL0_28:O RBL0_29:O RBL0_30:O RBL0_31:O RBL1_24:O RBL1_25:O
+*+ RBL1_26:O RBL1_27:O RBL1_28:O RBL1_29:O RBL1_30:O RBL1_31:O
+x1 WBL_1 WBL_2 WBL_3 WBLb_6 WBL_4 WBL_7 WBLb_5 WBL_0 WBLb_2 WBLb_1 WBLb_0 WBL_5 WBLb_4 WBL_6 WBLb_3
++ WBLb_7 WWL RWL RBL0_6 RBL0_2 RBL1_6 RBL0_7 RBL1_5 RBL1_4 RBL1_3 RBL1_2 RBL0_5 RBL1_1 RBL1_7 RBL0_1 RBL0_4
++ RBL0_3 RBL1_0 RBL0_0 VDD GND 10T_1x8_xschem
+x2 WBL_9 WBL_10 WBL_11 WBLb_14 WBL_12 WBL_15 WBLb_13 WBL_8 WBLb_10 WBLb_9 WBLb_8 WBL_13 WBLb_12
++ WBL_14 WBLb_11 WBLb_15 WWL RWL RBL0_14 RBL0_10 RBL1_14 RBL0_15 RBL1_13 RBL1_12 RBL1_11 RBL1_10 RBL0_13
++ RBL1_9 RBL1_15 RBL0_9 RBL0_12 RBL0_11 RBL1_8 RBL0_8 VDD GND 10T_1x8_xschem
+x3 WBL_17 WBL_18 WBL_19 WBLb_22 WBL_20 WBL_23 WBLb_21 WBL_16 WBLb_18 WBLb_17 WBLb_16 WBL_21 WBLb_20
++ WBL_22 WBLb_19 WBLb_23 WWL RWL RBL0_22 RBL0_18 RBL1_22 RBL0_23 RBL1_21 RBL1_20 RBL1_19 RBL1_18 RBL0_21
++ RBL1_17 RBL1_23 RBL0_17 RBL0_20 RBL0_19 RBL1_16 RBL0_16 VDD GND 10T_1x8_xschem
+x4 WBL_25 WBL_26 WBL_27 WBLb_30 WBL_28 WBL_31 WBLb_29 WBL_24 WBLb_26 WBLb_25 WBLb_24 WBL_29 WBLb_28
++ WBL_30 WBLb_27 WBLb_31 WWL RWL RBL0_30 RBL0_26 RBL1_30 RBL0_31 RBL1_29 RBL1_28 RBL1_27 RBL1_26 RBL0_29
++ RBL1_25 RBL1_31 RBL0_25 RBL0_28 RBL0_27 RBL1_24 RBL0_24 VDD GND 10T_1x8_xschem
+.ends
+
+* expanding   symbol:  10T_1x8_xschem.sym # of pins=34
+** sym_path: /home/rjridle/osu-toy-sram/xschem/10T_1x8_xschem.sym
+** sch_path: /home/rjridle/osu-toy-sram/xschem/10T_1x8_xschem.sch
+.subckt 10T_1x8_xschem  WBL_1 WBL_2 WBL_3 WBLb_6 WBL_4 WBL_7 WBLb_5 WBL_0 WBLb_2 WBLb_1 WBLb_0 WBL_5
++ WBLb_4 WBL_6 WBLb_3 WBLb_7 WWL RWL RBL0_6 RBL0_2 RBL1_6 RBL0_7 RBL1_5 RBL1_4 RBL1_3 RBL1_2 RBL0_5 RBL1_1
++ RBL1_7 RBL0_1 RBL0_4 RBL0_3 RBL1_0 RBL0_0  VDD  GND
+*.PININFO WBLb_0:I RBL0_0:O WBL_0:I WBLb_1:I WBL_1:I WBLb_2:I WBL_2:I WBLb_3:I WBL_3:I WBLb_4:I
+*+ WBL_4:I WBL_5:I WBLb_5:I WBL_6:I WBLb_6:I WBLb_7:I WBL_7:I RBL1_0:O RBL0_1:O RBL1_1:O RBL0_2:O RBL1_2:O
+*+ RBL0_3:O RBL1_3:O RBL0_4:O RBL1_4:O RBL0_5:O RBL1_5:O RBL0_6:O RBL1_6:O RBL0_7:O RBL1_7:O WWL:I RWL:I
+x1 WWL WBL_0 RBL0_0 RBL1_0 WBLb_0 RWL RWL VDD GND 10T_toy_xschem
+x2 WWL WBL_1 RBL0_1 RBL1_1 WBLb_1 RWL RWL VDD GND 10T_toy_xschem
+x3 WWL WBL_2 RBL0_2 RBL1_2 WBLb_2 RWL RWL VDD GND 10T_toy_xschem
+x4 WWL WBL_3 RBL0_3 RBL1_3 WBLb_3 RWL RWL VDD GND 10T_toy_xschem
+x5 WWL WBL_4 RBL0_4 RBL1_4 WBLb_4 RWL RWL VDD GND 10T_toy_xschem
+x6 WWL WBL_5 RBL0_5 RBL1_5 WBLb_5 RWL RWL VDD GND 10T_toy_xschem
+x7 WWL WBL_6 RBL0_6 RBL1_6 WBLb_6 RWL RWL VDD GND 10T_toy_xschem
+x8 WWL WBL_7 RBL0_7 RBL1_7 WBLb_7 RWL RWL VDD GND 10T_toy_xschem
+.ends
+
+
+* expanding   symbol:  10T_toy_xschem.sym # of pins=7
+** sym_path: /home/rjridle/osu-toy-sram/xschem/10T_toy_xschem.sym
+** sch_path: /home/rjridle/osu-toy-sram/xschem/10T_toy_xschem.sch
+.subckt 10T_toy_xschem  WWL WBL RBL0 RBL1 WBLb RWL0 RWL1  VDD  GND
+*.PININFO WWL:I RWL0:I RWL1:I WBL:I WBLb:I RBL0:O RBL1:O
+x1 net1 net2 VDD GND INVX1
+x2 net2 net1 VDD GND INVX1
+XM1 net2 WWL WBL GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 WBLb WWL net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net3 net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 RBL0 RWL0 net3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 RBL1 RWL1 net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  INVX1.sym # of pins=2
+** sym_path: /home/rjridle/osu-toy-sram/xschem/INVX1.sym
+** sch_path: /home/rjridle/osu-toy-sram/xschem/INVX1.sch
+.subckt INVX1  Y A  VDD  GND
+*.PININFO A:I Y:O
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end

@@ -1,0 +1,77 @@
+timestamp 1655238822
+version 8.3
+tech sky130A
+style ngspice(lvs)
+scale 1000 1 0.5
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
+port "RBL0" 6 437 19 452 61 li
+port "RBL1" 7 -100 19 -85 61 li
+port "RWL0" 2 379 83 409 117 li
+port "RWL1" 3 -57 83 -27 117 li
+port "WBL" 4 364 165 379 194 li
+port "WBLb" 5 -26 165 -11 193 li
+port "WWL" 1 -100 221 452 251 p
+port "VDD" 8 160 207 192 221 m1
+port "GND" 9 160 -19 192 -5 m1
+node "RBL0" 342 149.464 437 19 li 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+node "RWL0_junc" 315 0 323 19 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "RWL1_junc" 315 0 -27 19 ndif 0 0 0 0 0 0 0 0 1918 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "RBL1" 342 149.464 -100 19 li 0 0 0 0 0 0 0 0 1806 170 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4050 570 0 0 0 0 0 0 0 0 0 0 0 0
+node "RWL0" 207 109.051 379 83 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 300 0 0 1020 128 0 0 0 0 0 0 0 0 0 0 0 0
+node "RWL1" 207 109.051 -57 83 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3600 300 0 0 1020 128 0 0 0 0 0 0 0 0 0 0 0 0
+node "WBL" 399 142.387 364 165 li 0 0 0 0 0 0 0 0 967 126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4440 614 0 0 0 0 0 0 0 0 0 0 0 0
+node "junc0" 1711 467.013 122 -3 p 0 0 0 0 0 0 0 0 1974 256 516 86 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 14863 939 0 0 0 0 0 0 0 0 0 0 0 0
+node "junc1" 1753 394.424 29 -3 p 0 0 0 0 0 0 0 0 1949 256 672 104 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9690 762 0 0 15255 941 0 0 0 0 0 0 0 0 0 0 0 0
+node "WBLb" 375 138.887 -26 165 li 0 0 0 0 0 0 0 0 924 122 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4433 613 0 0 0 0 0 0 0 0 0 0 0 0
+node "WWL" 1138 459.934 -100 221 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21240 1476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VDD" 5656 258.972 160 207 m1 0 0 0 0 14688 498 0 0 56 60 2504 288 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 980 164 7728 1132 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 160 -19 m1 0 0 0 0 0 0 0 0 9008 928 56 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 980 164 7728 1132 0 0 0 0 0 0 0 0 0 0
+cap "RBL1" "junc1" 57.187
+cap "RWL1" "WBL" 3.09091
+cap "RBL0" "junc0" 59.0486
+cap "RBL0" "WWL" 10.7325
+cap "junc0" "WBL" 170.742
+cap "WBL" "WWL" 23.2974
+cap "RWL1" "junc1" 50.4342
+cap "RWL1_junc" "WBLb" 15.7885
+cap "junc0" "junc1" 479.603
+cap "WWL" "junc1" 63.5929
+cap "RBL0" "VDD" 14.192
+cap "WBL" "VDD" 16.8717
+cap "VDD" "junc1" 125.126
+cap "junc0" "RWL0" 50.4342
+cap "WWL" "RWL0" 6.63462
+cap "RBL1" "RWL1" 40.0714
+cap "junc0" "RBL1" 27.0637
+cap "RBL1" "WWL" 10.7325
+cap "WBL" "WBLb" 24.1664
+cap "RBL1" "VDD" 14.192
+cap "WBL" "RWL0_junc" 15.7885
+cap "junc0" "RWL1" 27.7677
+cap "RWL1" "WWL" 6.63462
+cap "WBLb" "junc1" 183.585
+cap "junc0" "WWL" 63.5929
+cap "junc0" "VDD" 47.9827
+cap "WWL" "VDD" 178.392
+cap "WBLb" "RWL0" 3.09091
+cap "RBL0" "WBL" 120.918
+cap "RBL0" "junc1" 33.1573
+cap "WBL" "junc1" 47.9189
+cap "RBL1" "WBLb" 102.912
+cap "RBL0" "RWL0" 40.0714
+cap "WBL" "RWL0" 40.0714
+cap "RWL1" "WBLb" 40.0714
+cap "junc0" "WBLb" 43.0871
+cap "WBLb" "WWL" 27.9959
+cap "RWL0" "junc1" 27.7677
+cap "WBLb" "VDD" 22.7586
+device mosfet nshort 379 19 380 20 30 42 "GND" "RWL0" 60 0 "RWL0_junc" 42 0 "RBL0" 42 0
+device mosfet npass 293 19 294 20 30 28 "GND" "junc0" 60 0 "GND" 28 0 "RWL0_junc" 28 0
+device mosfet npd 200 19 201 20 30 42 "GND" "junc1" 60 0 "GND" 42 0 "junc0" 42 0
+device mosfet npd 122 19 123 20 30 42 "GND" "junc0" 60 0 "junc1" 42 0 "GND" 42 0
+device mosfet npass 29 19 30 20 30 28 "GND" "junc1" 60 0 "RWL1_junc" 28 0 "GND" 28 0
+device mosfet nshort -57 19 -56 20 30 42 "GND" "RWL1" 60 0 "RBL1" 42 0 "RWL1_junc" 42 0
+device mosfet nshort 315 165 316 166 30 28 "GND" "WWL" 60 0 "junc0" 28 0 "WBL" 28 0
+device mosfet ppu 200 155 201 156 30 28 "VDD" "junc1" 60 0 "VDD" 28 0 "junc0" 28 0
+device mosfet ppu 122 155 123 156 30 28 "VDD" "junc0" 60 0 "junc1" 28 0 "VDD" 28 0
+device mosfet nshort 7 165 8 166 30 28 "GND" "WWL" 60 0 "WBLb" 28 0 "junc1" 28 0

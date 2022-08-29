@@ -1,0 +1,76 @@
+###
+###	Source file sky130.magicrc
+###	Process this file with the m4 processor
+###
+
+
+# MUST CHANGE THIS TO REPOSITORIES TOP LEVEL DIRECTORY
+set PDK_ROOT /path/to/osu-toy-sram
+
+
+puts stdout "Sourcing design .magicrc for technology sky130 ..."
+
+# Put grid on 0.005 pitch.  This is important, as some commands don't
+# rescale the grid automatically (such as lef read?).
+
+set scalefac [tech lambda]
+if {[lindex $scalefac 1] < 2} {
+    scalegrid 1 2
+}
+
+# drc off
+drc euclidean on
+
+# Change this to a fixed number for repeatable behavior with GDS writes
+# e.g., "random seed 12345"
+catch {random seed}
+
+# Turn off the scale option on ext2spice or else it conflicts with the
+# scale in the model files.
+ext2spice scale off
+
+
+# Set this to the folder that holds the technology files
+set TECH_ROOT ${PDK_ROOT}/magic/.magic_tech
+
+# loading technology
+tech load ${TECH_ROOT}/sky130A.tech
+# load device generator
+#source $TECH_ROOT/sky130.tcl
+
+# load bind keys (optional)
+source ${TECH_ROOT}/sky130.BindKeys
+
+# set units to lambda grid 
+snap internal
+
+# set sky130 standard power, ground, and substrate names
+set VDD VPWR
+set GND VGND
+set SUB VSUBS
+
+# add path to IP from catalog.  This procedure defined in the PDK script.
+catch {magic::query_mylib_ip}
+# add path to local IP from user design space.  Defined in the PDK script.
+catch {magic::query_my_projects}
+
+# Custom macros
+#macro XK_Left "scroll l .1 w"
+#macro Shift_XK_Left "scroll l 1 w"
+#macro Control_XK_Left "box grow w 1"
+#macro Control_Shift_XK_Left "box shrink e 1"
+#macro XK_Right "scroll r .1 w"
+#macro Shift_XK_Right "scroll r 1 w"
+#macro Control_XK_Right "box grow e 1"
+#macro Control_Shift_XK_Right "box shrink w 1"
+#macro XK_Up "scroll u .1 w"
+#macro Shift_XK_Up "scroll u 1 w"
+#macro Control_XK_Up "box grow n 1"
+#macro Control_Shift_XK_Up "box shrink s 1"
+#macro XK_Down "scroll d .1 w"
+#macro Shift_XK_Down "scroll d 1 w"
+#macro Control_XK_Down "box grow s 1"
+#macro Control_Shift_XK_Down "box shrink n 1"
+#macro XK_Pointer_Button4 "scroll u .05 w"
+#macro XK_Pointer_Button5 "scroll d .05 w"
+#macro . "history redo -1"

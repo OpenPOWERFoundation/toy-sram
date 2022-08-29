@@ -1,0 +1,80 @@
+** sch_path: /home/abishek/SRAM_WORK/osu-toy-sram/xschem/test_10T_toy_xschem.sch
+**.subckt test_10T_toy_xschem
+V1 VDD GND 3
+VWWL WWL GND pwl 0ns 0V 4.9ns 0V 5ns 1.8V 9.9ns 1.8V 10ns 0V 19.9ns 0V 20ns 1.8V 24.9ns 1.8V 25ns 0V
+VWBL WBL GND pwl 0ns 0V 4.9ns 0V 5ns 1.8V 9.9ns 1.8V 10ns 0V 19.9ns 0V 20ns 0V 24.9ns 0V 25ns 0V
+VRWL1 RWL0 RWL1 0V
+VWBLb WBLb GND pwl 0ns 0V 4.9ns 0V 5ns 0.0V 9.9ns 0.0V 10ns 0V 19.9ns 0V 20ns 1.8V 24.9ns 1.8V 25ns
++ 0V
+VRWL0 RWL0 GND pwl 0ns 0V 4.9ns 0V 5ns 0.0V 9.9ns 0.0V 10ns 1.8V 19.9ns 1.8V 20ns 0.0V 24.9ns 0.0V
++ 25ns 1.8V
+x1 WWL WBL RBL0 RBL1 WBLb RWL0 RWL1 VDD GND 10T_toy_xschem
+**** begin user architecture code
+
+.lib /import/angmar1/repos/openpdk/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  10T_toy_xschem.sym # of pins=7
+** sym_path: /home/abishek/SRAM_WORK/osu-toy-sram/xschem/10T_toy_xschem.sym
+** sch_path: /home/abishek/SRAM_WORK/osu-toy-sram/xschem/10T_toy_xschem.sch
+.subckt 10T_toy_xschem  WWL WBL RBL0 RBL1 WBLb RWL0 RWL1  VDD  GND
+*.ipin WWL
+*.ipin RWL0
+*.ipin RWL1
+*.ipin WBL
+*.ipin WBLb
+*.opin RBL0
+*.opin RBL1
+x1 net1 net2 VDD GND INVX1
+x2 net2 net1 VDD GND INVX1
+XM1 net2 WWL WBL GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 WBLb WWL net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net3 net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 RBL0 RWL0 net3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net4 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 RBL1 RWL1 net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  INVX1.sym # of pins=2
+** sym_path: /home/abishek/SRAM_WORK/osu-toy-sram/xschem/INVX1.sym
+** sch_path: /home/abishek/SRAM_WORK/osu-toy-sram/xschem/INVX1.sch
+.subckt INVX1  Y A  VDD  GND
+*.ipin A
+*.opin Y
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.21 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.14 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+**** begin user architecture code
+
+
+.tran 1ps 30ns
+
+.print DC V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)
+.print tran V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)
+.probe V(WWL) V(RBL0) V(RBL1) V(RWL0) V(RWL1) V(RBL) V(RBLb)
+.op
+
+
+**** end user architecture code
+.end

@@ -1,0 +1,2009 @@
+Flattening unmatched subcell INVX1 in circuit 10T_toy_xschem (1)(2 instances)
+Flattening unmatched subcell 10T_toy_xschem in circuit 10T_1x8_xschem (1)(8 instances)
+
+Cell sky130_fd_pr__nfet_01v8 disconnected node: drain
+Cell sky130_fd_pr__nfet_01v8 disconnected node: gate
+Cell sky130_fd_pr__nfet_01v8 disconnected node: source
+Cell sky130_fd_pr__nfet_01v8 disconnected node: bulk
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |1                                          
+(no matching pin)                          |2                                          
+(no matching pin)                          |3                                          
+(no matching pin)                          |4                                          
+drain                                      |(no matching pin)                          
+gate                                       |(no matching pin)                          
+source                                     |(no matching pin)                          
+bulk                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Cell sky130_fd_pr__pfet_01v8 disconnected node: drain
+Cell sky130_fd_pr__pfet_01v8 disconnected node: gate
+Cell sky130_fd_pr__pfet_01v8 disconnected node: source
+Cell sky130_fd_pr__pfet_01v8 disconnected node: bulk
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+(no matching pin)                          |1                                          
+(no matching pin)                          |2                                          
+(no matching pin)                          |3                                          
+(no matching pin)                          |4                                          
+drain                                      |(no matching pin)                          
+gate                                       |(no matching pin)                          
+source                                     |(no matching pin)                          
+bulk                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: x10T_1x8_magic_flattened        |Circuit 2: 10T_1x8_xschem                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16)               |sky130_fd_pr__pfet_01v8 (16)               
+sky130_fd_pr__nfet_01v8 (64)               |sky130_fd_pr__nfet_01v8 (64)               
+Number of devices: 80                      |Number of devices: 80                      
+Number of nets: 388                        |Number of nets: 388                        
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: x10T_1x8_magic_flattened        |Circuit 2: 10T_1x8_xschem                  
+
+---------------------------------------------------------------------------------------
+Net: GND                                   |Net: GND                                   
+  sky130_fd_pr__nfet_01v8/bulk = 64        |  sky130_fd_pr__nfet_01v8/(1|3) = 32       
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/4 = 64           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: dummy_136                             |Net: dummy_460                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_104                             |Net: dummy_456                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_132                             |Net: dummy_452                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_92                              |Net: dummy_448                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_140                             |Net: dummy_444                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_84                              |Net: dummy_440                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_100                             |Net: dummy_436                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_76                              |Net: dummy_432                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_96                              |Net: dummy_428                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_124                             |Net: dummy_424                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_88                              |Net: dummy_420                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_108                             |Net: dummy_416                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_112                             |Net: dummy_412                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_80                              |Net: dummy_408                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_128                             |Net: dummy_404                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_120                             |Net: dummy_400                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__pfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_135                             |Net: dummy_459                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_103                             |Net: dummy_455                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_131                             |Net: dummy_451                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_91                              |Net: dummy_447                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_139                             |Net: dummy_443                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_83                              |Net: dummy_439                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_99                              |Net: dummy_435                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_75                              |Net: dummy_431                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_95                              |Net: dummy_427                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_123                             |Net: dummy_423                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_87                              |Net: dummy_419                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_107                             |Net: dummy_415                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_111                             |Net: dummy_411                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_79                              |Net: dummy_407                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_127                             |Net: dummy_403                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_119                             |Net: dummy_399                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__pfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_134                             |Net: dummy_458                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_102                             |Net: dummy_454                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_130                             |Net: dummy_450                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_90                              |Net: dummy_446                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_138                             |Net: dummy_442                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_82                              |Net: dummy_438                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_98                              |Net: dummy_434                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_74                              |Net: dummy_430                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_94                              |Net: dummy_426                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_122                             |Net: dummy_422                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_86                              |Net: dummy_418                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_106                             |Net: dummy_414                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_110                             |Net: dummy_410                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_78                              |Net: dummy_406                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_126                             |Net: dummy_402                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_118                             |Net: dummy_398                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__pfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_133                             |Net: dummy_457                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_101                             |Net: dummy_453                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_129                             |Net: dummy_449                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_89                              |Net: dummy_445                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_137                             |Net: dummy_441                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_81                              |Net: dummy_437                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_97                              |Net: dummy_433                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_73                              |Net: dummy_429                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_93                              |Net: dummy_425                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_121                             |Net: dummy_421                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_85                              |Net: dummy_417                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_105                             |Net: dummy_413                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_109                             |Net: dummy_409                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_77                              |Net: dummy_405                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_125                             |Net: dummy_401                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_117                             |Net: dummy_397                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__pfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_72                              |Net: dummy_396                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_388                             |Net: dummy_388                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_364                             |Net: dummy_364                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_356                             |Net: dummy_356                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_332                             |Net: dummy_332                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_324                             |Net: dummy_324                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_300                             |Net: dummy_300                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_292                             |Net: dummy_292                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_268                             |Net: dummy_268                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_260                             |Net: dummy_260                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_236                             |Net: dummy_236                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_228                             |Net: dummy_228                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_204                             |Net: dummy_204                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_196                             |Net: dummy_196                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_172                             |Net: dummy_172                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_164                             |Net: dummy_164                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_71                              |Net: dummy_395                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_387                             |Net: dummy_387                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_363                             |Net: dummy_363                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_355                             |Net: dummy_355                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_331                             |Net: dummy_331                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_323                             |Net: dummy_323                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_299                             |Net: dummy_299                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_291                             |Net: dummy_291                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_267                             |Net: dummy_267                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_259                             |Net: dummy_259                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_235                             |Net: dummy_235                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_227                             |Net: dummy_227                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_203                             |Net: dummy_203                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_195                             |Net: dummy_195                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_171                             |Net: dummy_171                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_163                             |Net: dummy_163                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_70                              |Net: dummy_394                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_386                             |Net: dummy_386                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_362                             |Net: dummy_362                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_354                             |Net: dummy_354                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_330                             |Net: dummy_330                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_322                             |Net: dummy_322                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_298                             |Net: dummy_298                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_290                             |Net: dummy_290                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_266                             |Net: dummy_266                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_258                             |Net: dummy_258                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_234                             |Net: dummy_234                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_226                             |Net: dummy_226                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_202                             |Net: dummy_202                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_194                             |Net: dummy_194                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_170                             |Net: dummy_170                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_162                             |Net: dummy_162                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_69                              |Net: dummy_393                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_385                             |Net: dummy_385                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_361                             |Net: dummy_361                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_353                             |Net: dummy_353                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_329                             |Net: dummy_329                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_321                             |Net: dummy_321                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_297                             |Net: dummy_297                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_289                             |Net: dummy_289                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_265                             |Net: dummy_265                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_257                             |Net: dummy_257                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_233                             |Net: dummy_233                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_225                             |Net: dummy_225                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_201                             |Net: dummy_201                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_193                             |Net: dummy_193                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_169                             |Net: dummy_169                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_161                             |Net: dummy_161                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_116                             |Net: dummy_392                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_384                             |Net: dummy_384                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_360                             |Net: dummy_360                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_352                             |Net: dummy_352                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_328                             |Net: dummy_328                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_320                             |Net: dummy_320                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_296                             |Net: dummy_296                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_288                             |Net: dummy_288                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_264                             |Net: dummy_264                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_256                             |Net: dummy_256                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_232                             |Net: dummy_232                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_224                             |Net: dummy_224                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_200                             |Net: dummy_200                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_192                             |Net: dummy_192                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_168                             |Net: dummy_168                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_160                             |Net: dummy_160                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_115                             |Net: dummy_391                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_383                             |Net: dummy_383                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_359                             |Net: dummy_359                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_351                             |Net: dummy_351                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_327                             |Net: dummy_327                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_319                             |Net: dummy_319                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_295                             |Net: dummy_295                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_287                             |Net: dummy_287                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_263                             |Net: dummy_263                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_255                             |Net: dummy_255                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_231                             |Net: dummy_231                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_223                             |Net: dummy_223                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_199                             |Net: dummy_199                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_191                             |Net: dummy_191                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_167                             |Net: dummy_167                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_159                             |Net: dummy_159                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_114                             |Net: dummy_390                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_382                             |Net: dummy_382                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_358                             |Net: dummy_358                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_350                             |Net: dummy_350                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_326                             |Net: dummy_326                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_318                             |Net: dummy_318                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_294                             |Net: dummy_294                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_286                             |Net: dummy_286                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_262                             |Net: dummy_262                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_254                             |Net: dummy_254                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_230                             |Net: dummy_230                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_222                             |Net: dummy_222                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_198                             |Net: dummy_198                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_190                             |Net: dummy_190                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_166                             |Net: dummy_166                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_158                             |Net: dummy_158                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_113                             |Net: dummy_389                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_381                             |Net: dummy_381                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_357                             |Net: dummy_357                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_349                             |Net: dummy_349                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_325                             |Net: dummy_325                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_317                             |Net: dummy_317                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_293                             |Net: dummy_293                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_285                             |Net: dummy_285                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_261                             |Net: dummy_261                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_253                             |Net: dummy_253                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_229                             |Net: dummy_229                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_221                             |Net: dummy_221                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_197                             |Net: dummy_197                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_189                             |Net: dummy_189                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_165                             |Net: dummy_165                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_157                             |Net: dummy_157                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_380                             |Net: dummy_380                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_376                             |Net: dummy_376                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_348                             |Net: dummy_348                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_344                             |Net: dummy_344                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_316                             |Net: dummy_316                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_312                             |Net: dummy_312                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_284                             |Net: dummy_284                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_280                             |Net: dummy_280                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_252                             |Net: dummy_252                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_248                             |Net: dummy_248                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_220                             |Net: dummy_220                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_216                             |Net: dummy_216                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_188                             |Net: dummy_188                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_184                             |Net: dummy_184                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_156                             |Net: dummy_156                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_152                             |Net: dummy_152                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_379                             |Net: dummy_379                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_375                             |Net: dummy_375                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_347                             |Net: dummy_347                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_343                             |Net: dummy_343                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_315                             |Net: dummy_315                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_311                             |Net: dummy_311                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_283                             |Net: dummy_283                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_279                             |Net: dummy_279                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_251                             |Net: dummy_251                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_247                             |Net: dummy_247                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_219                             |Net: dummy_219                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_215                             |Net: dummy_215                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_187                             |Net: dummy_187                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_183                             |Net: dummy_183                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_155                             |Net: dummy_155                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_151                             |Net: dummy_151                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_378                             |Net: dummy_378                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_374                             |Net: dummy_374                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_346                             |Net: dummy_346                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_342                             |Net: dummy_342                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_314                             |Net: dummy_314                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_310                             |Net: dummy_310                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_282                             |Net: dummy_282                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_278                             |Net: dummy_278                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_250                             |Net: dummy_250                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_246                             |Net: dummy_246                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_218                             |Net: dummy_218                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_214                             |Net: dummy_214                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_186                             |Net: dummy_186                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_182                             |Net: dummy_182                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_154                             |Net: dummy_154                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_150                             |Net: dummy_150                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_377                             |Net: dummy_377                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_373                             |Net: dummy_373                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_345                             |Net: dummy_345                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_341                             |Net: dummy_341                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_313                             |Net: dummy_313                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_309                             |Net: dummy_309                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_281                             |Net: dummy_281                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_277                             |Net: dummy_277                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_249                             |Net: dummy_249                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_245                             |Net: dummy_245                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_217                             |Net: dummy_217                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_213                             |Net: dummy_213                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_185                             |Net: dummy_185                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_181                             |Net: dummy_181                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_153                             |Net: dummy_153                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_149                             |Net: dummy_149                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_372                             |Net: dummy_372                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_368                             |Net: dummy_368                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_340                             |Net: dummy_340                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_336                             |Net: dummy_336                             
+  sky130_fd_pr__pfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_308                             |Net: dummy_308                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_304                             |Net: dummy_304                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_276                             |Net: dummy_276                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_272                             |Net: dummy_272                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_244                             |Net: dummy_244                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_240                             |Net: dummy_240                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_212                             |Net: dummy_212                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_208                             |Net: dummy_208                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_180                             |Net: dummy_180                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_176                             |Net: dummy_176                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_148                             |Net: dummy_148                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_144                             |Net: dummy_144                             
+  sky130_fd_pr__nfet_01v8/proxy4 = 1       |  sky130_fd_pr__nfet_01v8/proxybulk = 1    
+                                           |                                           
+Net: dummy_371                             |Net: dummy_371                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_367                             |Net: dummy_367                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_339                             |Net: dummy_339                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_335                             |Net: dummy_335                             
+  sky130_fd_pr__pfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_307                             |Net: dummy_307                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_303                             |Net: dummy_303                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_275                             |Net: dummy_275                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_271                             |Net: dummy_271                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_243                             |Net: dummy_243                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_239                             |Net: dummy_239                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_211                             |Net: dummy_211                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_207                             |Net: dummy_207                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_179                             |Net: dummy_179                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_175                             |Net: dummy_175                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_147                             |Net: dummy_147                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_143                             |Net: dummy_143                             
+  sky130_fd_pr__nfet_01v8/proxy3 = 1       |  sky130_fd_pr__nfet_01v8/proxysource = 1  
+                                           |                                           
+Net: dummy_370                             |Net: dummy_370                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_366                             |Net: dummy_366                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_338                             |Net: dummy_338                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_334                             |Net: dummy_334                             
+  sky130_fd_pr__pfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_306                             |Net: dummy_306                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_302                             |Net: dummy_302                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_274                             |Net: dummy_274                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_270                             |Net: dummy_270                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_242                             |Net: dummy_242                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_238                             |Net: dummy_238                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_210                             |Net: dummy_210                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_206                             |Net: dummy_206                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_178                             |Net: dummy_178                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_174                             |Net: dummy_174                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_146                             |Net: dummy_146                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_142                             |Net: dummy_142                             
+  sky130_fd_pr__nfet_01v8/proxy2 = 1       |  sky130_fd_pr__nfet_01v8/proxygate = 1    
+                                           |                                           
+Net: dummy_369                             |Net: dummy_369                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_365                             |Net: dummy_365                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_337                             |Net: dummy_337                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_333                             |Net: dummy_333                             
+  sky130_fd_pr__pfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_305                             |Net: dummy_305                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_301                             |Net: dummy_301                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_273                             |Net: dummy_273                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_269                             |Net: dummy_269                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_241                             |Net: dummy_241                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_237                             |Net: dummy_237                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_209                             |Net: dummy_209                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_205                             |Net: dummy_205                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_177                             |Net: dummy_177                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_173                             |Net: dummy_173                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_145                             |Net: dummy_145                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: dummy_141                             |Net: dummy_141                             
+  sky130_fd_pr__nfet_01v8/proxy1 = 1       |  sky130_fd_pr__nfet_01v8/proxydrain = 1   
+                                           |                                           
+Net: WBLb_7                                |Net: WBLb_7                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_7                                 |Net: WBL_7                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_6                                |Net: WBLb_6                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_6                                 |Net: WBL_6                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_5                                |Net: WBLb_5                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_5                                 |Net: WBL_5                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_4                                |Net: WBLb_4                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_4                                 |Net: WBL_4                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_3                                |Net: WBLb_3                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_3                                 |Net: WBL_3                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_2                                |Net: WBLb_2                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_2                                 |Net: WBL_2                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_1                                |Net: WBLb_1                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_1                                 |Net: WBL_1                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBLb_0                                |Net: WBLb_0                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: WBL_0                                 |Net: WBL_0                                 
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_7                                |Net: RBL1_7                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_7                                |Net: RBL0_7                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_6                                |Net: RBL1_6                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_6                                |Net: RBL0_6                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_5                                |Net: RBL1_5                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_5                                |Net: RBL0_5                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_4                                |Net: RBL1_4                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_4                                |Net: RBL0_4                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_3                                |Net: RBL1_3                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_3                                |Net: RBL0_3                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_2                                |Net: RBL1_2                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_2                                |Net: RBL0_2                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_1                                |Net: RBL1_1                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_1                                |Net: RBL0_1                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL1_0                                |Net: RBL1_0                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: RBL0_0                                |Net: RBL0_0                                
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: RWL                                   |Net: RWL                                   
+  sky130_fd_pr__nfet_01v8/gate = 16        |  sky130_fd_pr__nfet_01v8/2 = 16           
+                                           |                                           
+Net: WWL                                   |Net: WWL                                   
+  sky130_fd_pr__nfet_01v8/gate = 16        |  sky130_fd_pr__nfet_01v8/2 = 16           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 10T_toy_magic_3/RWL0_junc             |Net: 10T_toy_xschem8/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_4/RWL0_junc             |Net: 10T_toy_xschem8/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_1/RWL0_junc             |Net: 10T_toy_xschem7/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_3/RWL1_junc             |Net: 10T_toy_xschem7/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_1/RWL1_junc             |Net: 10T_toy_xschem6/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_5/RWL0_junc             |Net: 10T_toy_xschem6/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_0/RWL0_junc             |Net: 10T_toy_xschem5/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_6/RWL0_junc             |Net: 10T_toy_xschem5/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_2/RWL1_junc             |Net: 10T_toy_xschem4/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_4/RWL1_junc             |Net: 10T_toy_xschem4/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_7/RWL1_junc             |Net: 10T_toy_xschem3/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_2/RWL0_junc             |Net: 10T_toy_xschem3/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_7/RWL0_junc             |Net: 10T_toy_xschem2/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_0/RWL1_junc             |Net: 10T_toy_xschem2/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_5/RWL1_junc             |Net: 10T_toy_xschem1/net4                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: 10T_toy_magic_6/RWL1_junc             |Net: 10T_toy_xschem1/net3                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 16       
+  sky130_fd_pr__pfet_01v8/bulk = 16        |  sky130_fd_pr__pfet_01v8/4 = 16           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: 10T_toy_magic_2/junc1                 |Net: 10T_toy_xschem8/net2                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_7/junc1                 |Net: 10T_toy_xschem8/net1                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_1/junc1                 |Net: 10T_toy_xschem7/net2                  
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_1/junc0                 |Net: 10T_toy_xschem7/net1                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_2/junc0                 |Net: 10T_toy_xschem6/net2                  
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_4/junc1                 |Net: 10T_toy_xschem6/net1                  
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_4/junc0                 |Net: 10T_toy_xschem5/net2                  
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_7/junc0                 |Net: 10T_toy_xschem5/net1                  
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_3/junc1                 |Net: 10T_toy_xschem4/net2                  
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_3/junc0                 |Net: 10T_toy_xschem4/net1                  
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_6/junc1                 |Net: 10T_toy_xschem3/net2                  
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_6/junc0                 |Net: 10T_toy_xschem3/net1                  
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_5/junc1                 |Net: 10T_toy_xschem2/net2                  
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_5/junc0                 |Net: 10T_toy_xschem2/net1                  
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: 10T_toy_magic_0/junc1                 |Net: 10T_toy_xschem1/net2                  
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: 10T_toy_magic_0/junc0                 |Net: 10T_toy_xschem1/net1                  
+  sky130_fd_pr__pfet_01v8/(drain|source) = |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/(drain|source) = |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/gate = 2         |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/gate = 1         |  sky130_fd_pr__pfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: x10T_1x8_magic_flattened        |Circuit 2: 10T_1x8_xschem                  
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v81078      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81063      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81061      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81057      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81049      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81043      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81040      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81036      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81023      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81021      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81020      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81017      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81015      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81003      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81002      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81001      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (2,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (2,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81077      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81075      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81072      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81067      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81065      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81060      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81054      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81048      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81038      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81037      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81034      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81031      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81026      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81019      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81014      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81005      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (6,1)                   |  proxydrain = 1                           
+  gate = 16                                |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,2)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81076      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81066      |Instance: 10T_toy_xschem8/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81062      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81055      |Instance: 10T_toy_xschem7/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81053      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81045      |Instance: 10T_toy_xschem6/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81039      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81033      |Instance: 10T_toy_xschem5/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81032      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81029      |Instance: 10T_toy_xschem4/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81028      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81024      |Instance: 10T_toy_xschem3/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81018      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81016      |Instance: 10T_toy_xschem2/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81010      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81008      |Instance: 10T_toy_xschem1/sky130_fd_pr__nf 
+  (drain,source) = (96,2)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (6,1)                            
+  proxy3 = 1                               |  2 = 16                                   
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81073      |Instance: 10T_toy_xschem8/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81070      |Instance: 10T_toy_xschem8/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81069      |Instance: 10T_toy_xschem7/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81068      |Instance: 10T_toy_xschem7/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81058      |Instance: 10T_toy_xschem6/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81052      |Instance: 10T_toy_xschem6/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81051      |Instance: 10T_toy_xschem5/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81042      |Instance: 10T_toy_xschem5/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81035      |Instance: 10T_toy_xschem4/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81030      |Instance: 10T_toy_xschem4/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81027      |Instance: 10T_toy_xschem3/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81022      |Instance: 10T_toy_xschem3/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81013      |Instance: 10T_toy_xschem2/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81012      |Instance: 10T_toy_xschem2/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81011      |Instance: 10T_toy_xschem1/INVX12/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v81009      |Instance: 10T_toy_xschem1/INVX11/sky130_fd 
+  (drain,source) = (96,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 96                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (96,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 96                                   
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v81079      |Instance: 10T_toy_xschem8/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81074      |Instance: 10T_toy_xschem8/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81071      |Instance: 10T_toy_xschem7/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81064      |Instance: 10T_toy_xschem7/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81059      |Instance: 10T_toy_xschem6/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81056      |Instance: 10T_toy_xschem6/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81050      |Instance: 10T_toy_xschem5/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81047      |Instance: 10T_toy_xschem5/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81046      |Instance: 10T_toy_xschem4/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81044      |Instance: 10T_toy_xschem4/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81041      |Instance: 10T_toy_xschem3/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81025      |Instance: 10T_toy_xschem3/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81007      |Instance: 10T_toy_xschem2/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81006      |Instance: 10T_toy_xschem2/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81004      |Instance: 10T_toy_xschem1/INVX12/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v81000      |Instance: 10T_toy_xschem1/INVX11/sky130_fd 
+  (drain,source) = (32,6)                  |  proxydrain = 1                           
+  gate = 6                                 |  proxygate = 1                            
+  bulk = 32                                |  proxysource = 1                          
+  proxy1 = 1                               |  proxybulk = 1                            
+  proxy2 = 1                               |  (1,3) = (32,6)                           
+  proxy3 = 1                               |  2 = 6                                    
+  proxy4 = 1                               |  4 = 32                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

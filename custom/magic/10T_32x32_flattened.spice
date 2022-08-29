@@ -1,0 +1,6 @@
+* HSPICE file created from 10T_32x32_flattened.ext - technology: sky130
+
+.option scale=5000u
+
+
+** hspice subcircuit dictionary

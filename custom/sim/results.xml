@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653584020" />
+    <testcase name="tb" classname="tb" file="/home/wtf/projects/osu-toy-sram/sim/tb.py" lineno="372" time="0.05606651306152344" sim_time_ns="207.001" ratio_time="3692.06124470148">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

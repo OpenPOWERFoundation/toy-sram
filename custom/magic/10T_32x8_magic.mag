@@ -1,0 +1,563 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1656029294
+<< pwell >>
+rect 74 184 89 212
+rect 464 184 479 213
+rect 0 38 15 80
+rect 537 38 552 80
+rect 580 38 595 80
+<< ndiffc >>
+rect 74 184 89 212
+rect 464 184 479 213
+rect 654 184 669 212
+rect 1044 184 1059 213
+rect 1234 184 1249 212
+rect 1624 184 1639 213
+rect 1814 184 1829 212
+rect 2204 184 2219 213
+rect 2394 184 2409 212
+rect 2784 184 2799 213
+rect 2974 184 2989 212
+rect 3364 184 3379 213
+rect 3554 184 3569 212
+rect 3944 184 3959 213
+rect 4134 184 4149 212
+rect 4524 184 4539 213
+rect 0 38 15 80
+rect 537 38 552 80
+rect 580 38 595 80
+rect 1117 38 1132 80
+rect 1160 38 1175 80
+rect 1697 38 1712 80
+rect 1740 38 1755 80
+rect 2277 38 2292 80
+rect 2320 38 2335 80
+rect 2857 38 2872 80
+rect 2900 38 2915 80
+rect 3437 38 3452 80
+rect 3480 38 3495 80
+rect 4017 38 4032 80
+rect 4060 38 4075 80
+rect 4597 38 4612 80
+<< poly >>
+rect 0 8610 30 8640
+rect 0 8340 30 8370
+rect 0 8070 30 8100
+rect 0 7800 30 7830
+rect 0 7530 30 7560
+rect 0 7260 30 7290
+rect 0 6990 30 7020
+rect 0 6720 30 6750
+rect 0 6450 30 6480
+rect 0 6180 30 6210
+rect 0 5910 30 5940
+rect 0 5640 30 5670
+rect 0 5370 30 5400
+rect 0 5100 30 5130
+rect 0 4830 30 4860
+rect 0 4560 30 4590
+rect 0 4290 30 4320
+rect 0 4020 30 4050
+rect 0 3750 30 3780
+rect 0 3480 30 3510
+rect 0 3210 30 3240
+rect 0 2940 30 2970
+rect 0 2670 30 2700
+rect 0 2400 30 2430
+rect 0 2130 30 2160
+rect 0 1860 30 1890
+rect 0 1590 30 1620
+rect 0 1320 30 1350
+rect 0 1050 30 1080
+rect 0 780 30 810
+rect 0 510 30 540
+rect 0 240 30 270
+<< metal1 >>
+rect 0 8596 15 8610
+rect 0 8472 15 8506
+rect 0 8370 15 8384
+rect 0 8326 15 8340
+rect 0 8202 15 8236
+rect 0 8100 15 8114
+rect 0 8056 15 8070
+rect 0 7932 15 7966
+rect 0 7830 15 7844
+rect 0 7786 15 7800
+rect 0 7662 15 7696
+rect 0 7560 15 7574
+rect 0 7516 15 7530
+rect 0 7392 15 7426
+rect 0 7290 15 7304
+rect 0 7246 15 7260
+rect 0 7122 15 7156
+rect 0 7020 15 7034
+rect 0 6976 15 6990
+rect 0 6852 15 6886
+rect 0 6750 15 6764
+rect 0 6706 15 6720
+rect 0 6582 15 6616
+rect 0 6480 15 6494
+rect 0 6436 15 6450
+rect 0 6312 15 6346
+rect 0 6210 15 6224
+rect 0 6166 15 6180
+rect 0 6042 15 6076
+rect 0 5940 15 5954
+rect 0 5896 15 5910
+rect 0 5772 15 5806
+rect 0 5670 15 5684
+rect 0 5626 15 5640
+rect 0 5502 15 5536
+rect 0 5400 15 5414
+rect 0 5356 15 5370
+rect 0 5232 15 5266
+rect 0 5130 15 5144
+rect 0 5086 15 5100
+rect 0 4962 15 4996
+rect 0 4860 15 4874
+rect 0 4816 15 4830
+rect 0 4692 15 4726
+rect 0 4590 15 4604
+rect 0 4546 15 4560
+rect 0 4422 15 4456
+rect 0 4320 15 4334
+rect 0 4276 15 4290
+rect 0 4152 15 4186
+rect 0 4050 15 4064
+rect 0 4006 15 4020
+rect 0 3882 15 3916
+rect 0 3780 15 3794
+rect 0 3736 15 3750
+rect 0 3612 15 3646
+rect 0 3510 15 3524
+rect 0 3466 15 3480
+rect 0 3342 15 3376
+rect 0 3240 15 3254
+rect 0 3196 15 3210
+rect 0 3072 15 3106
+rect 0 2970 15 2984
+rect 0 2926 15 2940
+rect 0 2802 15 2836
+rect 0 2700 15 2714
+rect 0 2656 15 2670
+rect 0 2532 15 2566
+rect 0 2430 15 2444
+rect 0 2386 15 2400
+rect 0 2262 15 2296
+rect 0 2160 15 2174
+rect 0 2116 15 2130
+rect 0 1992 15 2026
+rect 0 1890 15 1904
+rect 0 1846 15 1860
+rect 0 1722 15 1756
+rect 0 1620 15 1634
+rect 0 1576 15 1590
+rect 0 1452 15 1486
+rect 0 1350 15 1364
+rect 0 1306 15 1320
+rect 0 1182 15 1216
+rect 0 1080 15 1094
+rect 0 1036 15 1050
+rect 0 912 15 946
+rect 0 810 15 824
+rect 0 766 15 780
+rect 0 642 15 676
+rect 0 540 15 554
+rect 0 496 15 510
+rect 0 372 15 406
+rect 0 270 15 284
+rect 0 226 15 240
+rect 0 102 15 136
+rect 0 0 15 14
+use 10T_1x8_magic  10T_1x8_magic_16
+timestamp 1656019537
+transform 1 0 0 0 1 0
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_18
+timestamp 1656019537
+transform 1 0 0 0 1 270
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_19
+timestamp 1656019537
+transform 1 0 0 0 1 1080
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_22
+timestamp 1656019537
+transform 1 0 0 0 1 1350
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_17
+timestamp 1656019537
+transform 1 0 0 0 1 540
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_20
+timestamp 1656019537
+transform 1 0 0 0 1 810
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_23
+timestamp 1656019537
+transform 1 0 0 0 1 2160
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_21
+timestamp 1656019537
+transform 1 0 0 0 1 1620
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_24
+timestamp 1656019537
+transform 1 0 0 0 1 1890
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_27
+timestamp 1656019537
+transform 1 0 0 0 1 3240
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_25
+timestamp 1656019537
+transform 1 0 0 0 1 2700
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_28
+timestamp 1656019537
+transform 1 0 0 0 1 2970
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_26
+timestamp 1656019537
+transform 1 0 0 0 1 2430
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_9
+timestamp 1656019537
+transform 1 0 0 0 1 4320
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_29
+timestamp 1656019537
+transform 1 0 0 0 1 3780
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_31
+timestamp 1656019537
+transform 1 0 0 0 1 4050
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_30
+timestamp 1656019537
+transform 1 0 0 0 1 3510
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_10
+timestamp 1656019537
+transform 1 0 0 0 1 4860
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_11
+timestamp 1656019537
+transform 1 0 0 0 1 5130
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_8
+timestamp 1656019537
+transform 1 0 0 0 1 4590
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_15
+timestamp 1656019537
+transform 1 0 0 0 1 5940
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_14
+timestamp 1656019537
+transform 1 0 0 0 1 6210
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_12
+timestamp 1656019537
+transform 1 0 0 0 1 5400
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_13
+timestamp 1656019537
+transform 1 0 0 0 1 5670
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_7
+timestamp 1656019537
+transform 1 0 0 0 1 7020
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_6
+timestamp 1656019537
+transform 1 0 0 0 1 7290
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_4
+timestamp 1656019537
+transform 1 0 0 0 1 6480
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_5
+timestamp 1656019537
+transform 1 0 0 0 1 6750
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_1
+timestamp 1656019537
+transform 1 0 0 0 1 7560
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_0
+timestamp 1656019537
+transform 1 0 0 0 1 7830
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_3
+timestamp 1656019537
+transform 1 0 0 0 1 8100
+box -7 -4 4631 312
+use 10T_1x8_magic  10T_1x8_magic_2
+timestamp 1656019537
+transform 1 0 0 0 1 8370
+box -7 -4 4631 312
+<< labels >>
+rlabel metal1 0 4422 15 4456 1 RWL_15
+port 64 ew signal input
+rlabel poly 0 4560 30 4590 1 WWL_15
+port 63 ew signal input
+rlabel metal1 0 4692 15 4726 1 RWL_14
+port 62 ew signal input
+rlabel poly 0 4830 30 4860 1 WWL_14
+port 61 ew signal input
+rlabel metal1 0 4962 15 4996 1 RWL_13
+port 60 ew signal input
+rlabel poly 0 5100 30 5130 1 WWL_13
+port 59 ew signal input
+rlabel metal1 0 5232 15 5266 1 RWL_12
+port 58 ew signal input
+rlabel poly 0 5370 30 5400 1 WWL_12
+port 57 ew signal input
+rlabel metal1 0 5502 15 5536 1 RWL_11
+port 56 ew signal input
+rlabel poly 0 5640 30 5670 1 WWL_11
+port 55 ew signal input
+rlabel metal1 0 5772 15 5806 1 RWL_10
+port 54 ew signal input
+rlabel poly 0 5910 30 5940 1 WWL_10
+port 53 ew signal input
+rlabel metal1 0 6042 15 6076 1 RWL_9
+port 52 ew signal input
+rlabel poly 0 6180 30 6210 1 WWL_9
+port 51 ew signal input
+rlabel metal1 0 6312 15 6346 1 RWL_8
+port 50 ew signal input
+rlabel poly 0 6450 30 6480 1 WWL_8
+port 49 ew signal input
+rlabel metal1 0 6436 15 6450 1 VDD
+rlabel metal1 0 6210 15 6224 1 GND
+rlabel metal1 0 5896 15 5910 1 VDD
+rlabel metal1 0 5626 15 5640 1 VDD
+rlabel metal1 0 6166 15 6180 1 VDD
+rlabel metal1 0 5356 15 5370 1 VDD
+rlabel metal1 0 4816 15 4830 1 VDD
+rlabel metal1 0 4546 15 4560 1 VDD
+rlabel metal1 0 5086 15 5100 1 VDD
+rlabel metal1 0 5400 15 5414 1 GND
+rlabel metal1 0 5670 15 5684 1 GND
+rlabel metal1 0 5940 15 5954 1 GND
+rlabel metal1 0 5130 15 5144 1 GND
+rlabel metal1 0 4320 15 4334 1 GND
+rlabel metal1 0 4590 15 4604 1 GND
+rlabel metal1 0 4860 15 4874 1 GND
+rlabel poly 0 8610 30 8640 1 WWL_0
+port 33 ew signal input
+rlabel metal1 0 7020 15 7034 1 GND
+rlabel metal1 0 6750 15 6764 1 GND
+rlabel metal1 0 6480 15 6494 1 GND
+rlabel metal1 0 7290 15 7304 1 GND
+rlabel metal1 0 8100 15 8114 1 GND
+rlabel metal1 0 7830 15 7844 1 GND
+rlabel metal1 0 7560 15 7574 1 GND
+rlabel metal1 0 7246 15 7260 1 VDD
+rlabel metal1 0 6706 15 6720 1 VDD
+rlabel metal1 0 6976 15 6990 1 VDD
+rlabel metal1 0 7516 15 7530 1 VDD
+rlabel metal1 0 8326 15 8340 1 VDD
+rlabel metal1 0 7786 15 7800 1 VDD
+rlabel metal1 0 8056 15 8070 1 VDD
+rlabel metal1 0 8370 15 8384 1 GND
+port 98 ew ground bidirectional abutment
+rlabel metal1 0 8596 15 8610 1 VDD
+port 97 ew power bidirectional abutment
+rlabel metal1 0 6582 15 6616 1 RWL_7
+port 48 ew signal input
+rlabel poly 0 6720 30 6750 1 WWL_7
+port 47 ew signal input
+rlabel metal1 0 6852 15 6886 1 RWL_6
+port 46 ew signal input
+rlabel poly 0 6990 30 7020 1 WWL_6
+port 45 ew signal input
+rlabel metal1 0 7122 15 7156 1 RWL_5
+port 44 ew signal input
+rlabel poly 0 7260 30 7290 1 WWL_5
+port 43 ew signal input
+rlabel metal1 0 7392 15 7426 1 RWL_4
+port 42 ew signal input
+rlabel poly 0 7530 30 7560 1 WWL_4
+port 41 ew signal input
+rlabel metal1 0 7662 15 7696 1 RWL_3
+port 40 ew signal input
+rlabel poly 0 7800 30 7830 1 WWL_3
+port 39 ew signal input
+rlabel metal1 0 7932 15 7966 1 RWL_2
+port 38 ew signal input
+rlabel poly 0 8070 30 8100 1 WWL_2
+port 37 ew signal input
+rlabel metal1 0 8202 15 8236 1 RWL_1
+port 36 ew signal input
+rlabel poly 0 8340 30 8370 1 WWL_1
+port 35 ew signal input
+rlabel metal1 0 8472 15 8506 1 RWL_0
+port 34 ew signal input
+rlabel locali 0 38 15 80 1 RBL1_0
+port 1 ns signal output
+rlabel locali 537 38 552 80 1 RBL0_0
+port 2 ns signal output
+rlabel locali 580 38 595 80 1 RBL1_1
+port 3 ns signal output
+rlabel locali 1117 38 1132 80 1 RBL0_1
+port 4 ns signal output
+rlabel locali 1160 38 1175 80 1 RBL1_2
+port 5 ns signal output
+rlabel locali 1697 38 1712 80 1 RBL0_2
+port 6 ns signal output
+rlabel locali 1740 38 1755 80 1 RBL1_3
+port 7 ns signal output
+rlabel locali 2277 38 2292 80 1 RBL0_3
+port 8 ns signal output
+rlabel locali 2320 38 2335 80 1 RBL1_4
+port 9 ns signal output
+rlabel locali 2857 38 2872 80 1 RBL0_4
+port 10 ns signal output
+rlabel locali 2900 38 2915 80 1 RBL1_5
+port 11 ns signal output
+rlabel locali 3437 38 3452 80 1 RBL0_5
+port 12 ns signal output
+rlabel locali 3480 38 3495 80 1 RBL1_6
+port 13 ns signal output
+rlabel locali 4017 38 4032 80 1 RBL0_6
+port 14 ns signal output
+rlabel locali 4060 38 4075 80 1 RBL1_7
+port 15 ns signal output
+rlabel locali 4597 38 4612 80 1 RBL0_7
+port 16 ns signal output
+rlabel locali 464 184 479 213 1 WBL_0
+port 17 ns signal input
+rlabel locali 74 184 89 212 1 WBLb_0
+port 18 ns signal input
+rlabel locali 1044 184 1059 213 1 WBL_1
+port 19 ns signal input
+rlabel locali 654 184 669 212 1 WBLb_1
+port 20 ns signal input
+rlabel locali 1624 184 1639 213 1 WBL_2
+port 21 ns signal input
+rlabel locali 1234 184 1249 212 1 WBLb_2
+port 22 ns signal input
+rlabel locali 2204 184 2219 213 1 WBL_3
+port 23 ns signal input
+rlabel locali 1814 184 1829 212 1 WBLb_3
+port 24 ns signal input
+rlabel locali 2784 184 2799 213 1 WBL_4
+port 25 ns signal input
+rlabel locali 2394 184 2409 212 1 WBLb_4
+port 26 ns signal input
+rlabel locali 3364 184 3379 213 1 WBL_5
+port 27 ns signal input
+rlabel locali 2974 184 2989 212 1 WBLb_5
+port 28 ns signal input
+rlabel locali 3944 184 3959 213 1 WBL_6
+port 29 ns signal input
+rlabel locali 3554 184 3569 212 1 WBLb_6
+port 30 ns signal input
+rlabel locali 4524 184 4539 213 1 WBL_7
+port 31 ns signal input
+rlabel locali 4134 184 4149 212 1 WBLb_7
+port 32 ns signal input
+rlabel metal1 0 2116 15 2130 1 VDD
+rlabel metal1 0 1890 15 1904 1 GND
+rlabel metal1 0 1576 15 1590 1 VDD
+rlabel metal1 0 1306 15 1320 1 VDD
+rlabel metal1 0 1846 15 1860 1 VDD
+rlabel metal1 0 1036 15 1050 1 VDD
+rlabel metal1 0 496 15 510 1 VDD
+rlabel metal1 0 226 15 240 1 VDD
+rlabel metal1 0 766 15 780 1 VDD
+rlabel metal1 0 1080 15 1094 1 GND
+rlabel metal1 0 1350 15 1364 1 GND
+rlabel metal1 0 1620 15 1634 1 GND
+rlabel metal1 0 810 15 824 1 GND
+rlabel metal1 0 0 15 14 1 GND
+rlabel metal1 0 270 15 284 1 GND
+rlabel metal1 0 540 15 554 1 GND
+rlabel metal1 0 2700 15 2714 1 GND
+rlabel metal1 0 2430 15 2444 1 GND
+rlabel metal1 0 2160 15 2174 1 GND
+rlabel metal1 0 2970 15 2984 1 GND
+rlabel metal1 0 3780 15 3794 1 GND
+rlabel metal1 0 3510 15 3524 1 GND
+rlabel metal1 0 3240 15 3254 1 GND
+rlabel metal1 0 2926 15 2940 1 VDD
+rlabel metal1 0 2386 15 2400 1 VDD
+rlabel metal1 0 2656 15 2670 1 VDD
+rlabel metal1 0 3196 15 3210 1 VDD
+rlabel metal1 0 4006 15 4020 1 VDD
+rlabel metal1 0 3466 15 3480 1 VDD
+rlabel metal1 0 3736 15 3750 1 VDD
+rlabel metal1 0 4050 15 4064 1 GND
+port 98 ew ground bidirectional abutment
+rlabel metal1 0 4276 15 4290 1 VDD
+port 97 ew power bidirectional abutment
+rlabel poly 0 4290 30 4320 1 WWL_16
+port 65 ew signal input
+rlabel metal1 0 4152 15 4186 1 RWL_16
+port 66 ew signal input
+rlabel poly 0 4020 30 4050 1 WWL_17
+port 67 ew signal input
+rlabel metal1 0 3882 15 3916 1 RWL_17
+port 68 ew signal input
+rlabel poly 0 3750 30 3780 1 WWL_18
+port 69 ew signal input
+rlabel metal1 0 3612 15 3646 1 RWL_18
+port 70 ew signal input
+rlabel poly 0 3480 30 3510 1 WWL_19
+port 71 ew signal input
+rlabel metal1 0 3342 15 3376 1 RWL_19
+port 72 ew signal input
+rlabel poly 0 3210 30 3240 1 WWL_20
+port 73 ew signal input
+rlabel metal1 0 3072 15 3106 1 RWL_20
+port 74 ew signal input
+rlabel poly 0 2940 30 2970 1 WWL_21
+port 75 ew signal input
+rlabel metal1 0 2802 15 2836 1 RWL_21
+port 76 ew signal input
+rlabel poly 0 2670 30 2700 1 WWL_22
+port 77 ew signal input
+rlabel metal1 0 2532 15 2566 1 RWL_22
+port 78 ew signal input
+rlabel poly 0 2400 30 2430 1 WWL_23
+port 79 ew signal input
+rlabel metal1 0 2262 15 2296 1 RWL_23
+port 80 ew signal input
+rlabel poly 0 2130 30 2160 1 WWL_24
+port 81 ew signal input
+rlabel metal1 0 1992 15 2026 1 RWL_24
+port 82 ew signal input
+rlabel poly 0 1860 30 1890 1 WWL_25
+port 83 ew signal input
+rlabel metal1 0 1722 15 1756 1 RWL_25
+port 84 ew signal input
+rlabel poly 0 1590 30 1620 1 WWL_26
+port 85 ew signal input
+rlabel metal1 0 1452 15 1486 1 RWL_26
+port 86 ew signal input
+rlabel poly 0 1320 30 1350 1 WWL_27
+port 87 ew signal input
+rlabel metal1 0 1182 15 1216 1 RWL_27
+port 88 ew signal input
+rlabel poly 0 1050 30 1080 1 WWL_28
+port 89 ew signal input
+rlabel metal1 0 912 15 946 1 RWL_28
+port 90 ew signal input
+rlabel poly 0 780 30 810 1 WWL_29
+port 91 ew signal input
+rlabel metal1 0 642 15 676 1 RWL_29
+port 92 ew signal input
+rlabel poly 0 510 30 540 1 WWL_30
+port 93 ew signal input
+rlabel metal1 0 372 15 406 1 RWL_30
+port 94 ew signal input
+rlabel poly 0 240 30 270 1 WWL_31
+port 95 ew signal input
+rlabel metal1 0 102 15 136 1 RWL_31
+port 96 ew signal input
+<< end >>

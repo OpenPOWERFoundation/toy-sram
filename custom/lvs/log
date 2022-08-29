@@ -1,0 +1,53 @@
+Netgen 1.5.206 compiled on Tue Oct 26 17:17:30 CDT 2021
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file ../magic/x10T_32x32_magic.spice
+Call to undefined subcircuit x10T_1x8_magic
+Creating placeholder cell definition.
+Reading netlist file ../xschem/10T_32x32_xschem.spice
+Call to undefined subcircuit 10T_1x32_xschem
+Creating placeholder cell definition.
+Call to undefined subcircuit 10T_1x8_xschem
+Creating placeholder cell definition.
+Call to undefined subcircuit 10T_toy_xschem
+Creating placeholder cell definition.
+Call to undefined subcircuit INVX1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+No property area found for device c
+Comparison output logged to file comp.out
+Logging to file "comp.out" enabled
+Contents of circuit 1:  Circuit: 'x10T_32x32_magic'
+Circuit x10T_32x32_magic contains 353 device instances.
+  Class: c                     instances: 225
+  Class: x10T_1x8_magic        instances: 128
+Circuit contains 413 nets.
+Contents of circuit 2:  Circuit: '10T_32x32_xschem'
+Circuit 10T_32x32_xschem contains 10240 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 8192
+  Class: sky130_fd_pr__pfet_01v8 instances: 2048
+Circuit contains 4290 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'x10T_32x32_magic'
+Circuit x10T_32x32_magic contains 323 device instances.
+  Class: c                     instances: 195
+  Class: x10T_1x8_magic        instances: 128
+Circuit contains 383 nets.
+Contents of circuit 2:  Circuit: '10T_32x32_xschem'
+Circuit 10T_32x32_xschem contains 10240 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 8192
+  Class: sky130_fd_pr__pfet_01v8 instances: 2048
+Circuit contains 4290 nets.
+
+Circuit 1 contains 323 devices, Circuit 2 contains 10240 devices. *** MISMATCH ***
+Circuit 1 contains 383 nets,    Circuit 2 contains 4290 nets. *** MISMATCH ***
+
+Result: Netlists do not match.
+Logging to file "comp.out" disabled
+LVS Done.

@@ -1,0 +1,53 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed May 25 22:14:12 2022
+[*]
+[dumpfile] "/home/wtf/projects/osu-toy-sram/sim/test_ra_sdr.vcd"
+[dumpfile_mtime] "Fri Mar 25 12:59:04 2022"
+[dumpfile_size] 70350
+[savefile] "/home/wtf/projects/osu-toy-sram/sim/wtf_test_ra_sdr.gtkw"
+[timestart] 409950
+[size] 2088 1240
+[pos] 218 58
+*-14.000000 500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_ra_sdr.
+[treeopen] test_ra_sdr.ra.
+[sst_width] 282
+[signals_width] 312
+[sst_expanded] 1
+[sst_vpaned_height] 370
+@28
+test_ra_sdr.ra.clk
+test_ra_sdr.ra.reset
+@200
+-WR 0
+@28
+test_ra_sdr.ra.wr_enb_0
+@22
+#{test_ra_sdr.ra.wr_adr_0[0:5]} test_ra_sdr.ra.wr_adr_0[0] test_ra_sdr.ra.wr_adr_0[1] test_ra_sdr.ra.wr_adr_0[2] test_ra_sdr.ra.wr_adr_0[3] test_ra_sdr.ra.wr_adr_0[4] test_ra_sdr.ra.wr_adr_0[5]
+test_ra_sdr.ra.wr_adr_0_q[0:5]
+#{test_ra_sdr.ra.wr_dat_0[0:71]} test_ra_sdr.ra.wr_dat_0[0] test_ra_sdr.ra.wr_dat_0[1] test_ra_sdr.ra.wr_dat_0[2] test_ra_sdr.ra.wr_dat_0[3] test_ra_sdr.ra.wr_dat_0[4] test_ra_sdr.ra.wr_dat_0[5] test_ra_sdr.ra.wr_dat_0[6] test_ra_sdr.ra.wr_dat_0[7] test_ra_sdr.ra.wr_dat_0[8] test_ra_sdr.ra.wr_dat_0[9] test_ra_sdr.ra.wr_dat_0[10] test_ra_sdr.ra.wr_dat_0[11] test_ra_sdr.ra.wr_dat_0[12] test_ra_sdr.ra.wr_dat_0[13] test_ra_sdr.ra.wr_dat_0[14] test_ra_sdr.ra.wr_dat_0[15] test_ra_sdr.ra.wr_dat_0[16] test_ra_sdr.ra.wr_dat_0[17] test_ra_sdr.ra.wr_dat_0[18] test_ra_sdr.ra.wr_dat_0[19] test_ra_sdr.ra.wr_dat_0[20] test_ra_sdr.ra.wr_dat_0[21] test_ra_sdr.ra.wr_dat_0[22] test_ra_sdr.ra.wr_dat_0[23] test_ra_sdr.ra.wr_dat_0[24] test_ra_sdr.ra.wr_dat_0[25] test_ra_sdr.ra.wr_dat_0[26] test_ra_sdr.ra.wr_dat_0[27] test_ra_sdr.ra.wr_dat_0[28] test_ra_sdr.ra.wr_dat_0[29] test_ra_sdr.ra.wr_dat_0[30] test_ra_sdr.ra.wr_dat_0[31] test_ra_sdr.ra.wr_dat_0[32] test_ra_sdr.ra.wr_dat_0[33] test_ra_sdr.ra.wr_dat_0[34] test_ra_sdr.ra.wr_dat_0[35] test_ra_sdr.ra.wr_dat_0[36] test_ra_sdr.ra.wr_dat_0[37] test_ra_sdr.ra.wr_dat_0[38] test_ra_sdr.ra.wr_dat_0[39] test_ra_sdr.ra.wr_dat_0[40] test_ra_sdr.ra.wr_dat_0[41] test_ra_sdr.ra.wr_dat_0[42] test_ra_sdr.ra.wr_dat_0[43] test_ra_sdr.ra.wr_dat_0[44] test_ra_sdr.ra.wr_dat_0[45] test_ra_sdr.ra.wr_dat_0[46] test_ra_sdr.ra.wr_dat_0[47] test_ra_sdr.ra.wr_dat_0[48] test_ra_sdr.ra.wr_dat_0[49] test_ra_sdr.ra.wr_dat_0[50] test_ra_sdr.ra.wr_dat_0[51] test_ra_sdr.ra.wr_dat_0[52] test_ra_sdr.ra.wr_dat_0[53] test_ra_sdr.ra.wr_dat_0[54] test_ra_sdr.ra.wr_dat_0[55] test_ra_sdr.ra.wr_dat_0[56] test_ra_sdr.ra.wr_dat_0[57] test_ra_sdr.ra.wr_dat_0[58] test_ra_sdr.ra.wr_dat_0[59] test_ra_sdr.ra.wr_dat_0[60] test_ra_sdr.ra.wr_dat_0[61] test_ra_sdr.ra.wr_dat_0[62] test_ra_sdr.ra.wr_dat_0[63] test_ra_sdr.ra.wr_dat_0[64] test_ra_sdr.ra.wr_dat_0[65] test_ra_sdr.ra.wr_dat_0[66] test_ra_sdr.ra.wr_dat_0[67] test_ra_sdr.ra.wr_dat_0[68] test_ra_sdr.ra.wr_dat_0[69] test_ra_sdr.ra.wr_dat_0[70] test_ra_sdr.ra.wr_dat_0[71]
+test_ra_sdr.ra.wr_dat_0_q[0:71]
+@200
+-RD 0
+@28
+test_ra_sdr.ra.rd_enb_0
+test_ra_sdr.ra.rd_enb_0_q
+@22
+#{test_ra_sdr.ra.rd_adr_0[0:5]} test_ra_sdr.ra.rd_adr_0[0] test_ra_sdr.ra.rd_adr_0[1] test_ra_sdr.ra.rd_adr_0[2] test_ra_sdr.ra.rd_adr_0[3] test_ra_sdr.ra.rd_adr_0[4] test_ra_sdr.ra.rd_adr_0[5]
+test_ra_sdr.ra.rd_adr_0_q[0:5]
+#{test_ra_sdr.ra.rd_dat_0[0:71]} test_ra_sdr.ra.rd_dat_0[0] test_ra_sdr.ra.rd_dat_0[1] test_ra_sdr.ra.rd_dat_0[2] test_ra_sdr.ra.rd_dat_0[3] test_ra_sdr.ra.rd_dat_0[4] test_ra_sdr.ra.rd_dat_0[5] test_ra_sdr.ra.rd_dat_0[6] test_ra_sdr.ra.rd_dat_0[7] test_ra_sdr.ra.rd_dat_0[8] test_ra_sdr.ra.rd_dat_0[9] test_ra_sdr.ra.rd_dat_0[10] test_ra_sdr.ra.rd_dat_0[11] test_ra_sdr.ra.rd_dat_0[12] test_ra_sdr.ra.rd_dat_0[13] test_ra_sdr.ra.rd_dat_0[14] test_ra_sdr.ra.rd_dat_0[15] test_ra_sdr.ra.rd_dat_0[16] test_ra_sdr.ra.rd_dat_0[17] test_ra_sdr.ra.rd_dat_0[18] test_ra_sdr.ra.rd_dat_0[19] test_ra_sdr.ra.rd_dat_0[20] test_ra_sdr.ra.rd_dat_0[21] test_ra_sdr.ra.rd_dat_0[22] test_ra_sdr.ra.rd_dat_0[23] test_ra_sdr.ra.rd_dat_0[24] test_ra_sdr.ra.rd_dat_0[25] test_ra_sdr.ra.rd_dat_0[26] test_ra_sdr.ra.rd_dat_0[27] test_ra_sdr.ra.rd_dat_0[28] test_ra_sdr.ra.rd_dat_0[29] test_ra_sdr.ra.rd_dat_0[30] test_ra_sdr.ra.rd_dat_0[31] test_ra_sdr.ra.rd_dat_0[32] test_ra_sdr.ra.rd_dat_0[33] test_ra_sdr.ra.rd_dat_0[34] test_ra_sdr.ra.rd_dat_0[35] test_ra_sdr.ra.rd_dat_0[36] test_ra_sdr.ra.rd_dat_0[37] test_ra_sdr.ra.rd_dat_0[38] test_ra_sdr.ra.rd_dat_0[39] test_ra_sdr.ra.rd_dat_0[40] test_ra_sdr.ra.rd_dat_0[41] test_ra_sdr.ra.rd_dat_0[42] test_ra_sdr.ra.rd_dat_0[43] test_ra_sdr.ra.rd_dat_0[44] test_ra_sdr.ra.rd_dat_0[45] test_ra_sdr.ra.rd_dat_0[46] test_ra_sdr.ra.rd_dat_0[47] test_ra_sdr.ra.rd_dat_0[48] test_ra_sdr.ra.rd_dat_0[49] test_ra_sdr.ra.rd_dat_0[50] test_ra_sdr.ra.rd_dat_0[51] test_ra_sdr.ra.rd_dat_0[52] test_ra_sdr.ra.rd_dat_0[53] test_ra_sdr.ra.rd_dat_0[54] test_ra_sdr.ra.rd_dat_0[55] test_ra_sdr.ra.rd_dat_0[56] test_ra_sdr.ra.rd_dat_0[57] test_ra_sdr.ra.rd_dat_0[58] test_ra_sdr.ra.rd_dat_0[59] test_ra_sdr.ra.rd_dat_0[60] test_ra_sdr.ra.rd_dat_0[61] test_ra_sdr.ra.rd_dat_0[62] test_ra_sdr.ra.rd_dat_0[63] test_ra_sdr.ra.rd_dat_0[64] test_ra_sdr.ra.rd_dat_0[65] test_ra_sdr.ra.rd_dat_0[66] test_ra_sdr.ra.rd_dat_0[67] test_ra_sdr.ra.rd_dat_0[68] test_ra_sdr.ra.rd_dat_0[69] test_ra_sdr.ra.rd_dat_0[70] test_ra_sdr.ra.rd_dat_0[71]
+test_ra_sdr.ra.rd_dat_0_q[0:71]
+@200
+-RD 1
+@28
+test_ra_sdr.ra.rd_enb_1
+test_ra_sdr.ra.rd_enb_1_q
+@22
+#{test_ra_sdr.ra.rd_adr_1[0:5]} test_ra_sdr.ra.rd_adr_1[0] test_ra_sdr.ra.rd_adr_1[1] test_ra_sdr.ra.rd_adr_1[2] test_ra_sdr.ra.rd_adr_1[3] test_ra_sdr.ra.rd_adr_1[4] test_ra_sdr.ra.rd_adr_1[5]
+test_ra_sdr.ra.rd_adr_1_q[0:5]
+#{test_ra_sdr.ra.rd_dat_1[0:71]} test_ra_sdr.ra.rd_dat_1[0] test_ra_sdr.ra.rd_dat_1[1] test_ra_sdr.ra.rd_dat_1[2] test_ra_sdr.ra.rd_dat_1[3] test_ra_sdr.ra.rd_dat_1[4] test_ra_sdr.ra.rd_dat_1[5] test_ra_sdr.ra.rd_dat_1[6] test_ra_sdr.ra.rd_dat_1[7] test_ra_sdr.ra.rd_dat_1[8] test_ra_sdr.ra.rd_dat_1[9] test_ra_sdr.ra.rd_dat_1[10] test_ra_sdr.ra.rd_dat_1[11] test_ra_sdr.ra.rd_dat_1[12] test_ra_sdr.ra.rd_dat_1[13] test_ra_sdr.ra.rd_dat_1[14] test_ra_sdr.ra.rd_dat_1[15] test_ra_sdr.ra.rd_dat_1[16] test_ra_sdr.ra.rd_dat_1[17] test_ra_sdr.ra.rd_dat_1[18] test_ra_sdr.ra.rd_dat_1[19] test_ra_sdr.ra.rd_dat_1[20] test_ra_sdr.ra.rd_dat_1[21] test_ra_sdr.ra.rd_dat_1[22] test_ra_sdr.ra.rd_dat_1[23] test_ra_sdr.ra.rd_dat_1[24] test_ra_sdr.ra.rd_dat_1[25] test_ra_sdr.ra.rd_dat_1[26] test_ra_sdr.ra.rd_dat_1[27] test_ra_sdr.ra.rd_dat_1[28] test_ra_sdr.ra.rd_dat_1[29] test_ra_sdr.ra.rd_dat_1[30] test_ra_sdr.ra.rd_dat_1[31] test_ra_sdr.ra.rd_dat_1[32] test_ra_sdr.ra.rd_dat_1[33] test_ra_sdr.ra.rd_dat_1[34] test_ra_sdr.ra.rd_dat_1[35] test_ra_sdr.ra.rd_dat_1[36] test_ra_sdr.ra.rd_dat_1[37] test_ra_sdr.ra.rd_dat_1[38] test_ra_sdr.ra.rd_dat_1[39] test_ra_sdr.ra.rd_dat_1[40] test_ra_sdr.ra.rd_dat_1[41] test_ra_sdr.ra.rd_dat_1[42] test_ra_sdr.ra.rd_dat_1[43] test_ra_sdr.ra.rd_dat_1[44] test_ra_sdr.ra.rd_dat_1[45] test_ra_sdr.ra.rd_dat_1[46] test_ra_sdr.ra.rd_dat_1[47] test_ra_sdr.ra.rd_dat_1[48] test_ra_sdr.ra.rd_dat_1[49] test_ra_sdr.ra.rd_dat_1[50] test_ra_sdr.ra.rd_dat_1[51] test_ra_sdr.ra.rd_dat_1[52] test_ra_sdr.ra.rd_dat_1[53] test_ra_sdr.ra.rd_dat_1[54] test_ra_sdr.ra.rd_dat_1[55] test_ra_sdr.ra.rd_dat_1[56] test_ra_sdr.ra.rd_dat_1[57] test_ra_sdr.ra.rd_dat_1[58] test_ra_sdr.ra.rd_dat_1[59] test_ra_sdr.ra.rd_dat_1[60] test_ra_sdr.ra.rd_dat_1[61] test_ra_sdr.ra.rd_dat_1[62] test_ra_sdr.ra.rd_dat_1[63] test_ra_sdr.ra.rd_dat_1[64] test_ra_sdr.ra.rd_dat_1[65] test_ra_sdr.ra.rd_dat_1[66] test_ra_sdr.ra.rd_dat_1[67] test_ra_sdr.ra.rd_dat_1[68] test_ra_sdr.ra.rd_dat_1[69] test_ra_sdr.ra.rd_dat_1[70] test_ra_sdr.ra.rd_dat_1[71]
+@23
+test_ra_sdr.ra.rd_dat_1_q[0:71]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,58 @@
+Flattening unmatched subcell INVX1 in circuit 10T_toy_xschem (1)(2 instances)
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 has no definition, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: x10T_toy_magic                  |Circuit 2: 10T_toy_xschem                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
+sky130_fd_pr__nfet_01v8 (8)                |sky130_fd_pr__nfet_01v8 (8)                
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: x10T_toy_magic                  |Circuit 2: 10T_toy_xschem                  
+-------------------------------------------|-------------------------------------------
+WBLb                                       |WBLb                                       
+WBL                                        |WBL                                        
+RBL1                                       |RBL1                                       
+RBL0                                       |RBL0                                       
+RWL1                                       |RWL1                                       
+RWL0                                       |RWL0                                       
+WWL                                        |WWL                                        
+GND                                        |(no matching pin)                          
+VDD                                        |(no matching pin)                          
+VDD                                        |(no matching pin)                          
+GND                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for x10T_toy_magic and 10T_toy_xschem altered to match.
+Cells failed matching, or top level cell failed pin matching.

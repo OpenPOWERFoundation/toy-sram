@@ -1,0 +1,91 @@
+* NGSPICE file created from 10T_1x8_magic_flattened.ext - technology: sky130A
+
+.subckt x10T_1x8_magic_flattened
++ WWL RWL 
++ WBLb_0 WBL_0 WBLb_1 WBL_1 WBLb_2 WBL_2 WBLb_3 WBL_3 WBLb_4 WBL_4 WBLb_5 WBL_5 WBLb_6 WBL_6 WBLb_7 WBL_7
++ RBL0_0 RBL0_1 RBL0_2 RBL0_3 RBL0_4 RBL0_5 RBL0_6 RBL0_7
++ RBL1_0 RBL1_1 RBL1_2 RBL1_3 RBL1_4 RBL1_5 RBL1_6 RBL1_7
++ VDD GND
+
+M1000 10T_toy_magic_0/junc0 10T_toy_magic_0/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1001 10T_toy_magic_6/RWL1_junc RWL RBL1_1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1002 10T_toy_magic_5/RWL1_junc RWL RBL1_2 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1003 10T_toy_magic_0/RWL1_junc RWL RBL1_6 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1004 VDD 10T_toy_magic_5/junc0 10T_toy_magic_5/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1005 WBL_2 WWL 10T_toy_magic_5/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1006 10T_toy_magic_6/junc0 10T_toy_magic_6/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1007 10T_toy_magic_3/junc0 10T_toy_magic_3/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1008 10T_toy_magic_7/RWL0_junc 10T_toy_magic_7/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1009 10T_toy_magic_4/junc0 10T_toy_magic_4/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1010 10T_toy_magic_2/RWL0_junc 10T_toy_magic_2/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1011 10T_toy_magic_1/junc0 10T_toy_magic_1/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1012 GND 10T_toy_magic_7/junc0 10T_toy_magic_7/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1013 GND 10T_toy_magic_2/junc0 10T_toy_magic_2/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1014 10T_toy_magic_1/junc1 WWL WBLb_7 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1015 10T_toy_magic_7/RWL1_junc RWL RBL1_0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1016 GND 10T_toy_magic_7/junc1 10T_toy_magic_7/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1017 10T_toy_magic_4/RWL1_junc RWL RBL1_3 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1018 GND 10T_toy_magic_2/junc1 10T_toy_magic_2/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1019 WBL_6 WWL 10T_toy_magic_0/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1020 RBL0_0 RWL 10T_toy_magic_7/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1021 RBL0_1 RWL 10T_toy_magic_6/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1022 10T_toy_magic_3/junc0 10T_toy_magic_3/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1023 RBL0_5 RWL 10T_toy_magic_2/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1024 10T_toy_magic_0/RWL0_junc 10T_toy_magic_0/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1025 VDD 10T_toy_magic_3/junc0 10T_toy_magic_3/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1026 10T_toy_magic_2/junc1 WWL WBLb_5 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1027 GND 10T_toy_magic_6/junc0 10T_toy_magic_6/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1028 10T_toy_magic_6/RWL0_junc 10T_toy_magic_6/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1029 10T_toy_magic_5/RWL0_junc 10T_toy_magic_5/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1030 GND 10T_toy_magic_0/junc0 10T_toy_magic_0/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1031 WBL_4 WWL 10T_toy_magic_3/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1032 GND 10T_toy_magic_6/junc1 10T_toy_magic_6/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1033 GND 10T_toy_magic_0/junc1 10T_toy_magic_0/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1034 WBL_1 WWL 10T_toy_magic_6/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1035 GND 10T_toy_magic_5/junc0 10T_toy_magic_5/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1036 RBL0_6 RWL 10T_toy_magic_0/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1037 10T_toy_magic_7/junc1 WWL WBLb_0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1038 10T_toy_magic_4/junc1 WWL WBLb_3 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1039 GND 10T_toy_magic_5/junc1 10T_toy_magic_5/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1040 RBL0_2 RWL 10T_toy_magic_5/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1041 10T_toy_magic_4/junc0 10T_toy_magic_4/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1042 GND 10T_toy_magic_4/junc0 10T_toy_magic_4/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1043 10T_toy_magic_1/RWL1_junc RWL RBL1_7 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1044 VDD 10T_toy_magic_0/junc0 10T_toy_magic_0/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1045 GND 10T_toy_magic_4/junc1 10T_toy_magic_4/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1046 10T_toy_magic_1/junc0 10T_toy_magic_1/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1047 VDD 10T_toy_magic_6/junc0 10T_toy_magic_6/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1048 WBL_3 WWL 10T_toy_magic_4/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1049 10T_toy_magic_3/RWL1_junc RWL RBL1_4 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1050 10T_toy_magic_2/junc0 10T_toy_magic_2/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1051 10T_toy_magic_7/junc0 10T_toy_magic_7/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1052 10T_toy_magic_2/junc0 10T_toy_magic_2/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1053 10T_toy_magic_1/RWL0_junc 10T_toy_magic_1/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1054 10T_toy_magic_5/junc1 WWL WBLb_2 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1055 10T_toy_magic_4/RWL0_junc 10T_toy_magic_4/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1056 VDD 10T_toy_magic_1/junc0 10T_toy_magic_1/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1057 10T_toy_magic_2/RWL1_junc RWL RBL1_5 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1058 GND 10T_toy_magic_1/junc0 10T_toy_magic_1/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1059 10T_toy_magic_7/junc0 10T_toy_magic_7/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1060 WBL_7 WWL 10T_toy_magic_1/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1061 RBL0_3 RWL 10T_toy_magic_4/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1062 GND 10T_toy_magic_1/junc1 10T_toy_magic_1/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1063 RBL0_7 RWL 10T_toy_magic_1/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1064 VDD 10T_toy_magic_2/junc0 10T_toy_magic_2/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1065 10T_toy_magic_0/junc1 WWL WBLb_6 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1066 10T_toy_magic_3/RWL0_junc 10T_toy_magic_3/junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1067 WBL_5 WWL 10T_toy_magic_2/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1068 10T_toy_magic_6/junc0 10T_toy_magic_6/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1069 10T_toy_magic_5/junc0 10T_toy_magic_5/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1070 10T_toy_magic_0/junc0 10T_toy_magic_0/junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1071 VDD 10T_toy_magic_4/junc0 10T_toy_magic_4/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1072 10T_toy_magic_3/junc1 WWL WBLb_4 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1073 GND 10T_toy_magic_3/junc0 10T_toy_magic_3/junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1074 VDD 10T_toy_magic_7/junc0 10T_toy_magic_7/junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+M1075 10T_toy_magic_6/junc1 WWL WBLb_1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1076 GND 10T_toy_magic_3/junc1 10T_toy_magic_3/RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1077 WBL_0 WWL 10T_toy_magic_7/junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1078 RBL0_4 RWL 10T_toy_magic_3/RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+M1079 10T_toy_magic_5/junc0 10T_toy_magic_5/junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+.ends
+

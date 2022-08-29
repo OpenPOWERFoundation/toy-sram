@@ -1,0 +1,45 @@
+** sch_path: /home/rjridle/osu-toy-sram/xschem/10T_1x8_xschem.sch
+
+.subckt 10T_1x8_xschem
++ WWL RWL 
++ WBLb_0 WBL_0 WBLb_1 WBL_1 WBLb_2 WBL_2 WBLb_3 WBL_3 WBLb_4 WBL_4 WBLb_5 WBL_5 WBLb_6 WBL_6 WBLb_7 WBL_7
++ RBL0_0 RBL0_1 RBL0_2 RBL0_3 RBL0_4 RBL0_5 RBL0_6 RBL0_7
++ RBL1_0 RBL1_1 RBL1_2 RBL1_3 RBL1_4 RBL1_5 RBL1_6 RBL1_7
++ VDD GND
+
+x1 WWL WBL_0 RBL0_0 RBL1_0 WBLb_0 RWL RWL VDD GND 10T_toy_xschem
+x2 WWL WBL_1 RBL0_1 RBL1_1 WBLb_1 RWL RWL VDD GND 10T_toy_xschem
+x3 WWL WBL_2 RBL0_2 RBL1_2 WBLb_2 RWL RWL VDD GND 10T_toy_xschem
+x4 WWL WBL_3 RBL0_3 RBL1_3 WBLb_3 RWL RWL VDD GND 10T_toy_xschem
+x5 WWL WBL_4 RBL0_4 RBL1_4 WBLb_4 RWL RWL VDD GND 10T_toy_xschem
+x6 WWL WBL_5 RBL0_5 RBL1_5 WBLb_5 RWL RWL VDD GND 10T_toy_xschem
+x7 WWL WBL_6 RBL0_6 RBL1_6 WBLb_6 RWL RWL VDD GND 10T_toy_xschem
+x8 WWL WBL_7 RBL0_7 RBL1_7 WBLb_7 RWL RWL VDD GND 10T_toy_xschem
+.ends
+
+* expanding   symbol:  10T_toy_xschem.sym # of pins=7
+** sym_path: /home/rjridle/osu-toy-sram/xschem/10T_toy_xschem.sym
+** sch_path: /home/rjridle/osu-toy-sram/xschem/10T_toy_xschem.sch
+.subckt 10T_toy_xschem  WWL WBL RBL0 RBL1 WBLb RWL0 RWL1  VDD  GND
+*.PININFO WWL:I RWL0:I RWL1:I WBL:I WBLb:I RBL0:O RBL1:O
+x1 net1 net2 VDD GND INVX1
+x2 net2 net1 VDD GND INVX1
+XM1 net2 WWL WBL GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM2 WBLb WWL net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM3 net3 net2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM4 RBL0 RWL0 net3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM5 net4 net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM6 RBL1 RWL1 net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+.ends
+
+
+* expanding   symbol:  INVX1.sym # of pins=2
+** sym_path: /home/rjridle/osu-toy-sram/xschem/INVX1.sym
+** sch_path: /home/rjridle/osu-toy-sram/xschem/INVX1.sch
+.subckt INVX1  Y A  VDD  GND
+*.PININFO A:I Y:O
+XM1 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM2 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1
+.ends
+
+.end

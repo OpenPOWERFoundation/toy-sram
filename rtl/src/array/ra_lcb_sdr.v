@@ -41,6 +41,7 @@ module  ra_lcb_sdr (
    output         strobe;
 
    wire           clk_dly;
+   wire           i;
    wire           o0;
    wire           o1;
    wire           clk_dly2;

@@ -1,0 +1,58 @@
+Flattening unmatched subcell INVX1 in circuit 10T_toy_xschem (1)(2 instances)
+Flattening unmatched subcell x10T_toy_magic in circuit x10T_1x8_magic (0)(8 instances)
+Flattening unmatched subcell 10T_toy_xschem in circuit 10T_1x8_xschem (1)(8 instances)
+
+Subcircuit summary:
+Circuit 1: x10T_1x8_magic                  |Circuit 2: 10T_1x8_xschem                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16)               |sky130_fd_pr__pfet_01v8 (16)               
+sky130_fd_pr__nfet_01v8 (64)               |sky130_fd_pr__nfet_01v8 (64)               
+Number of devices: 80                      |Number of devices: 80                      
+Number of nets: 68                         |Number of nets: 68                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: x10T_1x8_magic                  |Circuit 2: 10T_1x8_xschem                  
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+RBL1_7                                     |RBL1_7                                     
+RBL0_7                                     |RBL0_7                                     
+RBL1_6                                     |RBL1_6                                     
+RBL0_6                                     |RBL0_6                                     
+RBL1_5                                     |RBL1_5                                     
+RBL0_5                                     |RBL0_5                                     
+RBL1_4                                     |RBL1_4                                     
+RBL0_4                                     |RBL0_4                                     
+RBL1_3                                     |RBL1_3                                     
+RBL0_3                                     |RBL0_3                                     
+RBL1_2                                     |RBL1_2                                     
+RBL0_2                                     |RBL0_2                                     
+RBL1_1                                     |RBL1_1                                     
+RBL0_1                                     |RBL0_1                                     
+RBL1_0                                     |RBL1_0                                     
+RBL0_0                                     |RBL0_0                                     
+WBLb_7                                     |WBLb_7                                     
+WBL_7                                      |WBL_7                                      
+WBLb_6                                     |WBLb_6                                     
+WBL_6                                      |WBL_6                                      
+WBLb_5                                     |WBLb_5                                     
+WBL_5                                      |WBL_5                                      
+WBLb_4                                     |WBLb_4                                     
+WBL_4                                      |WBL_4                                      
+WBLb_3                                     |WBLb_3                                     
+WBL_3                                      |WBL_3                                      
+WBLb_2                                     |WBLb_2                                     
+WBL_2                                      |WBL_2                                      
+WBLb_1                                     |WBLb_1                                     
+WBL_1                                      |WBL_1                                      
+WBLb_0                                     |WBLb_0                                     
+WBL_0                                      |WBL_0                                      
+WWL                                        |WWL                                        
+RWL                                        |RWL                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes x10T_1x8_magic and 10T_1x8_xschem are equivalent.
+Circuits match uniquely.

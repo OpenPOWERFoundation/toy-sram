@@ -1,0 +1,16 @@
+* HSPICE file created from 10T_toy_magic.ext - technology: sky130
+
+.subckt x10T_toy_magic WWL RWL0 RWL1 WBL WBLb RBL0 RBL1 VDD GND
+X0 junc0 junc1 VDD VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+X1 GND junc0 junc1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X2 RWL0_junc junc0 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X3 VDD junc0 junc1 VDD sky130_fd_pr__pfet_01v8 w=1 l=0.15
+X4 WBL WWL junc0 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X5 junc1 WWL WBLb GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X6 GND junc1 RWL1_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X7 RBL0 RWL0 RWL0_junc GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X8 junc0 junc1 GND GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+X9 RWL1_junc RWL1 RBL1 GND sky130_fd_pr__nfet_01v8 w=1 l=0.15
+.ends
+
+** hspice subcircuit dictionary
