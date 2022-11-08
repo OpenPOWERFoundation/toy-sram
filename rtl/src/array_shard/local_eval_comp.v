@@ -25,13 +25,13 @@ module local_eval (
     input         PRE_b,
     input         RBL_L,
     input         RBL_R,
-    output        RLB_O_b
+    output        RBL_O_b
 
 );
 
-sky130_fd_pr__pfet_01v8 PRE_L (.G(PRE_b), .S(RBL_L));
-sky130_fd_pr__pfet_01v8 PRE_R (.G(PRE_b), .S(RBL_R));
-sky130_fd_sc_hd__nand2_1 SEL (.A(RBL_L), .B(RBL_R), .Y(RBL_O_b));
+sky130_fd_pr__pfet_01v8 PRE_L (.G(PRE_b), .D(RBL_L));
+sky130_fd_pr__pfet_01v8 PRE_R (.G(PRE_b), .D(RBL_R));
+sky130_fd_sc_hd__nand2_1 SEL (.A(RBL_L), .B(RBL_R), .X(RBL_O_b));
 
 endmodule
 
@@ -41,17 +41,18 @@ module local_eval_comp (
     input         PRE0_b,
     input  [0:11] RBL0_L,
     input  [0:11] RBL0_R,
-    output [0:11] RLB0_O_b,
+    output [0:11] RBL0_O_b,
     input         PRE1_b,
     input  [0:11] RBL1_L,
     input  [0:11] RBL1_R,
-    output [0:11] RLB1_O_b
+    output [0:11] RBL1_O_b
 
 );
 
+genvar i;
 for (i = 0; i < 12; i = i + 1) begin
-   local_eval_eval_0 (.PRE_b(PRE0_b), .RBL_L(RBL0_L[i]), .RBL_R(RBL0_R[i]), .RBL_Ob(RBL0_0_b[i]));
-   local_eval eval_1 (.PRE_b(PRE1_b), .RBL_L(RBL1_L[i]), .RBL_R(RBL1_R[i]), .RBL_Ob(RBL1_0_b[i]));
+   local_eval eval_0 (.PRE_b(PRE0_b), .RBL_L(RBL0_L[i]), .RBL_R(RBL0_R[i]), .RBL_O_b(RBL0_O_b[i]));
+   local_eval eval_1 (.PRE_b(PRE1_b), .RBL_L(RBL1_L[i]), .RBL_R(RBL1_R[i]), .RBL_O_b(RBL1_O_b[i]));
 end
 
 endmodule

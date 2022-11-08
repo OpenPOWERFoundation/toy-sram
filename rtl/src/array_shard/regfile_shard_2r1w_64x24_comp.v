@@ -37,7 +37,7 @@ module regfile_shard_2r1w_64x24_comp (
     input         rd0_na4_a5,
     input         rd0_a4_na5,
     input         rd0_a4_a5,
-    output [0:31] rd0_dat,
+    output [0:23] rd0_dat,
 
     input         rd1_c_na0,
     input         rd1_c_a0,
@@ -51,7 +51,7 @@ module regfile_shard_2r1w_64x24_comp (
     input         rd1_na4_a5,
     input         rd1_a4_na5,
     input         rd1_a4_a5,
-    output [0:31] rd1_dat,
+    output [0:23] rd1_dat,
 
     input         wr0_c_na0,
     input         wr0_c_a0,
@@ -65,7 +65,7 @@ module regfile_shard_2r1w_64x24_comp (
     input         wr0_na4_a5,
     input         wr0_a4_na5,
     input         wr0_a4_a5,
-    input [0:31]  wr0_dat
+    input [0:23]  wr0_dat
 
 );
 
@@ -77,7 +77,7 @@ wire        rd0_na1_a2_i;
 wire        rd0_a1_na2_i;
 wire        rd0_a1_a2_i;
 wire        rd0_na3_i;
-wire        rd0__a3_i;
+wire        rd0_a3_i;
 wire        rd0_na4_na5_i;
 wire        rd0_na4_a5_i;
 wire        rd0_a4_na5_i;
@@ -90,7 +90,7 @@ wire        rd1_na1_a2_i;
 wire        rd1_a1_na2_i;
 wire        rd1_a1_a2_i;
 wire        rd1_na3_i;
-wire        rd1__a3_i;
+wire        rd1_a3_i;
 wire        rd1_na4_na5_i;
 wire        rd1_na4_a5_i;
 wire        rd1_a4_na5_i;
@@ -125,69 +125,109 @@ wire [0:31] rwl1_1x1;
 wire [0:31] wwl0_1x1;
 
 // subarray ins/outs
-wire [0:11] rwl0_000;
-wire [0:11] rwl1_000;
-wire [0:11] wwl_000;
+wire [0:15] rwl0_000;
+wire [0:15] rwl1_000;
+wire [0:15] wwl0_000;
 wire [0:11] rbl0_000;
 wire [0:11] rbl1_000;
-wire [0:11] wbl_000;
-wire [0:11] wbl_b_000;
+wire [0:11] wbl0_000;
+wire [0:11] wbl0_b_000;
 
-wire [0:11] rwl0_001;
-wire [0:11] rwl1_001;
-wire [0:11] wwl_001;
+wire [0:15] rwl0_001;
+wire [0:15] rwl1_001;
+wire [0:15] wwl0_001;
 wire [0:11] rbl0_001;
 wire [0:11] rbl1_001;
-wire [0:11] wbl_001;
-wire [0:11] wbl_b_001;
+wire [0:11] wbl0_001;
+wire [0:11] wbl0_b_001;
 
-wire [0:11] rwl0_010;
-wire [0:11] rwl1_010;
-wire [0:11] wwl_010;
+wire [0:15] rwl0_010;
+wire [0:15] rwl1_010;
+wire [0:15] wwl0_010;
 wire [0:11] rbl0_010;
 wire [0:11] rbl1_010;
-wire [0:11] wbl_010;
-wire [0:11] wbl_b_010;
+wire [0:11] wbl0_010;
+wire [0:11] wbl0_b_010;
 
-wire [0:11] rwl0_011;
-wire [0:11] rwl1_011;
-wire [0:11] wwl_011;
+wire [0:15] rwl0_011;
+wire [0:15] rwl1_011;
+wire [0:15] wwl0_011;
 wire [0:11] rbl0_011;
 wire [0:11] rbl1_011;
-wire [0:11] wbl_011;
-wire [0:11] wbl_b_011;
+wire [0:11] wbl0_011;
+wire [0:11] wbl0_b_011;
 
-wire [0:11] rwl0_100;
-wire [0:11] rwl1_100;
-wire [0:11] wwl_100;
+wire [0:15] rwl0_100;
+wire [0:15] rwl1_100;
+wire [0:15] wwl0_100;
 wire [0:11] rbl0_100;
 wire [0:11] rbl1_100;
-wire [0:11] wbl_100;
-wire [0:11] wbl_b_100;
+wire [0:11] wbl0_100;
+wire [0:11] wbl0_b_100;
 
-wire [0:11] rwl0_101;
-wire [0:11] rwl1_101;
-wire [0:11] wwl_101;
+wire [0:15] rwl0_101;
+wire [0:15] rwl1_101;
+wire [0:15] wwl0_101;
 wire [0:11] rbl0_101;
 wire [0:11] rbl1_101;
-wire [0:11] wbl_101;
-wire [0:11] wbl_b_101;
+wire [0:11] wbl0_101;
+wire [0:11] wbl0_b_101;
 
-wire [0:11] rwl0_110;
-wire [0:11] rwl1_110;
-wire [0:11] wwl_110;
+wire [0:15] rwl0_110;
+wire [0:15] rwl1_110;
+wire [0:15] wwl0_110;
 wire [0:11] rbl0_110;
 wire [0:11] rbl1_110;
-wire [0:11] wbl_110;
-wire [0:11] wbl_b_110;
+wire [0:11] wbl0_110;
+wire [0:11] wbl0_b_110;
 
-wire [0:11] rwl0_111;
-wire [0:11] rwl1_111;
-wire [0:11] wwl_111;
+wire [0:15] rwl0_111;
+wire [0:15] rwl1_111;
+wire [0:15] wwl0_111;
 wire [0:11] rbl0_111;
 wire [0:11] rbl1_111;
-wire [0:11] wbl_111;
-wire [0:11] wbl_b_111;
+wire [0:11] wbl0_111;
+wire [0:11] wbl0_b_111;
+
+// local evals
+wire        pre0_0x0_b;
+wire        pre0_0x0;
+wire        pre0_0x1_b;
+wire        pre0_0x1;
+wire        pre0_1x0_b;
+wire        pre0_1x0;
+wire        pre0_1x1_b;
+wire        pre0_1x1;
+
+wire        pre1_0x0_b;
+wire        pre1_0x0;
+wire        pre1_0x1_b;
+wire        pre1_0x1;
+wire        pre1_1x0_b;
+wire        pre1_1x0;
+wire        pre1_1x1_b;
+wire        pre1_1x1;
+
+wire [0:11] rbl0_0x0;
+wire [0:11] rbl0_0x1;
+wire [0:11] rbl0_1x0;
+wire [0:11] rbl0_1x1;
+
+wire [0:11] rbl1_0x0;
+wire [0:11] rbl1_0x1;
+wire [0:11] rbl1_1x0;
+wire [0:11] rbl1_1x1;
+
+// write data
+wire [0:11] wbl0_0x0;
+wire [0:11] wbl0_0x1;
+wire [0:11] wbl0_1x0;
+wire [0:11] wbl0_1x1;
+wire [0:11] wbl0_b_0x0;
+wire [0:11] wbl0_b_0x1;
+wire [0:11] wbl0_b_1x0;
+wire [0:11] wbl0_b_1x1;
+
 
 // subarray cells; 4x2 16w/12b subarrays
 //
@@ -222,86 +262,86 @@ wire [0:11] wbl_b_111;
 toysram_16x12 r000 (
    .RWL0(rwl0_000),
    .RWL1(rwl1_000),
-   .WWL(wwl_000),
+   .WWL(wwl0_000),
    .RBL0(rbl0_000),
    .RBL1(rbl1_000),
-   .WBL(wbl_000),
-   .WBLb(wbl_b_000)
+   .WBL(wbl0_000),
+   .WBLb(wbl0_b_000)
 );
 toysram_16x12 r001 (
    .RWL0(rwl0_001),
    .RWL1(rwl1_001),
-   .WWL(wwl_001),
+   .WWL(wwl0_001),
    .RBL0(rbl0_001),
    .RBL1(rbl1_001),
-   .WBL(wbl_001),
-   .WBLb(wbl_b_001)
+   .WBL(wbl0_001),
+   .WBLb(wbl0_b_001)
 );
 
 toysram_16x12 r010 (
    .RWL0(rwl0_010),
    .RWL1(rwl1_010),
-   .WWL(wwl_010),
+   .WWL(wwl0_010),
    .RBL0(rbl0_010),
    .RBL1(rbl1_010),
-   .WBL(wbl_010),
-   .WBLb(wbl_b_010)
+   .WBL(wbl0_010),
+   .WBLb(wbl0_b_010)
 );
 
 toysram_16x12 r011 (
    .RWL0(rwl0_011),
    .RWL1(rwl1_011),
-   .WWL(wwl_011),
+   .WWL(wwl0_011),
    .RBL0(rbl0_011),
    .RBL1(rbl1_011),
-   .WBL(wbl_011),
-   .WBLb(wbl_b_011)
+   .WBL(wbl0_011),
+   .WBLb(wbl0_b_011)
 );
 
 toysram_16x12 r100 (
    .RWL0(rwl0_100),
    .RWL1(rwl1_100),
-   .WWL(wwl_100),
+   .WWL(wwl0_100),
    .RBL0(rbl0_100),
    .RBL1(rbl1_100),
-   .WBL(wbl_100),
-   .WBLb(wbl_b_100)
+   .WBL(wbl0_100),
+   .WBLb(wbl0_b_100)
 );
 
 toysram_16x12 r101 (
    .RWL0(rwl0_101),
    .RWL1(rwl1_101),
-   .WWL(wwl_101),
+   .WWL(wwl0_101),
    .RBL0(rbl0_101),
    .RBL1(rbl1_101),
-   .WBL(wbl_101),
-   .WBLb(wbl_b_101)
+   .WBL(wbl0_101),
+   .WBLb(wbl0_b_101)
 );
 
 toysram_16x12 r110 (
    .RWL0(rwl0_110),
    .RWL1(rwl1_110),
-   .WWL(wwl_110),
+   .WWL(wwl0_110),
    .RBL0(rbl0_110),
    .RBL1(rbl1_110),
-   .WBL(wbl_110),
-   .WBLb(wbl_b_110)
+   .WBL(wbl0_110),
+   .WBLb(wbl0_b_110)
 );
 
 toysram_16x12 r111 (
    .RWL0(rwl0_111),
    .RWL1(rwl1_111),
-   .WWL(wwl_111),
+   .WWL(wwl0_111),
    .RBL0(rbl0_111),
    .RBL1(rbl1_111),
-   .WBL(wbl_111),
-   .WBLb(wbl_b_111)
+   .WBL(wbl0_111),
+   .WBLb(wbl0_b_111)
 );
 
 // wordline decodes to one-hots; separate copies for up/down
 // separate comps for L/R so i/o macro can divide the center; a3
 //  distinguishes L/R
-wordlines_comp dcd_0 (
+wordlines_comp_32 dcd_0 (
 
     .rd0_c_na0(rd0_c_na0_i),
     .rd0_c_a0(rd0_c_a0_i),
@@ -351,7 +391,7 @@ wordlines_comp dcd_0 (
 
 );
 
-wordlines_comp dcd_1 (
+wordlines_comp_32 dcd_1 (
 
     .rd0_c_na0(rd0_c_na0_i),
     .rd0_c_a0(rd0_c_a0_i),
@@ -434,40 +474,40 @@ wordlines_comp dcd_1 (
 // during precharge c_na0 = c_a0 = 0
 // 4 copies to 000/010, 001/011, 100/110, 101,111 quads
 // rd0
-sky130_fd_sc_hd__inv_8 pre0_0x0_b (.A(rd0_c_na0),  .Y(pre0_0x0_b);
-sky130_fd_sc_hd__inv_8 pre0_0x0   (.A(pre0_0x0_b), .Y(pre0_0x0);
-sky130_fd_sc_hd__inv_8 pre0_0x1_b (.A(rd0_c_na0),  .Y(pre0_0x1_b);
-sky130_fd_sc_hd__inv_8 pre0_0x1   (.A(pre0_0x1_b), .Y(pre0_0x1);
-sky130_fd_sc_hd__inv_8 pre0_1x0_b (.A(rd0_c_a0),   .Y(pre0_1x0_b);
-sky130_fd_sc_hd__inv_8 pre0_1x0   (.A(pre0_1x0_b), .Y(pre0_1x0);
-sky130_fd_sc_hd__inv_8 pre0_1x1_b (.A(rd0_c_a0),   .Y(pre0_1x1_b);
-sky130_fd_sc_hd__inv_8 pre0_1x1   (.A(pre0_1x1_b), .Y(pre0_1x1);
+sky130_fd_sc_hd__inv_2 inv0_0x0_b (.A(rd0_c_na0),  .Y(pre0_0x0_b));
+sky130_fd_sc_hd__inv_2 inv0_0x0   (.A(pre0_0x0_b), .Y(pre0_0x0));
+sky130_fd_sc_hd__inv_2 inv0_0x1_b (.A(rd0_c_na0),  .Y(pre0_0x1_b));
+sky130_fd_sc_hd__inv_2 inv0_0x1   (.A(pre0_0x1_b), .Y(pre0_0x1));
+sky130_fd_sc_hd__inv_2 inv0_1x0_b (.A(rd0_c_a0),   .Y(pre0_1x0_b));
+sky130_fd_sc_hd__inv_2 inv0_1x0   (.A(pre0_1x0_b), .Y(pre0_1x0));
+sky130_fd_sc_hd__inv_2 inv0_1x1_b (.A(rd0_c_a0),   .Y(pre0_1x1_b));
+sky130_fd_sc_hd__inv_2 inv0_1x1   (.A(pre0_1x1_b), .Y(pre0_1x1));
 // rd1
-sky130_fd_sc_hd__inv_8 pre1_0x0_b (.A(rd0_c_na0),  .Y(pre1_0x0_b);
-sky130_fd_sc_hd__inv_8 pre1_0x0   (.A(pre1_0x0_b), .Y(pre1_0x0);
-sky130_fd_sc_hd__inv_8 pre1_0x1_b (.A(rd0_c_na0),  .Y(pre1_0x1_b);
-sky130_fd_sc_hd__inv_8 pre1_0x1   (.A(pre1_0x1_b), .Y(pre1_0x1);
-sky130_fd_sc_hd__inv_8 pre1_1x0_b (.A(rd0_c_a0),   .Y(pre1_1x0_b);
-sky130_fd_sc_hd__inv_8 pre1_1x0   (.A(pre1_1x0_b), .Y(pre1_1x0);
-sky130_fd_sc_hd__inv_8 pre1_1x1_b (.A(rd0_c_a0),   .Y(pre1_1x1_b);
-sky130_fd_sc_hd__inv_8 pre1_1x1   (.A(pre1_1x1_b), .Y(pre1_1x1);
+sky130_fd_sc_hd__inv_2 inv1_0x0_b (.A(rd0_c_na0),  .Y(pre1_0x0_b));
+sky130_fd_sc_hd__inv_2 inv1_0x0   (.A(pre1_0x0_b), .Y(pre1_0x0));
+sky130_fd_sc_hd__inv_2 inv1_0x1_b (.A(rd0_c_na0),  .Y(pre1_0x1_b));
+sky130_fd_sc_hd__inv_2 inv1_0x1   (.A(pre1_0x1_b), .Y(pre1_0x1));
+sky130_fd_sc_hd__inv_2 inv1_1x0_b (.A(rd0_c_a0),   .Y(pre1_1x0_b));
+sky130_fd_sc_hd__inv_2 inv1_1x0   (.A(pre1_1x0_b), .Y(pre1_1x0));
+sky130_fd_sc_hd__inv_2 inv1_1x1_b (.A(rd0_c_a0),   .Y(pre1_1x1_b));
+sky130_fd_sc_hd__inv_2 inv1_1x1   (.A(pre1_1x1_b), .Y(pre1_1x1));
 
 // quad local evals, 2 ports
 local_eval_comp eval_0x0 (
-   .PRE0_b(pre0_0x0), .RBL0_L(rbl0_000), .RBL0_R(rbl0_010), .RBL0_Ob(rbl0_0x0),
-   .PRE1_b(pre1_0x0), .RBL1_L(rbl1_000), .RBL1_R(rbl1_010), .RBL1_Ob(rbl1_0x0),
+   .PRE0_b(pre0_0x0), .RBL0_L(rbl0_000), .RBL0_R(rbl0_010), .RBL0_O_b(rbl0_0x0),
+   .PRE1_b(pre1_0x0), .RBL1_L(rbl1_000), .RBL1_R(rbl1_010), .RBL1_O_b(rbl1_0x0)
 );
 local_eval_comp eval_0x1 (
-   .PRE0_b(pre0_0x1), .RBL0_L(rbl0_001), .RBL0_R(rbl0_011), .RBL0_Ob(rbl0_0x1),
-   .PRE1_b(pre1_0x1), .RBL1_L(rbl1_001), .RBL1_R(rbl1_011), .RBL1_Ob(rbl1_0x1),
+   .PRE0_b(pre0_0x1), .RBL0_L(rbl0_001), .RBL0_R(rbl0_011), .RBL0_O_b(rbl0_0x1),
+   .PRE1_b(pre1_0x1), .RBL1_L(rbl1_001), .RBL1_R(rbl1_011), .RBL1_O_b(rbl1_0x1)
 );
 local_eval_comp eval_1x0 (
-   .PRE0_b(pre0_1x0), .RBL0_L(rbl0_100), .RBL0_R(rbl0_110), .RBL0_Ob(rbl0_1x0),
-   .PRE1_b(pre1_1x0), .RBL1_L(rbl1_100), .RBL1_R(rbl1_110), .RBL1_Ob(rbl1_1x0),
+   .PRE0_b(pre0_1x0), .RBL0_L(rbl0_100), .RBL0_R(rbl0_110), .RBL0_O_b(rbl0_1x0),
+   .PRE1_b(pre1_1x0), .RBL1_L(rbl1_100), .RBL1_R(rbl1_110), .RBL1_O_b(rbl1_1x0)
 );
 local_eval_comp eval_1x1 (
-   .PRE0_b(pre0_1x1), .RBL0_L(rbl0_101), .RBL0_R(rbl0_111), .RBL0_Ob(rbl0_1x1),
-   .PRE1_b(pre1_1x1), .RBL1_L(rbl1_101), .RBL1_R(rbl1_111), .RBL1_Ob(rbl1_1x1),
+   .PRE0_b(pre0_1x1), .RBL0_L(rbl0_101), .RBL0_R(rbl0_111), .RBL0_O_b(rbl0_1x1),
+   .PRE1_b(pre1_1x1), .RBL1_L(rbl1_101), .RBL1_R(rbl1_111), .RBL1_O_b(rbl1_1x1)
 );
 
 // separate ports by quads for placement
@@ -477,44 +517,83 @@ local_eval_comp eval_1x1 (
 // wtf do wbl get another level buffering for far pairs? where? local eval col?
 inout_comp io (
 
-    .rd0_c_na0(rd0_c_na0_i),
-    .rd0_c_a0(rd0_c_a0_i),
-    .rd0_na1_na2(rd0_na1_na2_i),
-    .rd0_na1_a2(rd0_na1_a2_i),
-    .rd0_a1_na2(rd0_a1_na2_i),
-    .rd0_a1_a2(rd0_a1_a2_i),
-    .rd0_na3(rd0_na3_i),
-    .rd0_a3(rd0_a3_i),
-    .rd0_na4_na5(rd0_na4_na5_i),
-    .rd0_na4_a5(rd0_na4_a5_i),
-    .rd0_a4_na5(rd0_a4_na5_i),
-    .rd0_a4_a5(rd0_a4_a5_i),
+    .rd0_c_na0(rd0_c_na0),
+    .rd0_c_a0(rd0_c_a0),
+    .rd0_na1_na2(rd0_na1_na2),
+    .rd0_na1_a2(rd0_na1_a2),
+    .rd0_a1_na2(rd0_a1_na2),
+    .rd0_a1_a2(rd0_a1_a2),
+    .rd0_na3(rd0_na3),
+    .rd0_a3(rd0_a3),
+    .rd0_na4_na5(rd0_na4_na5),
+    .rd0_na4_a5(rd0_na4_a5),
+    .rd0_a4_na5(rd0_a4_na5),
+    .rd0_a4_a5(rd0_a4_a5),
 
-    .rd1_c_na0(rd1_c_na0_i),
-    .rd1_c_a0(rd1_c_a0_i),
-    .rd1_na1_na2(rd1_na1_na2_i),
-    .rd1_na1_a2(rd1_na1_a2_i),
-    .rd1_a1_na2(rd1_a1_na2_i),
-    .rd1_a1_a2(rd1_a1_a2_i),
-    .rd1_na3(rd1_na3_i),
-    .rd1_a3(rd1_a3_i),
-    .rd1_na4_na5(rd1_na4_na5_i),
-    .rd1_na4_a5(rd1_na4_a5_i),
-    .rd1_a4_na5(rd1_a4_na5_i),
-    .rd1_a4_a5(rd1_a4_a5_i),
+    .rd1_c_na0(rd1_c_na0),
+    .rd1_c_a0(rd1_c_a0),
+    .rd1_na1_na2(rd1_na1_na2),
+    .rd1_na1_a2(rd1_na1_a2),
+    .rd1_a1_na2(rd1_a1_na2),
+    .rd1_a1_a2(rd1_a1_a2),
+    .rd1_na3(rd1_na3),
+    .rd1_a3(rd1_a3),
+    .rd1_na4_na5(rd1_na4_na5),
+    .rd1_na4_a5(rd1_na4_a5),
+    .rd1_a4_na5(rd1_a4_na5),
+    .rd1_a4_a5(rd1_a4_a5),
 
-    .wr0_c_na0(wr0_c_na0_i),
-    .wr0_c_a0(wr0_c_a0_i),
-    .wr0_na1_na2(wr0_na1_na2_i),
-    .wr0_na1_a2(wr0_na1_a2_i),
-    .wr0_a1_na2(wr0_a1_na2_i),
-    .wr0_a1_a2(wr0_a1_a2_i),
-    .wr0_na3(wr0_na3_i),
-    .wr0_a3(wr0_a3_i),
-    .wr0_na4_na5(wr0_na4_na5_i),
-    .wr0_na4_a5(wr0_na4_a5_i),
-    .wr0_a4_na5(wr0_a4_na5_i),
-    .wr0_a4_a5(wr0_a4_a5_i),
+    .wr0_c_na0(wr0_c_na0),
+    .wr0_c_a0(wr0_c_a0),
+    .wr0_na1_na2(wr0_na1_na2),
+    .wr0_na1_a2(wr0_na1_a2),
+    .wr0_a1_na2(wr0_a1_na2),
+    .wr0_a1_a2(wr0_a1_a2),
+    .wr0_na3(wr0_na3),
+    .wr0_a3(wr0_a3),
+    .wr0_na4_na5(wr0_na4_na5),
+    .wr0_na4_a5(wr0_na4_a5),
+    .wr0_a4_na5(wr0_a4_na5),
+    .wr0_a4_a5(wr0_a4_a5),
+
+    .rd0_c_na0_i(rd0_c_na0_i),
+    .rd0_c_a0_i(rd0_c_a0_i),
+    .rd0_na1_na2_i(rd0_na1_na2_i),
+    .rd0_na1_a2_i(rd0_na1_a2_i),
+    .rd0_a1_na2_i(rd0_a1_na2_i),
+    .rd0_a1_a2_i(rd0_a1_a2_i),
+    .rd0_na3_i(rd0_na3_i),
+    .rd0_a3_i(rd0_a3_i),
+    .rd0_na4_na5_i(rd0_na4_na5_i),
+    .rd0_na4_a5_i(rd0_na4_a5_i),
+    .rd0_a4_na5_i(rd0_a4_na5_i),
+    .rd0_a4_a5_i(rd0_a4_a5_i),
+
+    .rd1_c_na0_i(rd1_c_na0_i),
+    .rd1_c_a0_i(rd1_c_a0_i),
+    .rd1_na1_na2_i(rd1_na1_na2_i),
+    .rd1_na1_a2_i(rd1_na1_a2_i),
+    .rd1_a1_na2_i(rd1_a1_na2_i),
+    .rd1_a1_a2_i(rd1_a1_a2_i),
+    .rd1_na3_i(rd1_na3_i),
+    .rd1_a3_i(rd1_a3_i),
+    .rd1_na4_na5_i(rd1_na4_na5_i),
+    .rd1_na4_a5_i(rd1_na4_a5_i),
+    .rd1_a4_na5_i(rd1_a4_na5_i),
+    .rd1_a4_a5_i(rd1_a4_a5_i),
+
+    .wr0_c_na0_i(wr0_c_na0_i),
+    .wr0_c_a0_i(wr0_c_a0_i),
+    .wr0_na1_na2_i(wr0_na1_na2_i),
+    .wr0_na1_a2_i(wr0_na1_a2_i),
+    .wr0_a1_na2_i(wr0_a1_na2_i),
+    .wr0_a1_a2_i(wr0_a1_a2_i),
+    .wr0_na3_i(wr0_na3_i),
+    .wr0_a3_i(wr0_a3_i),
+    .wr0_na4_na5_i(wr0_na4_na5_i),
+    .wr0_na4_a5_i(wr0_na4_a5_i),
+    .wr0_a4_na5_i(wr0_a4_na5_i),
+    .wr0_a4_a5_i(wr0_a4_a5_i),
 
     .rd0_dat_0x0(rbl0_0x0),
     .rd0_dat_0x1(rbl0_0x1),
@@ -528,15 +607,25 @@ inout_comp io (
     .rd1_dat_1x1(rbl1_1x1),
     .rd1_dat(rd1_dat),
 
-    .wr0_dat_0x0(wbl_0x0),
-    .wr0_dat_b_000(wbl_b_0x0),
-    .wr0_dat_0x1(wbl_0x1),
-    .wr0_dat_b_0x1(wbl_b_0x1),
-    .wr0_dat_1x0(wbl_1x0),
-    .wr0_dat_b_1x0(wbl_b_1x0),
-    .wr0_dat_1x1(wbl_1x1),
-    .wr0_dat_b_1x1(wbl_b_1x1)
+    .wr0_dat(wr0_dat),
+    .wr0_dat_0x0(wbl0_0x0),
+    .wr0_dat_b_0x0(wbl0_b_0x0),
+    .wr0_dat_0x1(wbl0_0x1),
+    .wr0_dat_b_0x1(wbl0_b_0x1),
+    .wr0_dat_1x0(wbl0_1x0),
+    .wr0_dat_b_1x0(wbl0_b_1x0),
+    .wr0_dat_1x1(wbl0_1x1),
+    .wr0_dat_b_1x1(wbl0_b_1x1)
 
 );
+
+assign wbl0_b_000 = wbl0_b_0x0;
+assign wbl0_b_001 = wbl0_b_0x1;
+assign wbl0_b_010 = wbl0_b_0x0;
+assign wbl0_b_011 = wbl0_b_0x1;
+assign wbl0_b_100 = wbl0_b_1x0;
+assign wbl0_b_101 = wbl0_b_0x1;
+assign wbl0_b_110 = wbl0_b_1x0;
+assign wbl0_b_111 = wbl0_b_0x1;
 
 endmodule

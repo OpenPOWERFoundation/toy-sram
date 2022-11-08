@@ -36,7 +36,7 @@ module regfile_shard_2r1w_64x24 (
     input         rd0_na4_a5,
     input         rd0_a4_na5,
     input         rd0_a4_a5,
-    output [0:31] rd0_dat,
+    output [0:23] rd0_dat,
 
     input         rd1_c_na0,
     input         rd1_c_a0,
@@ -50,7 +50,7 @@ module regfile_shard_2r1w_64x24 (
     input         rd1_na4_a5,
     input         rd1_a4_na5,
     input         rd1_a4_a5,
-    output [0:31] rd1_dat,
+    output [0:23] rd1_dat,
 
     input         wr0_c_na0,
     input         wr0_c_a0,
@@ -64,7 +64,7 @@ module regfile_shard_2r1w_64x24 (
     input         wr0_na4_a5,
     input         wr0_a4_na5,
     input         wr0_a4_a5,
-    input [0:31]  wr0_dat
+    input [0:23]  wr0_dat
 
 );
 
@@ -152,7 +152,7 @@ toysram_16x12 w10 (
    .RBL0(rbl0_16_31_00_11),
    .RBL1(rbl1_16_31_00_11),
    .WBL(wbl_16_31_00_11),
-   .WBL(~wbl_16_31_00_11)
+   .WBLb(~wbl_16_31_00_11)
 );
 toysram_16x12 w11 (
    .RWL0(rwl0_16_31_12_23),
@@ -161,7 +161,7 @@ toysram_16x12 w11 (
    .RBL0(rbl0_16_31_12_23),
    .RBL1(rbl1_16_31_12_23),
    .WBL(wbl_16_31_12_23),
-   .WBL(~wbl_16_31_12_23)
+   .WBLb(~wbl_16_31_12_23)
 );
 
 // words 32:47
