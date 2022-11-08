@@ -18,7 +18,7 @@ SIM ?= icarus
 
 # icarus
 
-VERILOG_ROOT = src
+VERILOG_ROOT = src/array
 
 COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
 
@@ -26,12 +26,11 @@ COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
 
 # rtl
 TOPLEVEL_LANG = verilog
-# top-level to enable trace, etc.
-VERILOG_SOURCES = ./test_ra_sdr_64x72.v
-TOPLEVEL = test_ra_sdr_64x72
+VERILOG_SOURCES = ./tb_ra_64x72_2r1w.v
+TOPLEVEL = tb_ra_64x72_2r1w
 
 # python test
-MODULE = tb
+MODULE = tb_ra_64x72
 TESTCASE = tb
 
 # cocotb make rules
@@ -42,5 +41,5 @@ build: clean sim fst
 run: sim fst
 
 fst:
-	vcd2fst test_ra_sdr_64x72.vcd test_ra_sdr_64x72.fst
-	rm test_ra_sdr_64x72.vcd
+	vcd2fst tb_ra_64x72.vcd tb_ra_64x72.fst
+	rm tb_ra_64x72.vcd

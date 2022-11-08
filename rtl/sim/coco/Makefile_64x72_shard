@@ -18,7 +18,6 @@ SIM ?= icarus
 
 # icarus
 #
-#VERILOG_ROOT = ../src/array_behav
 VERILOG_ROOT = src/array_shard
 COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
 
@@ -26,8 +25,7 @@ COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
 
 # rtl
 TOPLEVEL_LANG = verilog
-# top-level to enable trace, etc.
-VERILOG_SOURCES = ./tb_ra_64x72_2r1w.v
+VERILOG_SOURCES = ./tb_ra_64x72_2r1w.v $(VERILOG_ROOT)/wordlines_comp.v $(VERILOG_ROOT)/sky130_hd.v $(VERILOG_ROOT)/sky130_fd.v
 TOPLEVEL = tb_ra_64x72_2r1w
 
 # python test

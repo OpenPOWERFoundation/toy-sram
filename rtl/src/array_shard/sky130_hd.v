@@ -67,12 +67,8 @@ module sky130_fd_sc_hd__nand2 (
     supply1 VPB ;
     supply0 VNB ;
 
-    // Local signals
-    wire and0_out_X;
-
     //  Name  Output      Other arguments
-    nand nand0 (and0_out_X, A, B           );
-    buf  buf0 (X         , and0_out_X     );
+    nand nand0 (X, A, B);
 
 endmodule
 
@@ -117,6 +113,76 @@ module sky130_fd_sc_hd__nand2_2 (
     supply0 VNB ;
 
     sky130_fd_sc_hd__nand2 base (
+        .X(X),
+        .A(A),
+        .B(B)
+    );
+
+endmodule
+
+module sky130_fd_sc_hd__or2 (
+    X,
+    A,
+    B
+);
+
+    // Module ports
+    output X;
+    input  A;
+    input  B;
+
+    // Module supplies
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    //  Name  Output      Other arguments
+    or or0 (X, A, B);
+
+endmodule
+
+module sky130_fd_sc_hd__or2_1 (
+    X,
+    A,
+    B
+);
+
+    output X;
+    input  A;
+    input  B;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    sky130_fd_sc_hd__or2 base (
+        .X(X),
+        .A(A),
+        .B(B)
+    );
+
+endmodule
+
+module sky130_fd_sc_hd__or2_2 (
+    X,
+    A,
+    B
+);
+
+    output X;
+    input  A;
+    input  B;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    sky130_fd_sc_hd__or2 base (
         .X(X),
         .A(A),
         .B(B)

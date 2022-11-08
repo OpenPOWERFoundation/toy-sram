@@ -51,102 +51,104 @@ reg [0:11] mem_14;
 reg [0:11] mem_15;
 
 // word-select
-assign RBL0 = (mem_00  & {12{RWL0[0]}})  |
-              (mem_01  & {12{RWL0[1]}})  |
-              (mem_02  & {12{RWL0[2]}})  |
-              (mem_03  & {12{RWL0[3]}})  |
-              (mem_04  & {12{RWL0[4]}})  |
-              (mem_05  & {12{RWL0[5]}})  |
-              (mem_06  & {12{RWL0[6]}})  |
-              (mem_07  & {12{RWL0[7]}})  |
-              (mem_08  & {12{RWL0[8]}})  |
-              (mem_09  & {12{RWL0[9]}})  |
-              (mem_10  & {12{RWL0[10]}}) |
-              (mem_11  & {12{RWL0[11]}}) |
-              (mem_12  & {12{RWL0[12]}}) |
-              (mem_13  & {12{RWL0[13]}}) |
-              (mem_14  & {12{RWL0[14]}}) |
-              (mem_15  & {12{RWL0[15]}});
+// the bits are negative-active at this point
+// the cell outputs 0 if stored '1' AND RWLx; RBLx[0:11] are dot-AND'ed
+assign RBL0 = ~(mem_00  & {12{RWL0[0]}})  &
+              ~(mem_01  & {12{RWL0[1]}})  &
+              ~(mem_02  & {12{RWL0[2]}})  &
+              ~(mem_03  & {12{RWL0[3]}})  &
+              ~(mem_04  & {12{RWL0[4]}})  &
+              ~(mem_05  & {12{RWL0[5]}})  &
+              ~(mem_06  & {12{RWL0[6]}})  &
+              ~(mem_07  & {12{RWL0[7]}})  &
+              ~(mem_08  & {12{RWL0[8]}})  &
+              ~(mem_09  & {12{RWL0[9]}})  &
+              ~(mem_10  & {12{RWL0[10]}}) &
+              ~(mem_11  & {12{RWL0[11]}}) &
+              ~(mem_12  & {12{RWL0[12]}}) &
+              ~(mem_13  & {12{RWL0[13]}}) &
+              ~(mem_14  & {12{RWL0[14]}}) &
+              ~(mem_15  & {12{RWL0[15]}});
 
-assign RBL1 = (mem_00  & {12{RWL1[0]}})  |
-              (mem_01  & {12{RWL1[1]}})  |
-              (mem_02  & {12{RWL1[2]}})  |
-              (mem_03  & {12{RWL1[3]}})  |
-              (mem_04  & {12{RWL1[4]}})  |
-              (mem_05  & {12{RWL1[5]}})  |
-              (mem_06  & {12{RWL1[6]}})  |
-              (mem_07  & {12{RWL1[7]}})  |
-              (mem_08  & {12{RWL1[8]}})  |
-              (mem_09  & {12{RWL1[9]}})  |
-              (mem_10  & {12{RWL1[10]}}) |
-              (mem_11  & {12{RWL1[11]}}) |
-              (mem_12  & {12{RWL1[12]}}) |
-              (mem_13  & {12{RWL1[13]}}) |
-              (mem_14  & {12{RWL1[14]}}) |
-              (mem_15  & {12{RWL1[15]}});
+assign RBL1 = ~(mem_00  & {12{RWL1[0]}})  &
+              ~(mem_01  & {12{RWL1[1]}})  &
+              ~(mem_02  & {12{RWL1[2]}})  &
+              ~(mem_03  & {12{RWL1[3]}})  &
+              ~(mem_04  & {12{RWL1[4]}})  &
+              ~(mem_05  & {12{RWL1[5]}})  &
+              ~(mem_06  & {12{RWL1[6]}})  &
+              ~(mem_07  & {12{RWL1[7]}})  &
+              ~(mem_08  & {12{RWL1[8]}})  &
+              ~(mem_09  & {12{RWL1[9]}})  &
+              ~(mem_10  & {12{RWL1[10]}}) &
+              ~(mem_11  & {12{RWL1[11]}}) &
+              ~(mem_12  & {12{RWL1[12]}}) &
+              ~(mem_13  & {12{RWL1[13]}}) &
+              ~(mem_14  & {12{RWL1[14]}}) &
+              ~(mem_15  & {12{RWL1[15]}});
 
 always @(posedge WWL[0]) begin
-   #10; mem_00 <= ~WBLb;
+   mem_00 <= ~WBLb;
 end
 
 always @(posedge WWL[1]) begin
-   #10; mem_01 <= ~WBLb;
+   mem_01 <= ~WBLb;
 end
 
 always @(posedge WWL[2]) begin
-   #10; mem_02 <= ~WBLb;
+   mem_02 <= ~WBLb;
 end
 
 always @(posedge WWL[3]) begin
-   #10; mem_03 <= ~WBLb;
+   mem_03 <= ~WBLb;
 end
 
 always @(posedge WWL[4]) begin
-   #10; mem_04 <= ~WBLb;
+   mem_04 <= ~WBLb;
 end
 
 always @(posedge WWL[5]) begin
-   #10; mem_05 <= ~WBLb;
+   mem_05 <= ~WBLb;
 end
 
 always @(posedge WWL[6]) begin
-   #10; mem_06 <= ~WBLb;
+   mem_06 <= ~WBLb;
 end
 
 always @(posedge WWL[7]) begin
-   #10; mem_07 <= ~WBLb;
+   mem_07 <= ~WBLb;
 end
 
 always @(posedge WWL[8]) begin
-   #10; mem_08 <= ~WBLb;
+   mem_08 <= ~WBLb;
 end
 
 always @(posedge WWL[9]) begin
-   #10; mem_09 <= ~WBLb;
+   mem_09 <= ~WBLb;
 end
 
 always @(posedge WWL[10]) begin
-   #10; mem_10 <= ~WBLb;
+   mem_10 <= ~WBLb;
 end
 
 always @(posedge WWL[11]) begin
-   #10; mem_11 <= ~WBLb;
+   mem_11 <= ~WBLb;
 end
 
 always @(posedge WWL[12]) begin
-   #10; mem_12 <= ~WBLb;
+   mem_12 <= ~WBLb;
 end
 
 always @(posedge WWL[13]) begin
-   #10; mem_13 <= ~WBLb;
+   mem_13 <= ~WBLb;
 end
 
 always @(posedge WWL[14]) begin
-   #10; mem_14 <= ~WBLb;
+   mem_14 <= ~WBLb;
 end
 
 always @(posedge WWL[15]) begin
-   #10; mem_15 <= ~WBLb;
+   mem_15 <= ~WBLb;
 end
 
 // assert errors (multiwrite, etc.)

@@ -139,11 +139,44 @@ assign rd0_na4_a5_i = rd0_na4_a5;
 assign rd0_a4_na5_i = rd0_a4_na5;
 assign rd0_a4_a5_i = rd0_a4_a5;
 
-// dot-or then buf?
-assign rd0_dat = {rd0_dat_0x0 | rd0_dat_1x0, rd0_dat_0x1 | rd0_dat_1x1};
-assign rd1_dat = {rd1_dat_0x0 | rd1_dat_1x0, rd1_dat_0x1 | rd1_dat_1x1};
+assign rd1_c_na0_i = rd1_c_na0;
+assign rd1_c_a0_i = rd1_c_a0;
+assign rd1_na1_na2_i = rd1_na1_na2;
+assign rd1_na1_a2_i = rd1_na1_a2;
+assign rd1_a1_na2_i = rd1_a1_na2;
+assign rd1_a1_a2_i = rd1_a1_a2;
+assign rd1_na3_i = rd1_na3;
+assign rd1_a3_i = rd1_a3;
+assign rd1_na4_na5_i = rd1_na4_na5;
+assign rd1_na4_a5_i = rd1_na4_a5;
+assign rd1_a4_na5_i = rd1_a4_na5;
+assign rd1_a4_a5_i = rd1_a4_a5;
+
+assign wr0_c_na0_i = wr0_c_na0;
+assign wr0_c_a0_i = wr0_c_a0;
+assign wr0_na1_na2_i = wr0_na1_na2;
+assign wr0_na1_a2_i = wr0_na1_a2;
+assign wr0_a1_na2_i = wr0_a1_na2;
+assign wr0_a1_a2_i = wr0_a1_a2;
+assign wr0_na3_i = wr0_na3;
+assign wr0_a3_i = wr0_a3;
+assign wr0_na4_na5_i = wr0_na4_na5;
+assign wr0_na4_a5_i = wr0_na4_a5;
+assign wr0_a4_na5_i = wr0_a4_na5;
+assign wr0_a4_a5_i = wr0_a4_a5;
 
 genvar i;
+
+for (i = 0; i < 12; i = i + 1) begin
+   sky130_fd_sc_hd__or2_1 SEL0 (.A(rd0_dat_0x0[i]), .B(rd0_dat_1x0[i]), .X(rd0_dat[i]));
+   sky130_fd_sc_hd__or2_1 SEL1 (.A(rd1_dat_0x0[i]), .B(rd1_dat_1x0[i]), .X(rd1_dat[i]));
+end
+
+for (i = 0; i < 12; i = i + 1) begin
+   sky130_fd_sc_hd__or2_1 SEL0 (.A(rd0_dat_0x1[i]), .B(rd0_dat_1x1[i]), .X(rd0_dat[i+12]));
+   sky130_fd_sc_hd__or2_1 SEL1 (.A(rd1_dat_0x1[i]), .B(rd1_dat_1x1[i]), .X(rd1_dat[i+12]));
+end
+
 for (i = 0; i < 12; i = i + 1) begin
   sky130_fd_sc_hd__buf_1 BUF_0 (.A(wr0_dat[i]), .X(wr0_dat_0x0[i]));
   sky130_fd_sc_hd__inv_1 INV_0 (.A(wr0_dat[i]), .Y(wr0_dat_b_0x0[i]));

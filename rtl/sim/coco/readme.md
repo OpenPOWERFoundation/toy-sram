@@ -10,7 +10,7 @@
 
 ```
 make RANDOM_SEED=8675309 -f Makefile_64x72_shard build
-gtkwave tb_ra_64x72.fst ra_64x72_2r1w.gtkw
+gtkwave tb_ra_64x72.fst ra_shard_64x72_2r1w.gtkw
 ```
 
 * just run

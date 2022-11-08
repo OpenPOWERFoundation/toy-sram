@@ -140,17 +140,7 @@ generate
 
 endgenerate
 
-// toysram_16x12 component needs rising edge to check wwl
 assign strobe_int = strobe;
-/*
-// don't use the clock as data in sim mode
-if (`GENMODE == 0)
-   assign strobe_int = 1'b1;
-else
-   assign strobe_int = strobe;
-*/
-
-// generate the controls for the array
 
 address_clock_sdr_2r1w_64 #(
 
@@ -208,7 +198,7 @@ address_clock_sdr_2r1w_64 #(
 
 );
 
-regfile_shard_2r1w_64x24 ra0(
+regfile_shard_64x24_2r1w_comp ra0(
 
       .rd0_c_na0   (rd0_c_na0),
       .rd0_c_a0    (rd0_c_a0),
@@ -254,7 +244,7 @@ regfile_shard_2r1w_64x24 ra0(
 
 );
 
-regfile_shard_2r1w_64x24 ra1(
+regfile_shard_64x24_2r1w_comp ra1(
 
       .rd0_c_na0   (rd0_c_na0),
       .rd0_c_a0    (rd0_c_a0),
@@ -300,7 +290,7 @@ regfile_shard_2r1w_64x24 ra1(
 
 );
 
-regfile_shard_2r1w_64x24 ra2 (
+regfile_shard_64x24_2r1w_comp ra2 (
 
       .rd0_c_na0   (rd0_c_na0),
       .rd0_c_a0    (rd0_c_a0),

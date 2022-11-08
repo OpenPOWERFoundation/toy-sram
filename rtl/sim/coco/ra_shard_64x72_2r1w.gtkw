@@ -1,0 +1,81 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Tue Nov  8 22:49:44 2022
+[*]
+[dumpfile] "/data/projects/toy-sram/rtl/sim/coco/tb_ra_64x72.fst"
+[dumpfile_mtime] "Tue Nov  8 22:25:44 2022"
+[dumpfile_size] 98436
+[savefile] "/data/projects/toy-sram/rtl/sim/coco/ra_shard_64x72_2r1w.gtkw"
+[timestart] 75590
+[size] 1699 1047
+[pos] 188 268
+*-12.000000 90500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_ra_64x72_2r1w.
+[treeopen] tb_ra_64x72_2r1w.ra.
+[treeopen] tb_ra_64x72_2r1w.ra.ra0.
+[treeopen] tb_ra_64x72_2r1w.ra.ra0.r000.
+[sst_width] 242
+[signals_width] 257
+[sst_expanded] 1
+[sst_vpaned_height] 301
+@28
+tb_ra_64x72_2r1w.clk
+tb_ra_64x72_2r1w.rd_enb_0
+@22
+tb_ra_64x72_2r1w.rd_adr_0[0:5]
+tb_ra_64x72_2r1w.rd_dat_0[0:71]
+@28
+tb_ra_64x72_2r1w.rd_enb_1
+@22
+tb_ra_64x72_2r1w.rd_adr_1[0:5]
+tb_ra_64x72_2r1w.rd_dat_1[0:71]
+@28
+tb_ra_64x72_2r1w.wr_enb_0
+@22
+tb_ra_64x72_2r1w.wr_adr_0[0:5]
+tb_ra_64x72_2r1w.wr_dat_0[0:71]
+@200
+-RA
+@28
+tb_ra_64x72_2r1w.ra.rd_enb_0_q
+@22
+tb_ra_64x72_2r1w.ra.rd_adr_0_q[0:5]
+tb_ra_64x72_2r1w.ra.rd_dat_0_q[0:71]
+@28
+tb_ra_64x72_2r1w.ra.rd_enb_1_q
+@22
+tb_ra_64x72_2r1w.ra.rd_adr_1_q[0:5]
+tb_ra_64x72_2r1w.ra.rd_dat_1_q[0:71]
+@28
+tb_ra_64x72_2r1w.ra.wr_enb_0_q
+@22
+tb_ra_64x72_2r1w.ra.wr_adr_0_q[0:5]
+tb_ra_64x72_2r1w.ra.wr_dat_0_q[0:71]
+@200
+-RA0
+@28
+tb_ra_64x72_2r1w.ra.ra0.rd1_c_a0
+tb_ra_64x72_2r1w.ra.ra0.rd1_c_a0_i
+tb_ra_64x72_2r1w.ra.ra0.rd1_c_na0_i
+@22
+tb_ra_64x72_2r1w.ra.ra0.rbl1_000[0:11]
+@200
+-R000
+@22
+tb_ra_64x72_2r1w.ra.ra0.r000.mem_00[0:11]
+tb_ra_64x72_2r1w.ra.ra0.r000.RWL0[0:15]
+tb_ra_64x72_2r1w.ra.ra0.r000.RWL1[0:15]
+tb_ra_64x72_2r1w.ra.ra0.r000.RBL0[0:11]
+tb_ra_64x72_2r1w.ra.ra0.r000.RBL1[0:11]
+tb_ra_64x72_2r1w.ra.ra0.r000.WWL[0:15]
+tb_ra_64x72_2r1w.ra.ra0.r000.WBL[0:11]
+tb_ra_64x72_2r1w.ra.ra0.r000.WBLb[0:11]
+@200
+-Eval
+@22
+tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_L[0:11]
+tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_R[0:11]
+@23
+tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_O_b[0:11]
+[pattern_trace] 1
+[pattern_trace] 0

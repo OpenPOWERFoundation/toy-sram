@@ -157,12 +157,11 @@ genvar i, j;
 generate
    for (i = 0; i < 8; i = i + 1) begin
       for (j = 0; j < 4; j = j + 1) begin
-         sky130_fd_sc_hd__nand2_2 DCD_Cb (.A(dcd_a[i]), .B(dcd_b[j]), .X(wl_b[i*8+j]));
-         sky130_fd_sc_hd__inv_2 DCD_C (.A(wl_b[i*8+j]), .Y(wl[i*8+j]));
+         sky130_fd_sc_hd__nand2_2 DCD_Cb (.A(dcd_a[i]), .B(dcd_b[j]), .X(wl_b[i*4+j]));
+         sky130_fd_sc_hd__inv_2 DCD_C (.A(wl_b[i*4+j]), .Y(wl[i*4+j]));
       end
    end
 endgenerate
-
 endmodule
 
 module wordlines_comp_64 (
