@@ -32,9 +32,44 @@ Specific bandwidth can be expressed with two metrics:
 * Technology dependent “X TB/(sec * mm 2 )”
 * Technology independent “Y 1/(FO4 delay * PC PITCH * min horizontal metal pitch)”
 
-<img align="left" width="40%" src="/custom/layout/sram_sp.png">
-<img align="right"  width="40%" src="/custom/layout/sram_dp.png">
-<br clear="all" />
+## Array Design (64x24_2R1W)
+
+#### 2R1W memory cell
+
+   * read bitlines are the NFET part of a domino stage
+
+<image src="./cell.png">
+
+#### Subarray
+
+   * 16 word x 12 bit array of memory cells
+
+#### 64x24_2R1W 'hard' array
+
+   * (8) subarrays
+
+   * (12) addr/strobe inputs per port are decoded to 64 word lines and precharge enable
+
+   * subarray bitlines are precharged and combined with neighbor subarray in local eval cell
+
+   * final data outs are selected from half-array local evals
+
+#### 64x24_2R1W 'logical' array
+
+   * strobe plus 6 address lines predecoded to 12 array input lines per port
+
+   * port latching
+
+### Other
+
+#### SDR/DDR
+
+   * double-pumping the strobe allows 4R2W operation
+
+#### LSDL
+
+   * a custom LSDL cell can be used to latch the outputs in the array
+
 
 ## Links
 
