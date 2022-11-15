@@ -51,13 +51,13 @@ module sky130_fd_sc_hd__and2_1 (
 endmodule
 
 module sky130_fd_sc_hd__nand2 (
-    X,
+    Y,
     A,
     B
 );
 
     // Module ports
-    output X;
+    output Y;
     input  A;
     input  B;
 
@@ -68,17 +68,17 @@ module sky130_fd_sc_hd__nand2 (
     supply0 VNB ;
 
     //  Name  Output      Other arguments
-    nand nand0 (X, A, B);
+    nand nand0 (Y, A, B);
 
 endmodule
 
 module sky130_fd_sc_hd__nand2_1 (
-    X,
+    Y,
     A,
     B
 );
 
-    output X;
+    output Y;
     input  A;
     input  B;
 
@@ -89,7 +89,7 @@ module sky130_fd_sc_hd__nand2_1 (
     supply0 VNB ;
 
     sky130_fd_sc_hd__nand2 base (
-        .X(X),
+        .Y(Y),
         .A(A),
         .B(B)
     );
@@ -97,12 +97,12 @@ module sky130_fd_sc_hd__nand2_1 (
 endmodule
 
 module sky130_fd_sc_hd__nand2_2 (
-    X,
+    Y,
     A,
     B
 );
 
-    output X;
+    output Y;
     input  A;
     input  B;
 
@@ -113,7 +113,7 @@ module sky130_fd_sc_hd__nand2_2 (
     supply0 VNB ;
 
     sky130_fd_sc_hd__nand2 base (
-        .X(X),
+        .Y(Y),
         .A(A),
         .B(B)
     );
@@ -187,6 +187,52 @@ module sky130_fd_sc_hd__or2_2 (
         .A(A),
         .B(B)
     );
+
+endmodule
+
+module sky130_fd_sc_hd__or3_1 (
+    X,
+    A,
+    B,
+    C
+);
+
+    output X;
+    input  A;
+    input  B;
+    input  C;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    or or0 (X, A, B, C);
+
+endmodule
+
+module sky130_fd_sc_hd__nor4_1 (
+    X,
+    A,
+    B,
+    C,
+    D
+);
+
+    output X;
+    input  A;
+    input  B;
+    input  C;
+    input  D;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    nor nor0 (X, A, B, C, D);
 
 endmodule
 
@@ -534,6 +580,72 @@ module sky130_fd_sc_hd__a22o_1 (
         .B1(B1),
         .B2(B2)
     );
+
+endmodule
+
+module sky130_fd_sc_hd__o22ai_1 (
+    X ,
+    A1,
+    A2,
+    B1,
+    B2
+);
+
+    output X ;
+    input  A1;
+    input  A2;
+    input  B1;
+    input  B2;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    // Local signals
+    wire or0_out ;
+    wire or1_out ;
+    wire and0_out_X;
+
+    //  Name  Output     Other arguments
+    or or0 (or0_out , B1, B2            );
+    or or1 (or1_out , A1, A2            );
+    and and0  (and0_out_X, or1_out, or0_out);
+    not inv0 (X        , and0_out_X         );
+
+endmodule
+
+module sky130_fd_sc_hd__a22oi_1 (
+    X ,
+    A1,
+    A2,
+    B1,
+    B2
+);
+
+    output X ;
+    input  A1;
+    input  A2;
+    input  B1;
+    input  B2;
+
+    // Voltage supply signals
+    supply1 VPWR;
+    supply0 VGND;
+    supply1 VPB ;
+    supply0 VNB ;
+
+    // Local signals
+    wire and0_out ;
+    wire and1_out ;
+    wire or0_out_X;
+
+    //  Name  Output     Other arguments
+    and and0 (and0_out , B1, B2            );
+    and and1 (and1_out , A1, A2            );
+    or or0  (or0_out_X, and1_out, and0_out);
+    not inv0 (X        , or0_out_X         );
 
 endmodule
 

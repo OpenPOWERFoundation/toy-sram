@@ -470,6 +470,7 @@ wordlines_comp_32 dcd_1 (
 
 // local eval
 
+//wtf move to decode!
 // precharge repower
 // during precharge c_na0 = c_a0 = 0
 // 4 copies to 000/010, 001/011, 100/110, 101,111 quads

@@ -125,7 +125,7 @@ module regfile_64x24_2r1w (
 // subarray cells; 4x2 16w/12b subarrays
 
 // words 00:15
-toysram_16x12 w00 (
+toysram_16x12 r000 (
    .RWL0(rwl0_00_15_00_11),
    .RWL1(rwl1_00_15_00_11),
    .WWL(wwl_00_15_00_11),
@@ -134,7 +134,7 @@ toysram_16x12 w00 (
    .WBL(wbl_00_15_00_11),
    .WBLb(~wbl_00_15_00_11)
 );
-toysram_16x12 w01 (
+toysram_16x12 r001 (
    .RWL0(rwl0_00_15_12_23),
    .RWL1(rwl1_00_15_12_23),
    .WWL(wwl_00_15_12_23),
@@ -145,7 +145,7 @@ toysram_16x12 w01 (
 );
 
 // words 16:31
-toysram_16x12 w10 (
+toysram_16x12 r010 (
    .RWL0(rwl0_16_31_00_11),
    .RWL1(rwl1_16_31_00_11),
    .WWL(wwl_16_31_00_11),
@@ -154,7 +154,7 @@ toysram_16x12 w10 (
    .WBL(wbl_16_31_00_11),
    .WBLb(~wbl_16_31_00_11)
 );
-toysram_16x12 w11 (
+toysram_16x12 r011 (
    .RWL0(rwl0_16_31_12_23),
    .RWL1(rwl1_16_31_12_23),
    .WWL(wwl_16_31_12_23),
@@ -165,7 +165,7 @@ toysram_16x12 w11 (
 );
 
 // words 32:47
-toysram_16x12 w20 (
+toysram_16x12 r100 (
    .RWL0(rwl0_32_47_00_11),
    .RWL1(rwl1_32_47_00_11),
    .WWL(wwl_32_47_00_11),
@@ -174,7 +174,7 @@ toysram_16x12 w20 (
    .WBL(wbl_32_47_00_11),
    .WBLb(~wbl_32_47_00_11)
 );
-toysram_16x12 w21 (
+toysram_16x12 r101 (
    .RWL0(rwl0_32_47_12_23),
    .RWL1(rwl1_32_47_12_23),
    .WWL(wwl_32_47_12_23),
@@ -185,7 +185,7 @@ toysram_16x12 w21 (
 );
 
 // words 48:63
-toysram_16x12 w30 (
+toysram_16x12 r110 (
    .RWL0(rwl0_48_63_00_11),
    .RWL1(rwl1_48_63_00_11),
    .WWL(wwl_48_63_00_11),
@@ -194,7 +194,7 @@ toysram_16x12 w30 (
    .WBL(wbl_48_63_00_11),
    .WBLb(~wbl_48_63_00_11)
 );
-toysram_16x12 w31 (
+toysram_16x12 r111 (
    .RWL0(rwl0_48_63_12_23),
    .RWL1(rwl1_48_63_12_23),
    .WWL(wwl_48_63_12_23),

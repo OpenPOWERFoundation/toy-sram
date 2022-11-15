@@ -64,7 +64,7 @@ initial begin
    #1;
 end
 
-ra_lcb_sdr lcb (
+ra_lcb #(.GENMODE(`GENMODE)) lcb (     // defined in Makefile
 
    .clk      (clk),
    .reset    (reset),
@@ -73,7 +73,7 @@ ra_lcb_sdr lcb (
 
 );
 
-ra_cfg_sdr #(.INIT(-1)) cnfig (
+ra_cfg #(.INIT(`CFGINIT)) cnfig (      // null, or defined in Makefile
 
    .clk      (clk),
    .reset    (reset),
@@ -83,7 +83,7 @@ ra_cfg_sdr #(.INIT(-1)) cnfig (
 
 );
 
-ra_bist_sdr bist (
+ra_bist bist (
 
    .clk         (clk),
    .reset       (reset),
@@ -108,7 +108,7 @@ ra_bist_sdr bist (
 
 );
 
-ra_64x72_2r1w ra (
+ra_64x72_2r1w #(.GENMODE(0)) ra (
 
    .clk        (clk),
    .reset      (reset),

@@ -15,19 +15,19 @@
 // Brief explanation of modifications:
 //
 // Modification 1: This modification extends the patent license to an implementation of the Work in physical form – i.e.,
-// it unambiguously permits a user to make and use the physical chip. 
+// it unambiguously permits a user to make and use the physical chip.
 
 // Predecode of 6 address bits into 4 one hot encodings
 
 `timescale 1 ns / 1 ns
 
-module predecode_sdr_64(
+module predecode (
 
     strobe,
     enable,
     address,
-    
-        // 12 predecoded address lines 2 - 4 - 2 - 4 one hot encoding
+
+    // 12 predecoded address lines 2 - 4 - 2 - 4 one hot encoding
     c_na0,  // clock and not address(0)
     c_a0,   // clock and address(0)
     na1_na2,// not address(1) and not address(2)
@@ -42,28 +42,28 @@ module predecode_sdr_64(
     a4_a5   // address(4) and address(5)
 
 );
-     
+
    input       strobe;
-   input 	enable; 
+   input 	   enable;
    input [0:5] address;
-   
-   output 	c_na0;
-   output 	c_a0;
-   output 	na1_na2;
-   output 	na1_a2;
-   output 	a1_na2;
-   output 	a1_a2;  // address(1) and address(2)
-   output 	na3;    // not address(3)
-   output 	a3;     // address(3)
-   output 	na4_na5;// not address(4) and not address(5)
-   output 	na4_a5; // not address(4) address(5)
-   output 	a4_na5; // address(4) and not address(5)
-   output 	a4_a5;  // address(4) and address(5)  
+
+   output 	   c_na0;
+   output 	   c_a0;
+   output 	   na1_na2;
+   output 	   na1_a2;
+   output 	   a1_na2;
+   output 	   a1_a2;  // address(1) and address(2)
+   output 	   na3;    // not address(3)
+   output 	   a3;     // address(3)
+   output 	   na4_na5;// not address(4) and not address(5)
+   output 	   na4_a5; // not address(4) address(5)
+   output 	   a4_na5; // address(4) and not address(5)
+   output 	   a4_a5;  // address(4) and address(5)
 
    wire clock_enable;
-  
+
    wire [0:5] inv_address;
-  
+
    wire n_c_na0;
    wire n_c_a0;
    wire n_na1_na2;
@@ -74,13 +74,13 @@ module predecode_sdr_64(
    wire n_na4_a5;
    wire n_a4_na5;
    wire n_a4_a5;
-   
+
 
   // and read or write enable with clock
   // does this need to be SSB placed?
   assign clock_enable = strobe & enable;
 
-   
+
   assign inv_address[0] = (~(address[0]));
   assign inv_address[1] = (~(address[1]));
   assign inv_address[2] = (~(address[2]));
@@ -88,36 +88,36 @@ module predecode_sdr_64(
   assign inv_address[4] = (~(address[4]));
   assign inv_address[5] = (~(address[5]));
 
-   
+
   // A(0) address predecode and gating with clock
 
   assign c_na0 = clock_enable & inv_address[0];
-    
+
   assign c_a0 = clock_enable & address[0];
-   
-   
+
+
   // A(1:2) address predecode
-  
+
   assign na1_na2 = inv_address[1] & inv_address[2];
-   		 
+
   assign na1_a2 = inv_address[1] & address[2];
-  
+
   assign a1_na2 = address[1] & inv_address[2];
-   
+
   assign a1_a2 = address[1] & address[2];
 
-   
+
   // A(3) address predecode
 
   assign na3 = inv_address[3];
   assign a3  = address[3];
-   
-  // A(4:5) address predecode   
-  
+
+  // A(4:5) address predecode
+
   assign na4_na5 = inv_address[4] & inv_address[5];
 
   assign na4_a5 = inv_address[4] & address[5];
-   
+
   assign a4_na5 = address[4] & inv_address[5];
   assign a4_a5 = address[4] & address[5];
 

@@ -74,3 +74,73 @@ Specific bandwidth can be expressed with two metrics:
 ## Links
 
 * skywater-pdk.slack.com#toysram
+
+
+## To Do
+
+### memory cell
+
+* schem, layout, spice, liberty files
+* *WRONG!* needs RWL0+RWL1
+
+### 64x24 array
+
+* subarray
+   * 16x12 gds/lef needed
+   * lib also?
+
+* eval cell
+   * can pfet be instantiated in rtl?
+      * if not, just create a custom cell just for it (le_pullup); can make
+        different strength versions and connect in rtl
+   * custom cell; nand2 + pfet pullup gated by precharge for L/R
+
+* quarter
+   * single macro with L/R subarrays and eval stack between
+   * then need just decode gap and i/o gap between four quarters
+
+* full with placed std cell decoders, etc.
+   * single macro with placed netlist cells
+
+### 64x72 array
+
+* rtl for in/out latching
+
+* rtl for strobe (sdr, ddr delay taps)
+
+* rtl for bist?
+
+* rtl for cfg (strobe)
+
+### Verif
+
+* cycle sim for basic 64x72 rtl
+
+* cycle sim for site
+
+* spice sim for 16x12 + eval + 16x12 (quarter)?
+
+### Site
+
+* ring oscillator?
+
+* multiarray?
+
+* scan interface
+
+* wb interface?
+
+### Extras
+
+* auto-convert memory cell and eval to 180 and build site
+
+* lsdl latch in 64x24 for data outs
+
+
+
+
+
+
+
+
+

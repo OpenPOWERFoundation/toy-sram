@@ -18,14 +18,23 @@ SIM ?= icarus
 
 # icarus
 #
+VERILOG_COMMON = src/array
 VERILOG_ROOT = src/array_shard
-COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
+
+# CFGINIT
+# only no delay works as-is in cycle sim
+# 00000000 : disable delay
+# 00000001 : enable delay, sdr
+# 00000003 : enable delay, ddr
+#
+#COMPILE_ARGS = -y$(VERILOG_ROOT) -y$(VERILOG_COMMON) -DGENMODE=1 -DCFGINIT=1
+COMPILE_ARGS = -y$(VERILOG_ROOT) -y$(VERILOG_COMMON) -DGENMODE=1
 
 # other options
 
 # rtl
 TOPLEVEL_LANG = verilog
-VERILOG_SOURCES = ./tb_ra_64x72_2r1w.v $(VERILOG_ROOT)/wordlines_comp.v $(VERILOG_ROOT)/sky130_hd.v $(VERILOG_ROOT)/sky130_fd.v
+VERILOG_SOURCES = ./tb_ra_64x72_2r1w.v $(VERILOG_ROOT)/sky130_hd.v
 TOPLEVEL = tb_ra_64x72_2r1w
 
 # python test

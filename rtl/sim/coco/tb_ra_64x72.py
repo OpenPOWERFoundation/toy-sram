@@ -183,6 +183,8 @@ def printstate_32(sim):
 async def init(dut, sim):
    """Initialize inputs. """
 
+   dut.cfg_wr = 0
+
    return
 
 async def initSite(dut, sim):
@@ -297,7 +299,7 @@ async def tb(dut):
    sim.ddr = False
    sim.clk1xPeriod = 1
    sim.clk2x = False
-   sim.maxCycles = 50000
+   sim.maxCycles = 10000
 
    # init stuff
    await init(dut, sim)

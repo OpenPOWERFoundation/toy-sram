@@ -29,9 +29,11 @@ module local_eval (
 
 );
 
-sky130_fd_pr__pfet_01v8 PRE_L (.G(PRE_b), .D(RBL_L));
-sky130_fd_pr__pfet_01v8 PRE_R (.G(PRE_b), .D(RBL_R));
-sky130_fd_sc_hd__nand2_1 SEL (.A(RBL_L), .B(RBL_R), .X(RBL_O_b));
+//wtf hacked 1/2 inverters
+//toysram_local_pullup PRE_L (.PRE_b(PRE_b), .RBL(RBL_L));
+//toysram_local_pullup PRE_R (.PRE_b(PRE_b), .RBL(RBL_R));
+
+sky130_fd_sc_hd__nand2_1 SEL (.A(RBL_L), .B(RBL_R), .Y(RBL_O_b));
 
 endmodule
 

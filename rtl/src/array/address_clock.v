@@ -25,7 +25,7 @@
 
 `timescale 1 ns / 1 ns
 
-module address_clock_sdr_2r1w_64 (
+module address_clock (
 
     strobe,
 
@@ -85,7 +85,7 @@ module address_clock_sdr_2r1w_64 (
 
  parameter GENMODE = 0;			// 0=NoDelay, 1=Delay
 
- input      strobe;
+ input       strobe;
 
  // address ports and associated enable signals
  input       rd_enb_0;
@@ -98,59 +98,50 @@ module address_clock_sdr_2r1w_64 (
  // predecoded address signal
  // four groups of one hot encoded signals
  // read address 0
- output   rd0_c_na0;
- output   rd0_c_a0;
+ output      rd0_c_na0;
+ output      rd0_c_a0;
+ output      rd0_na1_na2;
+ output      rd0_na1_a2;
+ output      rd0_a1_na2;
+ output      rd0_a1_a2;
+ output      rd0_na3;
+ output      rd0_a3;
+ output      rd0_na4_na5;
+ output      rd0_na4_a5;
+ output      rd0_a4_na5;
+ output      rd0_a4_a5;
 
- output   rd0_na1_na2;
- output   rd0_na1_a2;
- output   rd0_a1_na2;
- output   rd0_a1_a2;
+ // read address 1
+ output      rd1_c_na0;
+ output      rd1_c_a0;
+ output      rd1_na1_na2;
+ output      rd1_na1_a2;
+ output      rd1_a1_na2;
+ output      rd1_a1_a2;
+ output      rd1_na3;
+ output      rd1_a3;
+ output      rd1_na4_na5;
+ output      rd1_na4_a5;
+ output      rd1_a4_na5;
+ output      rd1_a4_a5;
 
- output   rd0_na3;
- output   rd0_a3;
+ // write address 0
+ output      wr0_c_na0;
+ output      wr0_c_a0;
+ output      wr0_na1_na2;
+ output      wr0_na1_a2;
+ output      wr0_a1_na2;
+ output      wr0_a1_a2;
+ output      wr0_na3;
+ output      wr0_a3;
+ output      wr0_na4_na5;
+ output      wr0_na4_a5;
+ output      wr0_a4_na5;
+ output      wr0_a4_a5;
 
- output   rd0_na4_na5;
- output   rd0_na4_a5;
- output   rd0_a4_na5;
- output   rd0_a4_a5;
+ // one predecoder per port
 
-    // read address 1
- output   rd1_c_na0;
- output   rd1_c_a0;
-
- output   rd1_na1_na2;
- output   rd1_na1_a2;
- output   rd1_a1_na2;
- output   rd1_a1_a2;
-
- output   rd1_na3;
- output   rd1_a3;
-
- output   rd1_na4_na5;
- output   rd1_na4_a5;
- output   rd1_a4_na5;
- output   rd1_a4_a5;
-
-    // write address 0
- output   wr0_c_na0;
- output   wr0_c_a0;
-
- output   wr0_na1_na2;
- output   wr0_na1_a2;
- output   wr0_a1_na2;
- output   wr0_a1_a2;
-
- output   wr0_na3;
- output   wr0_a3;
-
- output   wr0_na4_na5;
- output   wr0_na4_a5;
- output   wr0_a4_na5;
- output   wr0_a4_a5;
-
-   // one predecoder per port
-
-  predecode_sdr_64 predecode_r0(
+  predecode predecode_r0(
       .strobe(strobe),
       .enable(rd_enb_0),
       .address(rd_adr_0),
@@ -168,7 +159,7 @@ module address_clock_sdr_2r1w_64 (
       .a4_a5(rd0_a4_a5)
   );
 
-  predecode_sdr_64 predecode_r1(
+  predecode predecode_r1(
       .strobe(strobe),
       .enable(rd_enb_1),
       .address(rd_adr_1),
@@ -186,7 +177,7 @@ module address_clock_sdr_2r1w_64 (
       .a4_a5(rd1_a4_a5)
    );
 
-   predecode_sdr_64 predecode_w0(
+   predecode predecode_w0(
       .strobe(strobe),
       .enable(wr_enb_0),
       .address(wr_adr_0),

@@ -20,7 +20,7 @@ SIM ?= icarus
 
 VERILOG_ROOT = src/array
 
-COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT)
+COMPILE_ARGS = -I$(VERILOG_ROOT) -y$(VERILOG_ROOT) -DGENMODE=0
 
 # other options
 

@@ -1,16 +1,17 @@
 [*]
 [*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
-[*] Tue Nov  8 22:49:44 2022
+[*] Tue Nov 15 19:51:18 2022
 [*]
 [dumpfile] "/data/projects/toy-sram/rtl/sim/coco/tb_ra_64x72.fst"
-[dumpfile_mtime] "Tue Nov  8 22:25:44 2022"
-[dumpfile_size] 98436
+[dumpfile_mtime] "Tue Nov 15 19:33:55 2022"
+[dumpfile_size] 99807
 [savefile] "/data/projects/toy-sram/rtl/sim/coco/ra_shard_64x72_2r1w.gtkw"
-[timestart] 75590
+[timestart] 0
 [size] 1699 1047
-[pos] 188 268
-*-12.000000 90500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 188 267
+*-12.000000 1020 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_ra_64x72_2r1w.
+[treeopen] tb_ra_64x72_2r1w.lcb.
 [treeopen] tb_ra_64x72_2r1w.ra.
 [treeopen] tb_ra_64x72_2r1w.ra.ra0.
 [treeopen] tb_ra_64x72_2r1w.ra.ra0.r000.
@@ -34,6 +35,22 @@ tb_ra_64x72_2r1w.wr_enb_0
 @22
 tb_ra_64x72_2r1w.wr_adr_0[0:5]
 tb_ra_64x72_2r1w.wr_dat_0[0:71]
+@200
+-CNFIG
+@22
+tb_ra_64x72_2r1w.cnfig.cfg_q[0:31]
+tb_ra_64x72_2r1w.cnfig.cfg[0:31]
+@200
+-LCB
+@22
+tb_ra_64x72_2r1w.lcb.tap1_sel_q[0:3]
+@23
+tb_ra_64x72_2r1w.lcb.tap1[0:3]
+@28
+tb_ra_64x72_2r1w.lcb.tap1_b
+tb_ra_64x72_2r1w.lcb.pulse1_b
+tb_ra_64x72_2r1w.lcb.pulse2_b
+tb_ra_64x72_2r1w.lcb.strobe
 @200
 -RA
 @28
@@ -75,7 +92,6 @@ tb_ra_64x72_2r1w.ra.ra0.r000.WBLb[0:11]
 @22
 tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_L[0:11]
 tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_R[0:11]
-@23
 tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_O_b[0:11]
 [pattern_trace] 1
 [pattern_trace] 0

@@ -23,11 +23,11 @@
 
 `timescale 1 ns / 1 ns
 
-`include "toysram.vh"
-
 module ra_64x72_2r1w #(
-    parameter GENMODE = `GENMODE,	        // 0=NoDelay, 1=Delay
+
+    parameter GENMODE,           	        // 0=NoDelay, 1=Delay
     parameter LATCHRD = 1                   // 1=latch read data, 0=unlatched
+
 ) (
     input         clk,
     input         reset,
@@ -142,7 +142,7 @@ endgenerate
 
 assign strobe_int = strobe;
 
-address_clock_sdr_2r1w_64 #(
+address_clock #(
 
       .GENMODE(GENMODE)
 

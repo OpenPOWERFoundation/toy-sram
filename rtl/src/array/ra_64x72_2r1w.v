@@ -23,12 +23,13 @@
 
 `timescale 1 ns / 1 ns
 
-`include "toysram.vh"
-
 module ra_64x72_2r1w #(
-    parameter GENMODE = `GENMODE,	        // 0=NoDelay, 1=Delay
+
+    parameter GENMODE,            	        // 0=NoDelay, 1=Delay
     parameter LATCHRD = 1                   // 1=latch read data, 0=unlatched
+
 ) (
+
     input         clk,
     input         reset,
     input         strobe,
@@ -142,17 +143,10 @@ endgenerate
 
 // toysram_16x12 component needs rising edge to check wwl
 assign strobe_int = strobe;
-/*
-// don't use the clock as data in sim mode
-if (`GENMODE == 0)
-   assign strobe_int = 1'b1;
-else
-   assign strobe_int = strobe;
-*/
 
 // generate the controls for the array
 
-address_clock_sdr_2r1w_64 #(
+address_clock #(
 
       .GENMODE(GENMODE)
 
