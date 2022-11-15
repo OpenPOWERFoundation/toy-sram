@@ -1,0 +1,73 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO toysram_local_eval
+  CLASS BLOCK ;
+  FOREIGN toysram_local_eval ;
+  ORIGIN 0.270 0.150 ;
+  SIZE 2.440 BY 3.200 ;
+  PIN RBL_O
+    ANTENNAGATEAREA 0.555000 ;
+    ANTENNADIFFAREA 0.898275 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.455 1.575 0.835 2.555 ;
+        RECT 0.015 1.190 0.350 1.415 ;
+        RECT 0.570 1.190 0.740 1.575 ;
+        RECT 1.580 1.415 1.825 2.525 ;
+        RECT 0.910 1.190 1.825 1.415 ;
+        RECT 0.015 1.165 1.825 1.190 ;
+        RECT 0.015 1.145 1.245 1.165 ;
+        RECT 0.170 0.975 1.245 1.145 ;
+        RECT 0.005 0.345 1.315 0.975 ;
+        RECT 0.005 0.175 1.245 0.345 ;
+        RECT -0.080 0.005 1.760 0.175 ;
+      LAYER mcon ;
+        RECT 0.065 0.005 0.235 0.175 ;
+        RECT 0.525 0.005 0.695 0.175 ;
+        RECT 0.985 0.005 1.155 0.175 ;
+        RECT 1.445 0.005 1.615 0.175 ;
+      LAYER met1 ;
+        RECT -0.080 -0.150 1.875 0.330 ;
+    END
+  END RBL_O
+  PIN PRE_R_b
+    ANTENNAGATEAREA 0.116025 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.495 0.585 1.830 0.855 ;
+    END
+  END PRE_R_b
+  PIN VPB
+    PORT
+      LAYER nwell ;
+        RECT -0.270 1.395 2.170 3.000 ;
+    END
+  END VPB
+  PIN VNB
+    PORT
+      LAYER pwell ;
+        RECT -0.055 0.195 1.395 1.105 ;
+        RECT 0.060 0.005 0.230 0.195 ;
+    END
+  END VNB
+  PIN VPWR
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT -0.080 2.725 1.760 2.895 ;
+        RECT 0.005 1.585 0.285 2.725 ;
+        RECT 1.055 1.585 1.315 2.725 ;
+      LAYER mcon ;
+        RECT 0.065 2.725 0.235 2.895 ;
+        RECT 0.525 2.725 0.695 2.895 ;
+        RECT 0.985 2.725 1.155 2.895 ;
+        RECT 1.445 2.725 1.615 2.895 ;
+      LAYER met1 ;
+        RECT -0.080 2.570 1.880 3.050 ;
+    END
+  END VPWR
+END toysram_local_eval
+END LIBRARY
+

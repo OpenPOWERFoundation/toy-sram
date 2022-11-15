@@ -1,0 +1,6 @@
+toysram_local_eval.lef:  NOWIREEXTENSIONATPIN ON ;
+toysram_local_eval.lef:  PIN RBL_O
+toysram_local_eval.lef:  PIN PRE_R_b
+toysram_local_eval.lef:  PIN VPB
+toysram_local_eval.lef:  PIN VNB
+toysram_local_eval.lef:  PIN VPWR

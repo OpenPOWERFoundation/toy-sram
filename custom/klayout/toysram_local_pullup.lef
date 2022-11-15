@@ -1,0 +1,60 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO toysram_local_pullup
+  CLASS BLOCK ;
+  FOREIGN toysram_local_pullup ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.380 BY 2.720 ;
+  PIN RBL
+    ANTENNADIFFAREA 0.260000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.720 1.485 1.050 2.465 ;
+        RECT 0.820 0.990 1.050 1.485 ;
+    END
+  END RBL
+  PIN PRE_b
+    ANTENNAGATEAREA 0.150000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.320 1.075 0.650 1.315 ;
+    END
+  END PRE_b
+  PIN VPB
+    PORT
+      LAYER nwell ;
+        RECT -0.190 1.305 1.570 2.910 ;
+    END
+  END VPB
+  PIN VGND
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 -0.085 1.380 0.085 ;
+      LAYER mcon ;
+        RECT 0.145 -0.085 0.315 0.085 ;
+        RECT 0.605 -0.085 0.775 0.085 ;
+        RECT 1.065 -0.085 1.235 0.085 ;
+      LAYER met1 ;
+        RECT 0.000 -0.240 1.380 0.240 ;
+    END
+  END VGND
+  PIN VPWR
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 2.635 1.380 2.805 ;
+        RECT 0.340 1.495 0.550 2.635 ;
+      LAYER mcon ;
+        RECT 0.145 2.635 0.315 2.805 ;
+        RECT 0.605 2.635 0.775 2.805 ;
+        RECT 1.065 2.635 1.235 2.805 ;
+      LAYER met1 ;
+        RECT 0.000 2.480 1.380 2.960 ;
+    END
+  END VPWR
+END toysram_local_pullup
+END LIBRARY
+

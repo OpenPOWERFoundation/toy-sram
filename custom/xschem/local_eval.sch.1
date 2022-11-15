@@ -1,0 +1,96 @@
+v {xschem version=3.1.0 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+B 4 200 -370 220 -280 {layer=7}
+T {PRE_L} 180 -240 0 0 0.3 0.3 {}
+T {PRE_R} 370 -240 0 0 0.3 0.3 {}
+N 180 -190 200 -190 {
+lab=PRE}
+N 240 -160 240 -130 {
+lab=RBL_L}
+N 240 -260 240 -220 {
+lab=VDD}
+N 430 -240 430 -220 {
+lab=VDD}
+N 210 -140 360 -140 {
+lab=PRE}
+N 360 -140 390 -140 {
+lab=PRE}
+N 390 -190 390 -140 {
+lab=PRE}
+N 430 -160 430 -140 {
+lab=RBL_R}
+N 430 -110 480 -110 {
+lab=RBL_R}
+N 240 -130 240 -80 {
+lab=RBL_L}
+N 240 -70 260 -70 {
+lab=RBL_L}
+N 240 -80 240 -70 {
+lab=RBL_L}
+N 430 -190 480 -190 {
+lab=GND}
+N 240 -190 290 -190 {
+lab=GND}
+N 600 -90 610 -90 {
+lab=RBL_Ob}
+N 180 -160 240 -160 {
+lab=RBL_L}
+N 430 -160 520 -160 {
+lab=RBL_R}
+N 240 -270 240 -260 {
+lab=VDD}
+N 200 -190 200 -140 {
+lab=PRE}
+N 200 -140 210 -140 {
+lab=PRE}
+N 240 -240 430 -240 {
+lab=VDD}
+N 260 -70 480 -70 {
+lab=RBL_L}
+N 430 -140 430 -110 {
+lab=RBL_R}
+C {sky130_fd_pr/pfet_01v8.sym} 220 -190 0 0 {name=M1
+L=0.15
+W=0.21
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 180 -190 0 0 {name=l5 sig_type=std_logic lab=PRE}
+C {devices/lab_pin.sym} 240 -270 0 1 {name=l7 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 290 -190 0 1 {name=l11 sig_type=std_logic lab=GND}
+C {devices/ipin.sym} 200 -360 0 0 {name=p1 lab=PRE}
+C {devices/ipin.sym} 200 -330 0 0 {name=p4 lab=RBL_L}
+C {devices/ipin.sym} 200 -310 0 0 {name=p5 lab=RBL_R}
+C {devices/opin.sym} 220 -320 0 0 {name=p6 lab=RBL_Ob}
+C {sky130_fd_pr/pfet_01v8.sym} 410 -190 0 0 {name=M2
+L=0.15
+W=0.21
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {stdcells/NAND2.sym} 540 -90 0 0 {name=x3 VCCPIN=VCC VSSPIN=VSS VCCBPIN=VCC VSSBPIN=VSS}
+C {devices/lab_pin.sym} 610 -90 0 1 {name=l1 sig_type=std_logic lab=RBL_Ob}
+C {devices/lab_pin.sym} 180 -160 0 0 {name=l2 sig_type=std_logic lab=RBL_L}
+C {devices/lab_pin.sym} 520 -160 0 1 {name=l3 sig_type=std_logic lab=RBL_R}
+C {devices/lab_pin.sym} 480 -190 0 1 {name=l4 sig_type=std_logic lab=GND}

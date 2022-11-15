@@ -1,0 +1,8 @@
+magic
+tech sky130B
+timestamp 1667750849
+use sky130_fd_sc_hdll__nand2_1  sky130_fd_sc_hdll__nand2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hdll/mag
+timestamp 1667402666
+transform 1 0 -8 0 1 9
+box -19 -24 203 296
+<< end >>

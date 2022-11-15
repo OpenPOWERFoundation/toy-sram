@@ -3,56 +3,73 @@
 ###	Process this file with the m4 processor
 ###
 
+if {[info exists ::env(PDK_ROOT)]} {
+   set PDK_ROOT $::env(PDK_ROOT)
+} else {
+   shell echo "PDK_ROOT must be set!"
+   quit
+}
+
+set TECH_ROOT ${PDK_ROOT}/sky130B/libs.tech/magic/*.magicrc
+set rc [glob -nocomplain $TECH_ROOT]
+if {[llength $rc] != 1} {
+   shell echo "Expected one .magicrc file in $TECH_ROOT.  Found:"
+   shell echo $rc
+   quit
+}
+
+puts "Sourcing $rc..."
+source $rc
+
 
 # MUST CHANGE THIS TO REPOSITORIES TOP LEVEL DIRECTORY
-set PDK_ROOT /path/to/osu-toy-sram
+#set PDK_ROOT /path/to/osu-toy-sram
 
-
-puts stdout "Sourcing design .magicrc for technology sky130 ..."
+#puts stdout "Sourcing design .magicrc for technology sky130 ..."
 
 # Put grid on 0.005 pitch.  This is important, as some commands don't
 # rescale the grid automatically (such as lef read?).
 
-set scalefac [tech lambda]
-if {[lindex $scalefac 1] < 2} {
-    scalegrid 1 2
-}
+#set scalefac [tech lambda]
+#if {[lindex $scalefac 1] < 2} {
+#    scalegrid 1 2
+#}
 
 # drc off
-drc euclidean on
+#drc euclidean on
 
 # Change this to a fixed number for repeatable behavior with GDS writes
 # e.g., "random seed 12345"
-catch {random seed}
+#catch {random seed}
 
 # Turn off the scale option on ext2spice or else it conflicts with the
 # scale in the model files.
-ext2spice scale off
+#ext2spice scale off
 
 
 # Set this to the folder that holds the technology files
-set TECH_ROOT ${PDK_ROOT}/magic/.magic_tech
+#set TECH_ROOT ${PDK_ROOT}/magic/.magic_tech
 
 # loading technology
-tech load ${TECH_ROOT}/sky130A.tech
+#tech load ${TECH_ROOT}/sky130A.tech
 # load device generator
 #source $TECH_ROOT/sky130.tcl
 
 # load bind keys (optional)
-source ${TECH_ROOT}/sky130.BindKeys
+#source ${TECH_ROOT}/sky130.BindKeys
 
-# set units to lambda grid 
-snap internal
+# set units to lambda grid
+#snap internal
 
 # set sky130 standard power, ground, and substrate names
-set VDD VPWR
-set GND VGND
-set SUB VSUBS
+#set VDD VPWR
+#set GND VGND
+#set SUB VSUBS
 
 # add path to IP from catalog.  This procedure defined in the PDK script.
-catch {magic::query_mylib_ip}
+#catch {magic::query_mylib_ip}
 # add path to local IP from user design space.  Defined in the PDK script.
-catch {magic::query_my_projects}
+#catch {magic::query_my_projects}
 
 # Custom macros
 #macro XK_Left "scroll l .1 w"
