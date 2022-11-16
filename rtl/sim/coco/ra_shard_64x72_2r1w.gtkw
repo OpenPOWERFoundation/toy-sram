@@ -1,24 +1,27 @@
 [*]
 [*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
-[*] Tue Nov 15 19:51:18 2022
+[*] Wed Nov 16 17:14:03 2022
 [*]
 [dumpfile] "/data/projects/toy-sram/rtl/sim/coco/tb_ra_64x72.fst"
-[dumpfile_mtime] "Tue Nov 15 19:33:55 2022"
-[dumpfile_size] 99807
+[dumpfile_mtime] "Wed Nov 16 16:47:59 2022"
+[dumpfile_size] 13040
 [savefile] "/data/projects/toy-sram/rtl/sim/coco/ra_shard_64x72_2r1w.gtkw"
-[timestart] 0
+[timestart] 86274
 [size] 1699 1047
 [pos] 188 267
-*-12.000000 1020 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-10.000000 90500 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] tb_ra_64x72_2r1w.
 [treeopen] tb_ra_64x72_2r1w.lcb.
 [treeopen] tb_ra_64x72_2r1w.ra.
 [treeopen] tb_ra_64x72_2r1w.ra.ra0.
-[treeopen] tb_ra_64x72_2r1w.ra.ra0.r000.
+[treeopen] tb_ra_64x72_2r1w.ra.ra0.genblk1.
+[treeopen] tb_ra_64x72_2r1w.ra.ra1.
+[treeopen] tb_ra_64x72_2r1w.ra.ra2.
+[treeopen] tb_ra_64x72_2r1w.ra.ra2.genblk1.
 [sst_width] 242
-[signals_width] 257
+[signals_width] 387
 [sst_expanded] 1
-[sst_vpaned_height] 301
+[sst_vpaned_height] 331
 @28
 tb_ra_64x72_2r1w.clk
 tb_ra_64x72_2r1w.rd_enb_0
@@ -44,12 +47,7 @@ tb_ra_64x72_2r1w.cnfig.cfg[0:31]
 -LCB
 @22
 tb_ra_64x72_2r1w.lcb.tap1_sel_q[0:3]
-@23
-tb_ra_64x72_2r1w.lcb.tap1[0:3]
 @28
-tb_ra_64x72_2r1w.lcb.tap1_b
-tb_ra_64x72_2r1w.lcb.pulse1_b
-tb_ra_64x72_2r1w.lcb.pulse2_b
 tb_ra_64x72_2r1w.lcb.strobe
 @200
 -RA
@@ -57,6 +55,21 @@ tb_ra_64x72_2r1w.lcb.strobe
 tb_ra_64x72_2r1w.ra.rd_enb_0_q
 @22
 tb_ra_64x72_2r1w.ra.rd_adr_0_q[0:5]
+@28
+tb_ra_64x72_2r1w.rd_enb_0
+@23
+tb_ra_64x72_2r1w.ra.ra2.genblk1.r00.mem_30[0:11]
+@22
+tb_ra_64x72_2r1w.ra.ra2.genblk1.r01.mem_30[0:11]
+tb_ra_64x72_2r1w.ra.ra2.genblk1.r00.RBL0[0:11]
+tb_ra_64x72_2r1w.ra.ra2.genblk1.r01.RBL0[0:11]
+tb_ra_64x72_2r1w.ra.ra2.rbl0_00_31_12_23[0:11]
+tb_ra_64x72_2r1w.ra.ra2.rbl0_32_63_00_11[0:11]
+tb_ra_64x72_2r1w.ra.ra2.rbl0_32_63_12_23[0:11]
+tb_ra_64x72_2r1w.ra.ra0.rd0_dat[0:23]
+tb_ra_64x72_2r1w.ra.ra1.rd0_dat[0:23]
+tb_ra_64x72_2r1w.ra.ra2.rd0_dat[0:23]
+tb_ra_64x72_2r1w.rd_dat_0[0:71]
 tb_ra_64x72_2r1w.ra.rd_dat_0_q[0:71]
 @28
 tb_ra_64x72_2r1w.ra.rd_enb_1_q
@@ -72,26 +85,13 @@ tb_ra_64x72_2r1w.ra.wr_dat_0_q[0:71]
 -RA0
 @28
 tb_ra_64x72_2r1w.ra.ra0.rd1_c_a0
-tb_ra_64x72_2r1w.ra.ra0.rd1_c_a0_i
-tb_ra_64x72_2r1w.ra.ra0.rd1_c_na0_i
-@22
-tb_ra_64x72_2r1w.ra.ra0.rbl1_000[0:11]
 @200
 -R000
-@22
-tb_ra_64x72_2r1w.ra.ra0.r000.mem_00[0:11]
-tb_ra_64x72_2r1w.ra.ra0.r000.RWL0[0:15]
-tb_ra_64x72_2r1w.ra.ra0.r000.RWL1[0:15]
-tb_ra_64x72_2r1w.ra.ra0.r000.RBL0[0:11]
-tb_ra_64x72_2r1w.ra.ra0.r000.RBL1[0:11]
-tb_ra_64x72_2r1w.ra.ra0.r000.WWL[0:15]
-tb_ra_64x72_2r1w.ra.ra0.r000.WBL[0:11]
-tb_ra_64x72_2r1w.ra.ra0.r000.WBLb[0:11]
-@200
 -Eval
 @22
-tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_L[0:11]
-tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_R[0:11]
-tb_ra_64x72_2r1w.ra.ra0.eval_0x0.RBL1_O_b[0:11]
+tb_ra_64x72_2r1w.ra.ra0.genblk1.r00.mem_00[0:11]
+tb_ra_64x72_2r1w.ra.ra0.genblk1.r01.mem_00[0:11]
+tb_ra_64x72_2r1w.ra.ra0.genblk1.r10.mem_00[0:11]
+tb_ra_64x72_2r1w.ra.ra0.genblk1.r11.mem_00[0:11]
 [pattern_trace] 1
 [pattern_trace] 0

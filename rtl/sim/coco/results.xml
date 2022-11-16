@@ -1,8 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1668540834" />
-    <testcase name="tb" classname="tb_ra_64x72" file="/data/projects/toy-sram/rtl/sim/coco/tb_ra_64x72.py" lineno="293" time="0.2973616123199463" sim_time_ns="107.001" ratio_time="359.8346106789072">
-      <failure />
-    </testcase>
+    <property name="random_seed" value="1668630103" />
+    <testcase name="tb" classname="tb_ra_64x72" file="/data/projects/toy-sram/rtl/sim/coco/tb_ra_64x72.py" lineno="293" time="22.16532826423645" sim_time_ns="10089.001" ratio_time="455.1703850142616" />
   </testsuite>
 </testsuites>

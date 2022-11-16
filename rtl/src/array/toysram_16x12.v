@@ -88,67 +88,67 @@ assign RBL1 = ~(mem_00  & {12{RWL1[0]}})  &
               ~(mem_15  & {12{RWL1[15]}});
 
 always @(posedge WWL[0]) begin
-   mem_00 <= ~WBLb;
+   mem_00 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[1]) begin
-   mem_01 <= ~WBLb;
+   mem_01 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[2]) begin
-   mem_02 <= ~WBLb;
+   mem_02 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[3]) begin
-   mem_03 <= ~WBLb;
+   mem_03 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[4]) begin
-   mem_04 <= ~WBLb;
+   mem_04 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[5]) begin
-   mem_05 <= ~WBLb;
+   mem_05 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[6]) begin
-   mem_06 <= ~WBLb;
+   mem_06 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[7]) begin
-   mem_07 <= ~WBLb;
+   mem_07 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[8]) begin
-   mem_08 <= ~WBLb;
+   mem_08 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[9]) begin
-   mem_09 <= ~WBLb;
+   mem_09 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[10]) begin
-   mem_10 <= ~WBLb;
+   mem_10 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[11]) begin
-   mem_11 <= ~WBLb;
+   mem_11 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[12]) begin
-   mem_12 <= ~WBLb;
+   mem_12 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[13]) begin
-   mem_13 <= ~WBLb;
+   mem_13 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[14]) begin
-   mem_14 <= ~WBLb;
+   mem_14 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[15]) begin
-   mem_15 <= ~WBLb;
+   mem_15 <= WBL | ~WBLb;
 end
 
 // assert errors (multiwrite, etc.)

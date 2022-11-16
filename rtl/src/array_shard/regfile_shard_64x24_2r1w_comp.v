@@ -20,10 +20,13 @@
 
 // Behavioral for 64x24 toysram (sdr or ddr), 'shard' (semi-hard)
 // 16x12 hard subarrays plus decoder, eval, io comps
+//  OR
+// 32x12 hard subarrays plus decoder, io comps
 
 `timescale 1 ps / 1 ps
-
-module regfile_shard_64x24_2r1w_comp (
+module regfile_shard_64x24_2r1w_comp #(
+    parameter integer RA_32x12 = 1
+) (
 
     input         rd0_c_na0,
     input         rd0_c_a0,
@@ -228,7 +231,6 @@ wire [0:11] wbl0_b_0x1;
 wire [0:11] wbl0_b_1x0;
 wire [0:11] wbl0_b_1x1;
 
-
 // subarray cells; 4x2 16w/12b subarrays
 //
 // bits are stacked vertically, words horizontally
@@ -258,85 +260,140 @@ wire [0:11] wbl0_b_1x1;
 //   00x=W0xx0xx  01x=W0xx1xx  10x=W1xx0xx 11x=W1xx1xx (0xx=W0xxxxx, 1xx=W1xxxxx)
 // if @3 is final select, subarrays:
 //   00x=W0xx0xx  01x=W1xx0xx  10x=W0xx1xx 11x=W1xx1xx (0xx=Wxxx0xx, 1xx=Wxxx1xx)
+//
+// 32x12 subarrays are L/R pairs and local eval
 
-toysram_16x12 r000 (
-   .RWL0(rwl0_000),
-   .RWL1(rwl1_000),
-   .WWL(wwl0_000),
-   .RBL0(rbl0_000),
-   .RBL1(rbl1_000),
-   .WBL(wbl0_000),
-   .WBLb(wbl0_b_000)
-);
-toysram_16x12 r001 (
-   .RWL0(rwl0_001),
-   .RWL1(rwl1_001),
-   .WWL(wwl0_001),
-   .RBL0(rbl0_001),
-   .RBL1(rbl1_001),
-   .WBL(wbl0_001),
-   .WBLb(wbl0_b_001)
-);
+// subarrays
+generate
 
-toysram_16x12 r010 (
-   .RWL0(rwl0_010),
-   .RWL1(rwl1_010),
-   .WWL(wwl0_010),
-   .RBL0(rbl0_010),
-   .RBL1(rbl1_010),
-   .WBL(wbl0_010),
-   .WBLb(wbl0_b_010)
-);
+if (RA_32x12 == 0) begin
 
-toysram_16x12 r011 (
-   .RWL0(rwl0_011),
-   .RWL1(rwl1_011),
-   .WWL(wwl0_011),
-   .RBL0(rbl0_011),
-   .RBL1(rbl1_011),
-   .WBL(wbl0_011),
-   .WBLb(wbl0_b_011)
-);
+   toysram_16x12 r000 (
+      .RWL0(rwl0_000),
+      .RWL1(rwl1_000),
+      .WWL(wwl0_000),
+      .RBL0(rbl0_000),
+      .RBL1(rbl1_000),
+      .WBL(wbl0_000),
+      .WBLb(wbl0_b_000)
+   );
+   toysram_16x12 r001 (
+      .RWL0(rwl0_001),
+      .RWL1(rwl1_001),
+      .WWL(wwl0_001),
+      .RBL0(rbl0_001),
+      .RBL1(rbl1_001),
+      .WBL(wbl0_001),
+      .WBLb(wbl0_b_001)
+   );
 
-toysram_16x12 r100 (
-   .RWL0(rwl0_100),
-   .RWL1(rwl1_100),
-   .WWL(wwl0_100),
-   .RBL0(rbl0_100),
-   .RBL1(rbl1_100),
-   .WBL(wbl0_100),
-   .WBLb(wbl0_b_100)
-);
+   toysram_16x12 r010 (
+      .RWL0(rwl0_010),
+      .RWL1(rwl1_010),
+      .WWL(wwl0_010),
+      .RBL0(rbl0_010),
+      .RBL1(rbl1_010),
+      .WBL(wbl0_010),
+      .WBLb(wbl0_b_010)
+   );
 
-toysram_16x12 r101 (
-   .RWL0(rwl0_101),
-   .RWL1(rwl1_101),
-   .WWL(wwl0_101),
-   .RBL0(rbl0_101),
-   .RBL1(rbl1_101),
-   .WBL(wbl0_101),
-   .WBLb(wbl0_b_101)
-);
+   toysram_16x12 r011 (
+      .RWL0(rwl0_011),
+      .RWL1(rwl1_011),
+      .WWL(wwl0_011),
+      .RBL0(rbl0_011),
+      .RBL1(rbl1_011),
+      .WBL(wbl0_011),
+      .WBLb(wbl0_b_011)
+   );
 
-toysram_16x12 r110 (
-   .RWL0(rwl0_110),
-   .RWL1(rwl1_110),
-   .WWL(wwl0_110),
-   .RBL0(rbl0_110),
-   .RBL1(rbl1_110),
-   .WBL(wbl0_110),
-   .WBLb(wbl0_b_110)
-);
+   toysram_16x12 r100 (
+      .RWL0(rwl0_100),
+      .RWL1(rwl1_100),
+      .WWL(wwl0_100),
+      .RBL0(rbl0_100),
+      .RBL1(rbl1_100),
+      .WBL(wbl0_100),
+      .WBLb(wbl0_b_100)
+   );
 
-toysram_16x12 r111 (
-   .RWL0(rwl0_111),
-   .RWL1(rwl1_111),
-   .WWL(wwl0_111),
-   .RBL0(rbl0_111),
-   .RBL1(rbl1_111),
-   .WBL(wbl0_111),
-   .WBLb(wbl0_b_111)
-);
+   toysram_16x12 r101 (
+      .RWL0(rwl0_101),
+      .RWL1(rwl1_101),
+      .WWL(wwl0_101),
+      .RBL0(rbl0_101),
+      .RBL1(rbl1_101),
+      .WBL(wbl0_101),
+      .WBLb(wbl0_b_101)
+   );
+
+   toysram_16x12 r110 (
+      .RWL0(rwl0_110),
+      .RWL1(rwl1_110),
+      .WWL(wwl0_110),
+      .RBL0(rbl0_110),
+      .RBL1(rbl1_110),
+      .WBL(wbl0_110),
+      .WBLb(wbl0_b_110)
+   );
+
+   toysram_16x12 r111 (
+      .RWL0(rwl0_111),
+      .RWL1(rwl1_111),
+      .WWL(wwl0_111),
+      .RBL0(rbl0_111),
+      .RBL1(rbl1_111),
+      .WBL(wbl0_111),
+      .WBLb(wbl0_b_111)
+   );
+
+end else begin
+
+   // words 00:31
+   toysram_32x12 r00 (
+      .RWL0(rwl0_0x0),
+      .RWL1(rwl1_0x0),
+      .WWL(wwl0_0x0),
+      .RBL0(rbl0_0x0),
+      .RBL1(rbl1_0x0),
+      .WBL(wbl0_0x0),
+      .WBLb(wbl0_b_0x0)
+   );
+
+   toysram_32x12 r01 (
+      .RWL0(rwl0_0x1),
+      .RWL1(rwl1_0x1),
+      .WWL(wwl0_0x1),
+      .RBL0(rbl0_0x1),
+      .RBL1(rbl1_0x1),
+      .WBL(wbl0_0x1),
+      .WBLb(wbl0_b_0x1)
+   );
+
+   // words 32:47
+   toysram_32x12 r10 (
+      .RWL0(rwl0_1x0),
+      .RWL1(rwl1_1x0),
+      .WWL(wwl0_1x0),
+      .RBL0(rbl0_1x0),
+      .RBL1(rbl1_1x0),
+      .WBL(wbl0_1x0),
+      .WBLb(wbl0_b_1x0)
+   );
+
+   // words 48:63
+   toysram_32x12 r11 (
+      .RWL0(rwl0_1x1),
+      .RWL1(rwl1_1x1),
+      .WWL(wwl0_1x1),
+      .RBL0(rbl0_1x1),
+      .RBL1(rbl1_1x1),
+      .WBL(wbl0_1x1),
+      .WBLb(wbl0_b_1x1)
+   );
+
+end
+endgenerate
 
 // wordline decodes to one-hots; separate copies for up/down
 // separate comps for L/R so i/o macro can divide the center; a3
@@ -441,75 +498,83 @@ wordlines_comp_32 dcd_1 (
 
  );
 
- assign rwl0_000 = rwl0_0x0[0:15];
- assign rwl0_001 = rwl0_0x1[0:15];
- assign rwl0_010 = rwl0_0x0[16:31];
- assign rwl0_011 = rwl0_0x1[16:31];
- assign rwl0_100 = rwl0_1x0[0:15];
- assign rwl0_101 = rwl0_1x1[0:15];
- assign rwl0_110 = rwl0_1x0[16:31];
- assign rwl0_111 = rwl0_1x1[16:31];
+generate
 
- assign rwl1_000 = rwl1_0x0[0:15];
- assign rwl1_001 = rwl1_0x1[0:15];
- assign rwl1_010 = rwl1_0x0[16:31];
- assign rwl1_011 = rwl1_0x1[16:31];
- assign rwl1_100 = rwl1_1x0[0:15];
- assign rwl1_101 = rwl1_1x1[0:15];
- assign rwl1_110 = rwl1_1x0[16:31];
- assign rwl1_111 = rwl1_1x1[16:31];
+if (RA_32x12 == 0) begin
 
- assign wwl0_000 = wwl0_0x0[0:15];
- assign wwl0_001 = wwl0_0x1[0:15];
- assign wwl0_010 = wwl0_0x0[16:31];
- assign wwl0_011 = wwl0_0x1[16:31];
- assign wwl0_100 = wwl0_1x0[0:15];
- assign wwl0_101 = wwl0_1x1[0:15];
- assign wwl0_110 = wwl0_1x0[16:31];
- assign wwl0_111 = wwl0_1x1[16:31];
+   assign rwl0_000 = rwl0_0x0[0:15];
+   assign rwl0_001 = rwl0_0x1[0:15];
+   assign rwl0_010 = rwl0_0x0[16:31];
+   assign rwl0_011 = rwl0_0x1[16:31];
+   assign rwl0_100 = rwl0_1x0[0:15];
+   assign rwl0_101 = rwl0_1x1[0:15];
+   assign rwl0_110 = rwl0_1x0[16:31];
+   assign rwl0_111 = rwl0_1x1[16:31];
 
-// local eval
+   assign rwl1_000 = rwl1_0x0[0:15];
+   assign rwl1_001 = rwl1_0x1[0:15];
+   assign rwl1_010 = rwl1_0x0[16:31];
+   assign rwl1_011 = rwl1_0x1[16:31];
+   assign rwl1_100 = rwl1_1x0[0:15];
+   assign rwl1_101 = rwl1_1x1[0:15];
+   assign rwl1_110 = rwl1_1x0[16:31];
+   assign rwl1_111 = rwl1_1x1[16:31];
 
-//wtf move to decode!
-// precharge repower
-// during precharge c_na0 = c_a0 = 0
-// 4 copies to 000/010, 001/011, 100/110, 101,111 quads
-// rd0
-sky130_fd_sc_hd__inv_2 inv0_0x0_b (.A(rd0_c_na0),  .Y(pre0_0x0_b));
-sky130_fd_sc_hd__inv_2 inv0_0x0   (.A(pre0_0x0_b), .Y(pre0_0x0));
-sky130_fd_sc_hd__inv_2 inv0_0x1_b (.A(rd0_c_na0),  .Y(pre0_0x1_b));
-sky130_fd_sc_hd__inv_2 inv0_0x1   (.A(pre0_0x1_b), .Y(pre0_0x1));
-sky130_fd_sc_hd__inv_2 inv0_1x0_b (.A(rd0_c_a0),   .Y(pre0_1x0_b));
-sky130_fd_sc_hd__inv_2 inv0_1x0   (.A(pre0_1x0_b), .Y(pre0_1x0));
-sky130_fd_sc_hd__inv_2 inv0_1x1_b (.A(rd0_c_a0),   .Y(pre0_1x1_b));
-sky130_fd_sc_hd__inv_2 inv0_1x1   (.A(pre0_1x1_b), .Y(pre0_1x1));
-// rd1
-sky130_fd_sc_hd__inv_2 inv1_0x0_b (.A(rd0_c_na0),  .Y(pre1_0x0_b));
-sky130_fd_sc_hd__inv_2 inv1_0x0   (.A(pre1_0x0_b), .Y(pre1_0x0));
-sky130_fd_sc_hd__inv_2 inv1_0x1_b (.A(rd0_c_na0),  .Y(pre1_0x1_b));
-sky130_fd_sc_hd__inv_2 inv1_0x1   (.A(pre1_0x1_b), .Y(pre1_0x1));
-sky130_fd_sc_hd__inv_2 inv1_1x0_b (.A(rd0_c_a0),   .Y(pre1_1x0_b));
-sky130_fd_sc_hd__inv_2 inv1_1x0   (.A(pre1_1x0_b), .Y(pre1_1x0));
-sky130_fd_sc_hd__inv_2 inv1_1x1_b (.A(rd0_c_a0),   .Y(pre1_1x1_b));
-sky130_fd_sc_hd__inv_2 inv1_1x1   (.A(pre1_1x1_b), .Y(pre1_1x1));
+   assign wwl0_000 = wwl0_0x0[0:15];
+   assign wwl0_001 = wwl0_0x1[0:15];
+   assign wwl0_010 = wwl0_0x0[16:31];
+   assign wwl0_011 = wwl0_0x1[16:31];
+   assign wwl0_100 = wwl0_1x0[0:15];
+   assign wwl0_101 = wwl0_1x1[0:15];
+   assign wwl0_110 = wwl0_1x0[16:31];
+   assign wwl0_111 = wwl0_1x1[16:31];
 
-// quad local evals, 2 ports
-local_eval_comp eval_0x0 (
+   // local eval
+
+   //wtf move to decode!
+   // precharge repower
+   // during precharge c_na0 = c_a0 = 0
+   // 4 copies to 000/010, 001/011, 100/110, 101,111 quads
+   // rd0
+   sky130_fd_sc_hd__inv_2 inv0_0x0_b (.A(rd0_c_na0),  .Y(pre0_0x0_b));
+   sky130_fd_sc_hd__inv_2 inv0_0x0   (.A(pre0_0x0_b), .Y(pre0_0x0));
+   sky130_fd_sc_hd__inv_2 inv0_0x1_b (.A(rd0_c_na0),  .Y(pre0_0x1_b));
+   sky130_fd_sc_hd__inv_2 inv0_0x1   (.A(pre0_0x1_b), .Y(pre0_0x1));
+   sky130_fd_sc_hd__inv_2 inv0_1x0_b (.A(rd0_c_a0),   .Y(pre0_1x0_b));
+   sky130_fd_sc_hd__inv_2 inv0_1x0   (.A(pre0_1x0_b), .Y(pre0_1x0));
+   sky130_fd_sc_hd__inv_2 inv0_1x1_b (.A(rd0_c_a0),   .Y(pre0_1x1_b));
+   sky130_fd_sc_hd__inv_2 inv0_1x1   (.A(pre0_1x1_b), .Y(pre0_1x1));
+   // rd1
+   sky130_fd_sc_hd__inv_2 inv1_0x0_b (.A(rd0_c_na0),  .Y(pre1_0x0_b));
+   sky130_fd_sc_hd__inv_2 inv1_0x0   (.A(pre1_0x0_b), .Y(pre1_0x0));
+   sky130_fd_sc_hd__inv_2 inv1_0x1_b (.A(rd0_c_na0),  .Y(pre1_0x1_b));
+   sky130_fd_sc_hd__inv_2 inv1_0x1   (.A(pre1_0x1_b), .Y(pre1_0x1));
+   sky130_fd_sc_hd__inv_2 inv1_1x0_b (.A(rd0_c_a0),   .Y(pre1_1x0_b));
+   sky130_fd_sc_hd__inv_2 inv1_1x0   (.A(pre1_1x0_b), .Y(pre1_1x0));
+   sky130_fd_sc_hd__inv_2 inv1_1x1_b (.A(rd0_c_a0),   .Y(pre1_1x1_b));
+   sky130_fd_sc_hd__inv_2 inv1_1x1   (.A(pre1_1x1_b), .Y(pre1_1x1));
+
+   // quad local evals, 2 ports
+   local_eval_comp eval_0x0 (
    .PRE0_b(pre0_0x0), .RBL0_L(rbl0_000), .RBL0_R(rbl0_010), .RBL0_O_b(rbl0_0x0),
    .PRE1_b(pre1_0x0), .RBL1_L(rbl1_000), .RBL1_R(rbl1_010), .RBL1_O_b(rbl1_0x0)
-);
-local_eval_comp eval_0x1 (
+   );
+   local_eval_comp eval_0x1 (
    .PRE0_b(pre0_0x1), .RBL0_L(rbl0_001), .RBL0_R(rbl0_011), .RBL0_O_b(rbl0_0x1),
    .PRE1_b(pre1_0x1), .RBL1_L(rbl1_001), .RBL1_R(rbl1_011), .RBL1_O_b(rbl1_0x1)
-);
-local_eval_comp eval_1x0 (
+   );
+   local_eval_comp eval_1x0 (
    .PRE0_b(pre0_1x0), .RBL0_L(rbl0_100), .RBL0_R(rbl0_110), .RBL0_O_b(rbl0_1x0),
    .PRE1_b(pre1_1x0), .RBL1_L(rbl1_100), .RBL1_R(rbl1_110), .RBL1_O_b(rbl1_1x0)
-);
-local_eval_comp eval_1x1 (
+   );
+   local_eval_comp eval_1x1 (
    .PRE0_b(pre0_1x1), .RBL0_L(rbl0_101), .RBL0_R(rbl0_111), .RBL0_O_b(rbl0_1x1),
    .PRE1_b(pre1_1x1), .RBL1_L(rbl1_101), .RBL1_R(rbl1_111), .RBL1_O_b(rbl1_1x1)
-);
+   );
+
+end
+
+endgenerate
 
 // separate ports by quads for placement
 // address passes through - should start decode here
@@ -619,6 +684,15 @@ inout_comp io (
     .wr0_dat_b_1x1(wbl0_b_1x1)
 
 );
+
+assign wbl0_000 = wbl0_0x0;
+assign wbl0_001 = wbl0_0x1;
+assign wbl0_010 = wbl0_0x0;
+assign wbl0_011 = wbl0_0x1;
+assign wbl0_100 = wbl0_1x0;
+assign wbl0_101 = wbl0_0x1;
+assign wbl0_110 = wbl0_1x0;
+assign wbl0_111 = wbl0_0x1;
 
 assign wbl0_b_000 = wbl0_b_0x0;
 assign wbl0_b_001 = wbl0_b_0x1;

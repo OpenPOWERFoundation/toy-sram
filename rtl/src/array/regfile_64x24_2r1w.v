@@ -22,9 +22,9 @@
 
 `timescale 1 ps / 1 ps
 
-// 0: gen 8x 16x12 plus local eval   1: gen 4x 32x24 and no local eval
+// 0: gen 8x 16x12 plus local eval   1: gen 4x 32x12 and no local eval
 module regfile_64x24_2r1w #(
-    parameter integer RA_32x24 = 1
+    parameter integer RA_32x12 = 1
 ) (
 
     input         rd0_c_na0,
@@ -71,8 +71,9 @@ module regfile_64x24_2r1w #(
 
 );
 
- // word & bit selects
+// word & bit selects
 
+// 16x12
 wire [0:15]      rwl0_00_15_00_11;
 wire [0:15]      rwl0_00_15_12_23;
 wire [0:15]      rwl1_00_15_00_11;
@@ -125,7 +126,21 @@ wire [0:11]      rbl1_48_63_12_23;
 wire [0:11]      wbl_48_63_00_11;
 wire [0:11]      wbl_48_63_12_23;
 
-// 32x24
+// 32x12
+wire [0:31]      rwl0_00_31_00_11;
+wire [0:31]      rwl0_00_31_12_23;
+wire [0:31]      rwl1_00_31_00_11;
+wire [0:31]      rwl1_00_31_12_23;
+wire [0:31]      wwl_00_31_00_11;
+wire [0:31]      wwl_00_31_12_23;
+
+wire [0:31]      rwl0_32_63_00_11;
+wire [0:31]      rwl0_32_63_12_23;
+wire [0:31]      rwl1_32_63_00_11;
+wire [0:31]      rwl1_32_63_12_23;
+wire [0:31]      wwl_32_63_00_11;
+wire [0:31]      wwl_32_63_12_23;
+
 wire [0:11]      rbl0_00_31_00_11;
 wire [0:11]      rbl0_00_31_12_23;
 wire [0:11]      rbl1_00_31_00_11;
@@ -140,137 +155,141 @@ wire [0:11]      rbl1_32_63_12_23;
 wire [0:11]      wbl_32_63_00_11;
 wire [0:11]      wbl_32_63_12_23;
 
+genvar i;
+
+// subarrays
 generate
 
-if (RA_32x24 == 0) begin
-// subarray cells; 4x2 16w/12b subarrays
+if (RA_32x12 == 0) begin
 
-// words 00:15
-toysram_16x12 r000 (
-   .RWL0(rwl0_00_15_00_11),
-   .RWL1(rwl1_00_15_00_11),
-   .WWL(wwl_00_15_00_11),
-   .RBL0(rbl0_00_15_00_11),
-   .RBL1(rbl1_00_15_00_11),
-   .WBL(wbl_00_15_00_11),
-   .WBLb(~wbl_00_15_00_11)
-);
-toysram_16x12 r001 (
-   .RWL0(rwl0_00_15_12_23),
-   .RWL1(rwl1_00_15_12_23),
-   .WWL(wwl_00_15_12_23),
-   .RBL0(rbl0_00_15_12_23),
-   .RBL1(rbl1_00_15_12_23),
-   .WBL(wbl_00_15_12_23),
-   .WBLb(~wbl_00_15_12_23)
-);
+   // 4x2 16w/12b
 
-// words 16:31
-toysram_16x12 r010 (
-   .RWL0(rwl0_16_31_00_11),
-   .RWL1(rwl1_16_31_00_11),
-   .WWL(wwl_16_31_00_11),
-   .RBL0(rbl0_16_31_00_11),
-   .RBL1(rbl1_16_31_00_11),
-   .WBL(wbl_16_31_00_11),
-   .WBLb(~wbl_16_31_00_11)
-);
-toysram_16x12 r011 (
-   .RWL0(rwl0_16_31_12_23),
-   .RWL1(rwl1_16_31_12_23),
-   .WWL(wwl_16_31_12_23),
-   .RBL0(rbl0_16_31_12_23),
-   .RBL1(rbl1_16_31_12_23),
-   .WBL(wbl_16_31_12_23),
-   .WBLb(~wbl_16_31_12_23)
-);
+   // words 00:15
+   toysram_16x12 r000 (
+      .RWL0(rwl0_00_15_00_11),
+      .RWL1(rwl1_00_15_00_11),
+      .WWL(wwl_00_15_00_11),
+      .RBL0(rbl0_00_15_00_11),
+      .RBL1(rbl1_00_15_00_11),
+      .WBL(wbl_00_15_00_11),
+      .WBLb(~wbl_00_15_00_11)
+   );
+   toysram_16x12 r001 (
+      .RWL0(rwl0_00_15_12_23),
+      .RWL1(rwl1_00_15_12_23),
+      .WWL(wwl_00_15_12_23),
+      .RBL0(rbl0_00_15_12_23),
+      .RBL1(rbl1_00_15_12_23),
+      .WBL(wbl_00_15_12_23),
+      .WBLb(~wbl_00_15_12_23)
+   );
 
-// words 32:47
-toysram_16x12 r100 (
-   .RWL0(rwl0_32_47_00_11),
-   .RWL1(rwl1_32_47_00_11),
-   .WWL(wwl_32_47_00_11),
-   .RBL0(rbl0_32_47_00_11),
-   .RBL1(rbl1_32_47_00_11),
-   .WBL(wbl_32_47_00_11),
-   .WBLb(~wbl_32_47_00_11)
-);
-toysram_16x12 r101 (
-   .RWL0(rwl0_32_47_12_23),
-   .RWL1(rwl1_32_47_12_23),
-   .WWL(wwl_32_47_12_23),
-   .RBL0(rbl0_32_47_12_23),
-   .RBL1(rbl1_32_47_12_23),
-   .WBL(wbl_32_47_12_23),
-   .WBLb(~wbl_32_47_12_23)
-);
+   // words 16:31
+   toysram_16x12 r010 (
+      .RWL0(rwl0_16_31_00_11),
+      .RWL1(rwl1_16_31_00_11),
+      .WWL(wwl_16_31_00_11),
+      .RBL0(rbl0_16_31_00_11),
+      .RBL1(rbl1_16_31_00_11),
+      .WBL(wbl_16_31_00_11),
+      .WBLb(~wbl_16_31_00_11)
+   );
+   toysram_16x12 r011 (
+      .RWL0(rwl0_16_31_12_23),
+      .RWL1(rwl1_16_31_12_23),
+      .WWL(wwl_16_31_12_23),
+      .RBL0(rbl0_16_31_12_23),
+      .RBL1(rbl1_16_31_12_23),
+      .WBL(wbl_16_31_12_23),
+      .WBLb(~wbl_16_31_12_23)
+   );
 
-// words 48:63
-toysram_16x12 r110 (
-   .RWL0(rwl0_48_63_00_11),
-   .RWL1(rwl1_48_63_00_11),
-   .WWL(wwl_48_63_00_11),
-   .RBL0(rbl0_48_63_00_11),
-   .RBL1(rbl1_48_63_00_11),
-   .WBL(wbl_48_63_00_11),
-   .WBLb(~wbl_48_63_00_11)
-);
-toysram_16x12 r111 (
-   .RWL0(rwl0_48_63_12_23),
-   .RWL1(rwl1_48_63_12_23),
-   .WWL(wwl_48_63_12_23),
-   .RBL0(rbl0_48_63_12_23),
-   .RBL1(rbl1_48_63_12_23),
-   .WBL(wbl_48_63_12_23),
-   .WBLb(~wbl_48_63_12_23)
-);
+   // words 32:47
+   toysram_16x12 r100 (
+      .RWL0(rwl0_32_47_00_11),
+      .RWL1(rwl1_32_47_00_11),
+      .WWL(wwl_32_47_00_11),
+      .RBL0(rbl0_32_47_00_11),
+      .RBL1(rbl1_32_47_00_11),
+      .WBL(wbl_32_47_00_11),
+      .WBLb(~wbl_32_47_00_11)
+   );
+   toysram_16x12 r101 (
+      .RWL0(rwl0_32_47_12_23),
+      .RWL1(rwl1_32_47_12_23),
+      .WWL(wwl_32_47_12_23),
+      .RBL0(rbl0_32_47_12_23),
+      .RBL1(rbl1_32_47_12_23),
+      .WBL(wbl_32_47_12_23),
+      .WBLb(~wbl_32_47_12_23)
+   );
+
+   // words 48:63
+   toysram_16x12 r110 (
+      .RWL0(rwl0_48_63_00_11),
+      .RWL1(rwl1_48_63_00_11),
+      .WWL(wwl_48_63_00_11),
+      .RBL0(rbl0_48_63_00_11),
+      .RBL1(rbl1_48_63_00_11),
+      .WBL(wbl_48_63_00_11),
+      .WBLb(~wbl_48_63_00_11)
+   );
+   toysram_16x12 r111 (
+      .RWL0(rwl0_48_63_12_23),
+      .RWL1(rwl1_48_63_12_23),
+      .WWL(wwl_48_63_12_23),
+      .RBL0(rbl0_48_63_12_23),
+      .RBL1(rbl1_48_63_12_23),
+      .WBL(wbl_48_63_12_23),
+      .WBLb(~wbl_48_63_12_23)
+   );
 
 end else begin
 
-// subarray cells; 2x2 32w/24b subarrays w/local eval inside between pairs
+   // 2x2 32w/24b w/local eval inside between pairs
 
-// words 00:31
-toysram_32x12 r00 (
-   .RWL0({rwl0_00_15_00_11,rwl0_16_31_00_11}),
-   .RWL1({rwl1_00_15_00_11,rwl1_16_31_00_11}),
-   .WWL({wwl_00_15_00_11,wwl_16_31_00_11}),
-   .RBL0(rbl0_00_31_00_11),
-   .RBL1(rbl1_00_31_00_11),
-   .WBL(wbl_00_31_00_11),
-   .WBLb(~wbl_00_31_00_11)
-);
+   // words 00:31
+   toysram_32x12 r00 (
+      .RWL0({rwl0_00_15_00_11,rwl0_16_31_00_11}),
+      .RWL1({rwl1_00_15_00_11,rwl1_16_31_00_11}),
+      .WWL({wwl_00_15_00_11,wwl_16_31_00_11}),
+      .RBL0(rbl0_00_31_00_11),
+      .RBL1(rbl1_00_31_00_11),
+      .WBL(wbl_00_31_00_11),
+      .WBLb(~wbl_00_31_00_11)
+   );
 
-toysram_32x12 r01 (
-   .RWL0({rwl0_00_15_12_23,rwl0_16_31_12_23}),
-   .RWL1({rwl1_00_15_12_23,rwl1_16_31_12_23}),
-   .WWL({wwl_00_15_12_23,wwl_16_31_12_23}),
-   .RBL0(rbl0_00_31_12_23),
-   .RBL1(rbl1_00_31_12_23),
-   .WBL(wbl_00_31_12_23),
-   .WBLb(~wbl_00_31_12_23)
-);
+   toysram_32x12 r01 (
+      .RWL0({rwl0_00_15_12_23,rwl0_16_31_12_23}),
+      .RWL1({rwl1_00_15_12_23,rwl1_16_31_12_23}),
+      .WWL({wwl_00_15_12_23,wwl_16_31_12_23}),
+      .RBL0(rbl0_00_31_12_23),
+      .RBL1(rbl1_00_31_12_23),
+      .WBL(wbl_00_31_12_23),
+      .WBLb(~wbl_00_31_12_23)
+   );
 
-// words 32:47
-toysram_32x12 r10 (
-   .RWL0({rwl0_32_47_00_11,rwl0_48_31_00_11}),
-   .RWL1({rwl1_32_47_00_11,rwl1_48_31_00_11}),
-   .WWL({wwl_32_47_00_11,wwl_48_31_00_11}),
-   .RBL0(rbl0_32_63_00_11),
-   .RBL1(rbl1_32_63_00_11),
-   .WBL(wbl_32_63_00_11),
-   .WBLb(~wbl_32_63_00_11)
-);
+   // words 32:47
+   toysram_32x12 r10 (
+      .RWL0({rwl0_32_47_00_11,rwl0_48_63_00_11}),
+      .RWL1({rwl1_32_47_00_11,rwl1_48_63_00_11}),
+      .WWL({wwl_32_47_00_11,wwl_48_63_00_11}),
+      .RBL0(rbl0_32_63_00_11),
+      .RBL1(rbl1_32_63_00_11),
+      .WBL(wbl_32_63_00_11),
+      .WBLb(~wbl_32_63_00_11)
+   );
 
-// words 48:63
-toysram_32x12 r11 (
-   .RWL0({rwl0_32_47_12_23,rwl0_48_63_12_23}),
-   .RWL1({rwl1_32_47_12_23,rwl1_48_63_12_23}),
-   .WWL({wwl_32_47_12_23,wwl_48_63_12_23}),
-   .RBL0(rbl0_32_63_12_23),
-   .RBL1(rbl1_32_63_12_23),
-   .WBL(wbl_32_63_12_23),
-   .WBLb(~wbl_32_63_12_23)
-);
+   // words 48:63
+   toysram_32x12 r11 (
+      .RWL0({rwl0_32_47_12_23,rwl0_48_63_12_23}),
+      .RWL1({rwl1_32_47_12_23,rwl1_48_63_12_23}),
+      .WWL({wwl_32_47_12_23,wwl_48_63_12_23}),
+      .RBL0(rbl0_32_63_12_23),
+      .RBL1(rbl1_32_63_12_23),
+      .WBL(wbl_32_63_12_23),
+      .WBLb(~wbl_32_63_12_23)
+   );
 
 end
 endgenerate
@@ -549,31 +568,48 @@ assign rwl0_48_63_12_23     = rwl0_48_63_00_11;
 assign rwl1_48_63_12_23     = rwl1_48_63_00_11;
 assign wwl_48_63_12_23      = wwl_48_63_00_11;
 
-
 // bit lines
-
-genvar i;
 generate
 
-for (i = 0; i < 12; i = i + 1) begin
-   assign rd0_dat[i] = (~rbl0_00_15_00_11[i]) | (~rbl0_16_31_00_11[i]) | (~rbl0_32_47_00_11[i]) | (~rbl0_48_63_00_11[i]);
-   assign rd1_dat[i] = (~rbl1_00_15_00_11[i]) | (~rbl1_16_31_00_11[i]) | (~rbl1_32_47_00_11[i]) | (~rbl1_48_63_00_11[i]);
-end
+if (RA_32x12 == 0) begin
 
-for (i = 0; i < 12; i = i + 1) begin
-   assign rd0_dat[i+12] = (~rbl0_00_15_12_23[i]) | (~rbl0_16_31_12_23[i]) | (~rbl0_32_47_12_23[i]) | (~rbl0_48_63_12_23[i]);
-   assign rd1_dat[i+12] = (~rbl1_00_15_12_23[i]) | (~rbl1_16_31_12_23[i]) | (~rbl1_32_47_12_23[i]) | (~rbl1_48_63_12_23[i]);
-end
+   for (i = 0; i < 12; i = i + 1) begin
+      assign rd0_dat[i] = (~rbl0_00_15_00_11[i]) | (~rbl0_16_31_00_11[i]) | (~rbl0_32_47_00_11[i]) | (~rbl0_48_63_00_11[i]);
+      assign rd1_dat[i] = (~rbl1_00_15_00_11[i]) | (~rbl1_16_31_00_11[i]) | (~rbl1_32_47_00_11[i]) | (~rbl1_48_63_00_11[i]);
+   end
 
+   for (i = 0; i < 12; i = i + 1) begin
+      assign rd0_dat[i+12] = (~rbl0_00_15_12_23[i]) | (~rbl0_16_31_12_23[i]) | (~rbl0_32_47_12_23[i]) | (~rbl0_48_63_12_23[i]);
+      assign rd1_dat[i+12] = (~rbl1_00_15_12_23[i]) | (~rbl1_16_31_12_23[i]) | (~rbl1_32_47_12_23[i]) | (~rbl1_48_63_12_23[i]);
+   end
+
+   assign wbl_00_15_00_11 = wr0_dat[0:11];
+   assign wbl_00_15_12_23 = wr0_dat[12:23];
+   assign wbl_16_31_00_11 = wr0_dat[0:11];
+   assign wbl_16_31_12_23 = wr0_dat[12:23];
+   assign wbl_32_47_00_11 = wr0_dat[0:11];
+   assign wbl_32_47_12_23 = wr0_dat[12:23];
+   assign wbl_48_63_00_11 = wr0_dat[0:11];
+   assign wbl_48_63_12_23 = wr0_dat[12:23];
+
+end else begin
+
+   for (i = 0; i < 12; i = i + 1) begin
+      assign rd0_dat[i] = rbl0_00_31_00_11[i] | rbl0_32_63_00_11[i];
+      assign rd1_dat[i] = rbl1_00_31_00_11[i] | rbl1_32_63_00_11[i];
+   end
+
+   for (i = 0; i < 12; i = i + 1) begin
+      assign rd0_dat[i+12] = rbl0_00_31_12_23[i] | rbl0_32_63_12_23[i];
+      assign rd1_dat[i+12] = rbl1_00_31_12_23[i] | rbl1_32_63_12_23[i];
+   end
+
+   assign wbl_00_31_00_11 = wr0_dat[0:11];
+   assign wbl_00_31_12_23 = wr0_dat[12:23];
+   assign wbl_32_63_00_11 = wr0_dat[0:11];
+   assign wbl_32_63_12_23 = wr0_dat[12:23];
+
+end
 endgenerate
-
-assign wbl_00_15_00_11 = wr0_dat[0:11];
-assign wbl_00_15_12_23 = wr0_dat[12:23];
-assign wbl_16_31_00_11 = wr0_dat[0:11];
-assign wbl_16_31_12_23 = wr0_dat[12:23];
-assign wbl_32_47_00_11 = wr0_dat[0:11];
-assign wbl_32_47_12_23 = wr0_dat[12:23];
-assign wbl_48_63_00_11 = wr0_dat[0:11];
-assign wbl_48_63_12_23 = wr0_dat[12:23];
 
 endmodule

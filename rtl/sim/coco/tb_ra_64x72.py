@@ -376,10 +376,12 @@ async def tb(dut):
 
    # configure allowed ports/entries
    rangesRd = [(0,63), (0,63), (0,63), (0,63)]     # full
-   #rangesRd = [(0,7), (0,7), (0,7), (0,7)]        # hammer
+   #rangesRd = [(0,7), (0,7), (0,7), (0,7)]         # hammer
+   #rangesRd = [(0,0), (0,0), (0,0), (0,0)]         # single
    rangesWr = [(0,63), (0,63),(0,63), (0,63)]      # full
-   #rangesWr = [(0,7), (0,7)]                      # hammer
-   #rangesWr = [None, None]                        # none
+   #rangesWr = [(0,7), (0,7)]                       # hammer
+   #rangesWr = [(0,0), (0,0)]                       # single
+   #rangesWr = [None, None]                         # none
 
    verbose = True
 

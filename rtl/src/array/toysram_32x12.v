@@ -67,168 +67,167 @@ reg [0:11] mem_30;
 reg [0:11] mem_31;
 
 // word-select
-// the bits are negative-active at this point in the 16x12 but
-//  the local eval is done between subarray pairs, so bits are positive going out
-assign RBL0 = ~((mem_00 & {12{RWL0[0]}})  & (mem_16 & {12{RWL0[16]}})) &
-              ~((mem_01 & {12{RWL0[1]}})  & (mem_17 & {12{RWL0[17]}})) &
-              ~((mem_02 & {12{RWL0[2]}})  & (mem_18 & {12{RWL0[18]}})) &
-              ~((mem_03 & {12{RWL0[3]}})  & (mem_19 & {12{RWL0[19]}})) &
-              ~((mem_04 & {12{RWL0[4]}})  & (mem_20 & {12{RWL0[20]}})) &
-              ~((mem_05 & {12{RWL0[5]}})  & (mem_21 & {12{RWL0[21]}})) &
-              ~((mem_06 & {12{RWL0[6]}})  & (mem_22 & {12{RWL0[22]}})) &
-              ~((mem_07 & {12{RWL0[7]}})  & (mem_23 & {12{RWL0[23]}})) &
-              ~((mem_08 & {12{RWL0[8]}})  & (mem_24 & {12{RWL0[24]}})) &
-              ~((mem_09 & {12{RWL0[9]}})  & (mem_25 & {12{RWL0[25]}})) &
-              ~((mem_10 & {12{RWL0[10]}}) & (mem_26 & {12{RWL0[26]}})) &
-              ~((mem_11 & {12{RWL0[11]}}) & (mem_27 & {12{RWL0[27]}})) &
-              ~((mem_12 & {12{RWL0[12]}}) & (mem_28 & {12{RWL0[28]}})) &
-              ~((mem_13 & {12{RWL0[13]}}) & (mem_29 & {12{RWL0[29]}})) &
-              ~((mem_14 & {12{RWL0[14]}}) & (mem_30 & {12{RWL0[30]}})) &
-              ~((mem_15 & {12{RWL0[15]}}) & (mem_31 & {12{RWL0[31]}}));
+// the local eval is done between subarray pairs, and bits are positive going out
+assign RBL0 = ((mem_00 & {12{RWL0[0]}})  | (mem_16 & {12{RWL0[16]}})) |
+              ((mem_01 & {12{RWL0[1]}})  | (mem_17 & {12{RWL0[17]}})) |
+              ((mem_02 & {12{RWL0[2]}})  | (mem_18 & {12{RWL0[18]}})) |
+              ((mem_03 & {12{RWL0[3]}})  | (mem_19 & {12{RWL0[19]}})) |
+              ((mem_04 & {12{RWL0[4]}})  | (mem_20 & {12{RWL0[20]}})) |
+              ((mem_05 & {12{RWL0[5]}})  | (mem_21 & {12{RWL0[21]}})) |
+              ((mem_06 & {12{RWL0[6]}})  | (mem_22 & {12{RWL0[22]}})) |
+              ((mem_07 & {12{RWL0[7]}})  | (mem_23 & {12{RWL0[23]}})) |
+              ((mem_08 & {12{RWL0[8]}})  | (mem_24 & {12{RWL0[24]}})) |
+              ((mem_09 & {12{RWL0[9]}})  | (mem_25 & {12{RWL0[25]}})) |
+              ((mem_10 & {12{RWL0[10]}}) | (mem_26 & {12{RWL0[26]}})) |
+              ((mem_11 & {12{RWL0[11]}}) | (mem_27 & {12{RWL0[27]}})) |
+              ((mem_12 & {12{RWL0[12]}}) | (mem_28 & {12{RWL0[28]}})) |
+              ((mem_13 & {12{RWL0[13]}}) | (mem_29 & {12{RWL0[29]}})) |
+              ((mem_14 & {12{RWL0[14]}}) | (mem_30 & {12{RWL0[30]}})) |
+              ((mem_15 & {12{RWL0[15]}}) | (mem_31 & {12{RWL0[31]}}));
 
-assign RBL0 = ~((mem_00 & {12{RWL1[0]}})  & (mem_16 & {12{RWL1[16]}})) &
-              ~((mem_01 & {12{RWL1[1]}})  & (mem_17 & {12{RWL1[17]}})) &
-              ~((mem_02 & {12{RWL1[2]}})  & (mem_18 & {12{RWL1[18]}})) &
-              ~((mem_03 & {12{RWL1[3]}})  & (mem_19 & {12{RWL1[19]}})) &
-              ~((mem_04 & {12{RWL1[4]}})  & (mem_20 & {12{RWL1[20]}})) &
-              ~((mem_05 & {12{RWL1[5]}})  & (mem_21 & {12{RWL1[21]}})) &
-              ~((mem_06 & {12{RWL1[6]}})  & (mem_22 & {12{RWL1[22]}})) &
-              ~((mem_07 & {12{RWL1[7]}})  & (mem_23 & {12{RWL1[23]}})) &
-              ~((mem_08 & {12{RWL1[8]}})  & (mem_24 & {12{RWL1[24]}})) &
-              ~((mem_09 & {12{RWL1[9]}})  & (mem_25 & {12{RWL1[25]}})) &
-              ~((mem_10 & {12{RWL1[10]}}) & (mem_26 & {12{RWL1[26]}})) &
-              ~((mem_11 & {12{RWL1[11]}}) & (mem_27 & {12{RWL1[27]}})) &
-              ~((mem_12 & {12{RWL1[12]}}) & (mem_28 & {12{RWL1[28]}})) &
-              ~((mem_13 & {12{RWL1[13]}}) & (mem_29 & {12{RWL1[29]}})) &
-              ~((mem_14 & {12{RWL1[14]}}) & (mem_30 & {12{RWL1[30]}})) &
-              ~((mem_15 & {12{RWL1[15]}}) & (mem_31 & {12{RWL1[31]}}));
+assign RBL1 = ((mem_00 & {12{RWL1[0]}})  | (mem_16 & {12{RWL1[16]}})) |
+              ((mem_01 & {12{RWL1[1]}})  | (mem_17 & {12{RWL1[17]}})) |
+              ((mem_02 & {12{RWL1[2]}})  | (mem_18 & {12{RWL1[18]}})) |
+              ((mem_03 & {12{RWL1[3]}})  | (mem_19 & {12{RWL1[19]}})) |
+              ((mem_04 & {12{RWL1[4]}})  | (mem_20 & {12{RWL1[20]}})) |
+              ((mem_05 & {12{RWL1[5]}})  | (mem_21 & {12{RWL1[21]}})) |
+              ((mem_06 & {12{RWL1[6]}})  | (mem_22 & {12{RWL1[22]}})) |
+              ((mem_07 & {12{RWL1[7]}})  | (mem_23 & {12{RWL1[23]}})) |
+              ((mem_08 & {12{RWL1[8]}})  | (mem_24 & {12{RWL1[24]}})) |
+              ((mem_09 & {12{RWL1[9]}})  | (mem_25 & {12{RWL1[25]}})) |
+              ((mem_10 & {12{RWL1[10]}}) | (mem_26 & {12{RWL1[26]}})) |
+              ((mem_11 & {12{RWL1[11]}}) | (mem_27 & {12{RWL1[27]}})) |
+              ((mem_12 & {12{RWL1[12]}}) | (mem_28 & {12{RWL1[28]}})) |
+              ((mem_13 & {12{RWL1[13]}}) | (mem_29 & {12{RWL1[29]}})) |
+              ((mem_14 & {12{RWL1[14]}}) | (mem_30 & {12{RWL1[30]}})) |
+              ((mem_15 & {12{RWL1[15]}}) | (mem_31 & {12{RWL1[31]}}));
 
 always @(posedge WWL[0]) begin
-   mem_00 <= ~WBLb;
+   mem_00 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[1]) begin
-   mem_01 <= ~WBLb;
+   mem_01 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[2]) begin
-   mem_02 <= ~WBLb;
+   mem_02 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[3]) begin
-   mem_03 <= ~WBLb;
+   mem_03 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[4]) begin
-   mem_04 <= ~WBLb;
+   mem_04 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[5]) begin
-   mem_05 <= ~WBLb;
+   mem_05 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[6]) begin
-   mem_06 <= ~WBLb;
+   mem_06 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[7]) begin
-   mem_07 <= ~WBLb;
+   mem_07 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[8]) begin
-   mem_08 <= ~WBLb;
+   mem_08 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[9]) begin
-   mem_09 <= ~WBLb;
+   mem_09 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[10]) begin
-   mem_10 <= ~WBLb;
+   mem_10 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[11]) begin
-   mem_11 <= ~WBLb;
+   mem_11 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[12]) begin
-   mem_12 <= ~WBLb;
+   mem_12 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[13]) begin
-   mem_13 <= ~WBLb;
+   mem_13 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[14]) begin
-   mem_14 <= ~WBLb;
+   mem_14 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[15]) begin
-   mem_15 <= ~WBLb;
+   mem_15 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[16]) begin
-   mem_16 <= ~WBLb;
+   mem_16 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[17]) begin
-   mem_17 <= ~WBLb;
+   mem_17 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[18]) begin
-   mem_18 <= ~WBLb;
+   mem_18 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[19]) begin
-   mem_19 <= ~WBLb;
+   mem_19 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[20]) begin
-   mem_20 <= ~WBLb;
+   mem_20 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[21]) begin
-   mem_21 <= ~WBLb;
+   mem_21 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[22]) begin
-   mem_22 <= ~WBLb;
+   mem_22 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[23]) begin
-   mem_23 <= ~WBLb;
+   mem_23 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[24]) begin
-   mem_24 <= ~WBLb;
+   mem_24 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[25]) begin
-   mem_25 <= ~WBLb;
+   mem_25 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[26]) begin
-   mem_26 <= ~WBLb;
+   mem_26 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[27]) begin
-   mem_27 <= ~WBLb;
+   mem_27 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[28]) begin
-   mem_28 <= ~WBLb;
+   mem_28 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[29]) begin
-   mem_29 <= ~WBLb;
+   mem_29 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[30]) begin
-   mem_30 <= ~WBLb;
+   mem_30 <= WBL | ~WBLb;
 end
 
 always @(posedge WWL[31]) begin
-   mem_31 <= ~WBLb;
+   mem_31 <= WBL | ~WBLb;
 end
 
 // assert errors (multiwrite, etc.)
