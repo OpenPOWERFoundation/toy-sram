@@ -1,0 +1,11 @@
+| units: 500000 tech: sky130A format: MIT
+x inv1_q VDD inv2_q w_420_92# s=2856,152 d=5460,298 l=30 w=84 x=462 y=289 sky130_fd_pr__pfet_01v8
+x inv1_q GND_0 inv2_q VSUBS s=3332,166 d=3087,161 l=30 w=98 x=224 y=289 sky130_fd_pr__nfet_01v8
+x RWL1 RBL1 a_672_120# VSUBS s=10836,424 d=4473,197 l=30 w=126 x=672 y=90 sky130_fd_pr__nfet_01v8
+x WWL WBLb inv1_q VSUBS s=8820,376 d=3479,169 l=30 w=98 x=224 y=90 sky130_fd_pr__nfet_01v8
+x inv2_q inv1_q VDD w_420_92# s=4956,286 d=2856,152 l=30 w=84 x=462 y=191 sky130_fd_pr__pfet_01v8
+x inv1_q GND_1 a_672_319# VSUBS s=4284,194 d=3969,189 l=30 w=126 x=672 y=289 sky130_fd_pr__nfet_01v8
+x inv2_q inv1_q GND_0 VSUBS s=3479,169 d=3332,166 l=30 w=98 x=224 y=191 sky130_fd_pr__nfet_01v8
+x WWL inv2_q WBL VSUBS s=3087,161 d=6664,332 l=30 w=98 x=224 y=382 sky130_fd_pr__nfet_01v8
+x inv2_q a_672_120# GND_1 VSUBS s=4473,197 d=4284,194 l=30 w=126 x=672 y=191 sky130_fd_pr__nfet_01v8
+x RWL0 a_672_319# RBL0 VSUBS s=3969,189 d=8064,380 l=30 w=126 x=672 y=382 sky130_fd_pr__nfet_01v8

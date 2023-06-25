@@ -1,0 +1,14 @@
+* NGSPICE file created from toysram_bit.ext - technology: sky130A
+
+.subckt toysram_bit WBL inv2_q GND_0 VDD GND_1 inv1_q WWL WBLb RBL0 RBL1 RWL0 RWL1
+X0 inv2_q inv1_q VDD w_420_92# sky130_fd_pr__pfet_01v8 ad=0.137 pd=1.49 as=0.0714 ps=0.76 w=0.42 l=0.15
+X1 inv2_q inv1_q GND_0 VSUBS sky130_fd_pr__nfet_01v8 ad=0.0772 pd=0.805 as=0.0833 ps=0.83 w=0.49 l=0.15
+X2 a_672_120# RWL1 RBL1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.112 pd=0.985 as=0.271 ps=2.12 w=0.63 l=0.15
+X3 inv1_q WWL WBLb VSUBS sky130_fd_pr__nfet_01v8 ad=0.087 pd=0.845 as=0.221 ps=1.88 w=0.49 l=0.15
+X4 VDD inv2_q inv1_q w_420_92# sky130_fd_pr__pfet_01v8 ad=0.0714 pd=0.76 as=0.124 ps=1.43 w=0.42 l=0.15
+X5 a_672_319# inv1_q GND_1 VSUBS sky130_fd_pr__nfet_01v8 ad=0.0992 pd=0.945 as=0.107 ps=0.97 w=0.63 l=0.15
+X6 GND_0 inv2_q inv1_q VSUBS sky130_fd_pr__nfet_01v8 ad=0.0833 pd=0.83 as=0.087 ps=0.845 w=0.49 l=0.15
+X7 WBL WWL inv2_q VSUBS sky130_fd_pr__nfet_01v8 ad=0.167 pd=1.66 as=0.0772 ps=0.805 w=0.49 l=0.15
+X8 GND_1 inv2_q a_672_120# VSUBS sky130_fd_pr__nfet_01v8 ad=0.107 pd=0.97 as=0.112 ps=0.985 w=0.63 l=0.15
+X9 RBL0 RWL0 a_672_319# VSUBS sky130_fd_pr__nfet_01v8 ad=0.202 pd=1.9 as=0.0992 ps=0.945 w=0.63 l=0.15
+.ends
